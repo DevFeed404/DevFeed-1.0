@@ -22,7 +22,7 @@ exports.subscribe = async (req, res) => {
           }
            else {
             
-            db.query("INSERT INTO users (name,email,organization,date)  VALUES (?, ?, ?,?)", [name,email,organization,date], (err, result) => {
+            db.query("INSERT INTO users (name,email,organization,date,isSubscribed)  VALUES (?, ?, ?,?, TRUE)", [name,email,organization,date], (err, result) => {
               if (err) {
                 console.log(err)
               }

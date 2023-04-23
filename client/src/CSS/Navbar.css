@@ -1,5 +1,24 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
 body{
     background-color: #242132;
+    width: 100vw !important;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background-color:#242132;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #746CFE;
+    border-radius: 10px;
 }
 
 .nav-body{

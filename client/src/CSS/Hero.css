@@ -1,0 +1,42 @@
+.hero{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+.hero-data{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+
+.hero-head{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    color: #FEFCFF;
+    font-size: 12vh;
+    margin-left: 5vw;
+}
+
+.hero-text{
+    width: 100%;
+    color: #FEFCFF;
+    margin-left: 5vw;
+    margin-top: 2vh;
+    font-size: 3vh;
+}
+
+.hero-img{
+    width: 30vw;
+    background-color: transparent;
+    filter:invert(1);
+    margin-right: 5vw;
+}

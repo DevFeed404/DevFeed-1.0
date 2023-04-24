@@ -32,7 +32,7 @@ body{
     color: #FEFCFF;
     align-items: center;
     justify-content:space-between;
-    z-index: 4;
+    z-index: 10;
     position: fixed;
 }
 

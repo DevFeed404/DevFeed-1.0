@@ -1,0 +1,80 @@
+.subscribe-con{
+    display: flex;
+    flex-direction: column;
+    background-color: #242132;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    /* background-color: blue; */
+    margin-top: 5vh;
+}
+
+.subscribe-con h2{
+    font-size: 7vh;
+    font-weight: 700;
+    color: #FEFCFF;
+}
+
+.hr{
+    height: 4px;
+    width: 10%;
+    background-color: #FEFCFF;
+    border-radius: 5px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.form-subheading{
+    color: #AE8CFA;
+    font-size: 3vh;
+    font-weight: 500;
+}
+
+.subscribe-form{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+}
+
+#person-name-heading{
+    color: #FEFCFF;
+    font-size: 3vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+#person-name{
+    background-color: transparent;
+    border: 1px#FEFCFF solid;
+    padding: 1vh;
+    border-radius: 5px;
+    margin: 1vh 0vh 3vh 0vh;
+}
+
+#person-email-heading{
+    color: #FEFCFF;
+    font-size: 3vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+#person-email{
+    background-color: transparent;
+    border: 1px#FEFCFF solid;
+    padding: 1vh;
+    border-radius: 5px;
+    margin: 1vh 0vh 3vh 0vh;
+}
+
+#subscribe-btn{
+    padding: 2vh;
+    background-color: #FEFCFF;
+    border-radius: 5px;
+    width: fit-content;
+    align-self: center;
+    font-size: 2.5vh;
+    font-weight: 600;
+    margin-top: 3vh;
+}

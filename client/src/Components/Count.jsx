@@ -2,9 +2,9 @@ import React from 'react'
 
 function Count() {
     return (
-        <div className='w-screen h-[80vh] flex flex-col bg-black justify-between'>
-            <h1 className='mt-[14vh]  w-screen text-5xl ml-[33%] mr-[40%]  font-bold text-white'>Checkout the Numbers</h1>
-            <div className='flex ml-[5vw] pb-6  justify-evenly flex-wrap '>
+        <div className='w-screen h-[75vh] mt-[5vh] flex flex-col count-container justify-between'>
+            <h1 className='mt-[10vh]  w-screen text-5xl ml-[33%] mr-[40%]  font-bold text-white'>Checkout the Numbers</h1>
+            <div className='flex ml-[5vw] pb-6 justify-evenly mb-[5vh] flex-wrap'>
                 <div className='h-[35vh] rounded-3xl  mt-[5vh] w-[19vw] flex flex-col justify-center backdrop-blur-xl border border-indigo-600	'>
 
                     <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" viewBox="0 0 16 16" className='fill-white ml-[35%] mt-[10%]'>

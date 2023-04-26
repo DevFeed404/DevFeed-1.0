@@ -21,6 +21,10 @@ body{
     border-radius: 10px;
 }
 
+.count-container{
+    background-color: rgba(0,0,0,0.3);
+}
+
 .nav-body{
     display: flex;
     flex-direction: row;

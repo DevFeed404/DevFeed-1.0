@@ -24,15 +24,15 @@ export default function Subscribe() {
 
   }
   return (
-    <div className='subscribe-con'>
-      <div className="subs-doodle">
+    <div className='subscribe-con '>
+      <div className="subs-doodle lg:hidden">
         <img src={require("../Assets/subs-doodle.png")} alt="" />
       </div>
 
-      <div className="subscribe-body">
+      <div className="subscribe-body ">
 
-        <div className="subscribe-heading">
-          <h2>Subscribe to our newsletter</h2>
+        <div className="subscribe-heading ">
+          <h2 className=''>Subscribe to our newsletter</h2>
         </div>
 
         <div className="hr"></div>

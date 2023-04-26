@@ -1,12 +1,21 @@
 .subscribe-con{
     display: flex;
-    flex-direction: column;
-    background-color: #242132;
+    flex-direction: row;
+    background-color: #00000072;
     align-items: center;
     justify-content: center;
     width: 100vw;
     /* background-color: blue; */
     margin-top: 5vh;
+}
+
+.subscribe-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    margin-top: 4vh;
 }
 
 .subscribe-con h2{
@@ -17,7 +26,7 @@
 
 .hr{
     height: 4px;
-    width: 10%;
+    width: 20%;
     background-color: #FEFCFF;
     border-radius: 5px;
     margin-top: 1vh;
@@ -33,7 +42,7 @@
 .subscribe-form{
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 60%;
     margin-top: 6vh;
     margin-bottom: 6vh;
 }

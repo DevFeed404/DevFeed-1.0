@@ -38,6 +38,10 @@
    {
        font-size: 3vh;
   }
+   @media (max-width: 597px)
+   {
+       font-size: 3vh;
+  }
 
 
 

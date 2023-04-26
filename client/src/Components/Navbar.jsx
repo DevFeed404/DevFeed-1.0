@@ -7,7 +7,6 @@ export default function Navbar() {
         <div className="logo">
             DevFeed
         </div>
-
         <div className="subscribe">
             Subscribe 
             <img src={require("../Assets/right.png")} alt=""  />

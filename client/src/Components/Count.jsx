@@ -2,7 +2,7 @@ import React from 'react'
 
 function Count() {
     return (
-        <div className='w-screen rounded-3xl h-fit flex flex-col bg-black justify-between'>
+        <div className='w-screen h-fit flex flex-col bg-[#00000072] justify-between'>
             <div className='items-center w-screen flex flex-col '>
                 <h1 className='mt-[11vh] sm:text-4xl xsm:text-3xl text-5xl  font-bold text-white'>Checkout the Numbers</h1>
 

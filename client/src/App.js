@@ -2,6 +2,7 @@
 import './App.css';
 import About from './Components/About';
 import Count from './Components/Count';
+import Footer from './Components/Footer';
 import Hero from './Components/Hero';
 import Navbar from './Components/Navbar';
 import RecentEvents from './Components/Recent_events';
@@ -17,6 +18,7 @@ function App() {
       <Count/>
       <Testimonials/>
       <Subscribe/>
+      <Footer/>
     </div>
   );
 }

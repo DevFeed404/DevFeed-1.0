@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <div className='nav-body'>
         <div className="logo">
-            DevFeed
+            <img src={require("../Assets/devfeed-logo.png")} alt="" id='nav-logo' />
         </div>
         <div className="subscribe">
             Subscribe 

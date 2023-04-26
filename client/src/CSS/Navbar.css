@@ -44,8 +44,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 5vw;
-    font-size: 4vh;
+    margin-left: -4vw;
+    /* font-size: 4vh; */
 }
 
 .subscribe{
@@ -65,3 +65,7 @@ body{
     height: 2.5vh;
 }
 
+#nav-logo{
+    width: 65%;
+    /* background-color: black; */
+}

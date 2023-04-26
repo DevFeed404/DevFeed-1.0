@@ -5,7 +5,7 @@ import Count from './Components/Count';
 import Footer from './Components/Footer';
 import Hero from './Components/Hero';
 import Navbar from './Components/Navbar';
-import RecentEvents from './Components/Recent_events';
+// import RecentEvents from './Components/Recent_events';
 import Subscribe from './Components/Subscribe';
 import Testimonials from './Components/Testimonials';
 

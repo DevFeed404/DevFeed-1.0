@@ -10,7 +10,12 @@ module.exports = {
       // => @media (max-width: 1279px) { ... }
 
       'lg': {'max': '1103px'},
-      // => @media (max-width: 1023px) { ... }
+      // => @media (max-width: 1103px) { ... }
+
+      'mlg': {'max': '1023px'},
+      // => @media (max-width: 1103px) { ... }
+
+
       'xmd': {'max': '900px'},
 
       'md': {'max': '767px'},

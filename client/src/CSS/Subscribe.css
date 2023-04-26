@@ -68,6 +68,21 @@
     margin: 1vh 0vh 3vh 0vh;
 }
 
+#person-org-heading{
+    color: #FEFCFF;
+    font-size: 3vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+#person-org{
+    background-color: transparent;
+    border: 1px#FEFCFF solid;
+    padding: 1vh;
+    border-radius: 5px;
+    margin: 1vh 0vh 3vh 0vh;
+}
+
 #subscribe-btn{
     padding: 2vh;
     background-color: #FEFCFF;

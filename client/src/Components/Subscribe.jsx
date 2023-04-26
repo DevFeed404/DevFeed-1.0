@@ -21,6 +21,9 @@ export default function Subscribe() {
           <h3 id="person-email-heading">Email</h3>
           <input type="email" name="person-email" id="person-email" placeholder='Enter your email'/>
 
+          <h3 id="person-org-heading">Organisation</h3>
+          <input type="text" name="person-org" id="person-org" placeholder='Enter your organisation name'/>
+
           <button type="submit" id='subscribe-btn'>SUBSCRIBE</button>
         </form>
     </div>

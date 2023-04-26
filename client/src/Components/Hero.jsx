@@ -13,7 +13,7 @@ export default function Hero() {
             </div>
         </div>
         
-        <div className="hero-image">
+        <div className="hero-image nm:hidden">
             <img src={require("../Assets/hero-doodle.png")} alt="" className='hero-img'/>
         </div>
     </div>

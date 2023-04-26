@@ -11,7 +11,7 @@ exports.sendtome = async (req, res) => {
             port: 587,
             auth: {
                 user: "ayush4002gupta@gmail.com",
-                pass: "tgsrmlkrmwpsfzxo"
+                pass: ""
             },
             tls: {
                 rejectUnauthorized: false

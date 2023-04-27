@@ -121,10 +121,10 @@
 }
 
 #subscribe-btn{
-    padding: 2vh;
+    padding: 1vh;
     background-color: #FEFCFF;
     border-radius: 5px;
-    width: fit-content;
+    width: 100%;
     align-self: center;
     font-size: 2.5vh;
     font-weight: 600;

@@ -9,9 +9,13 @@ export default function Footer() {
             Your feedback is highly valuable to us.
         </h3>
 
+        <div className="hr" style={{"width": "10%"}}></div>
+
         <form action="" method="post" className='feedback-form' id='feedback-form'>
-            <input type="text" name="feedback" id="feedback" placeholder='Your feedback'/>
-            <button type="submit">Send</button>
+            <h2>Feedback</h2>
+            <textarea name="feedback" id="feedback" placeholder='Your feedback'></textarea>
+            {/* <input type="text" name="feedback" id="feedback" placeholder='Your feedback'/> */}
+            <button type="submit">SEND</button>
         </form>
     </div>
     <div className='footer'>

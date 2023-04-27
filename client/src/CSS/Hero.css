@@ -46,9 +46,9 @@
    {
        font-size: 7vh;
   }
-  @media (max-width:68px)
+  @media (max-width:680px)
   {
-      font-size: 10svh;
+      font-size: 10vh;
  }
 
 }

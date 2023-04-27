@@ -14,8 +14,8 @@ export default function Footer() {
 
             <div className="hr" style={{"width": "10%"}}></div>
 
-            <form action="" method="post" className='feedback-form' id='feedback-form'>
-                <h2>Feedback</h2>
+            <form action="" method="post" className='feedback-form mt-3' id='feedback-form'>
+                {/* <h2>Feedback</h2> */}
                 <textarea name="feedback" id="feedback" placeholder='Your feedback'></textarea>
                 {/* <input type="text" name="feedback" id="feedback" placeholder='Your feedback'/> */}
                 <button type="submit">SEND</button>

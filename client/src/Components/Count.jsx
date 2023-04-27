@@ -29,9 +29,11 @@ function Count() {
             <div className='items-center w-screen flex flex-col '>
                 <h1 className='mt-[11vh] sm:text-4xl xsm:text-3xl text-5xl  font-bold text-white'>Checkout the Numbers</h1>
 
+                <div className="hr" style={{"width": "27%","marginTop": "3vh"}}></div>
             </div>
+            
 
-            <div className='flex ml-[5vw] pb-6 mb-[5vh] flex-row xmd:flex-col mt-[10vh] justify-evenly flex-wrap '>
+            <div className='flex ml-[5vw] pb-6 mb-[5vh] flex-row xmd:flex-col mt-[4vh] justify-evenly flex-wrap '>
                 <div className='h-fit xmd:w-[95%] rounded-3xl  mt-[5vh] w-[21vw] flex flex-col justify-center backdrop-blur-xl border border-indigo-600	'>
                     <div className='flex flex-col items-center'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" viewBox="0 0 16 16" className='fill-white mt-[10%]'>

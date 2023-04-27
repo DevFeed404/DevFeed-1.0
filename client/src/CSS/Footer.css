@@ -2,11 +2,12 @@
     display: flex;
     flex-direction: row;
     width: 100vw;
-    height: 7vh;
+    height: fit-content;
     align-items: center;
     justify-content: space-between;
     /* margin-bottom: 4vh; */
     background-color: black;
+ 
 }
 
 .footer-title{
@@ -23,15 +24,36 @@
     font-weight: 500;
 }
 
+#footer-logo{
+    height: 13vh;
+}
+
+.feedback-con{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    /* background-color: antiquewhite; */
+}
+
+.feedback-doodle img{
+    width: 25vw;
+    margin-right: 5vw;
+}
+
 .feedback{
     display: flex;
     flex-direction: column;
     /* height: 10vh; */
-    width: 100vw;
-    align-items: center;
+    width: 50vw;
+    align-items: flex-start;
     justify-content: space-around;
-    align-self: center;
-    margin: auto;
+    /* align-self: flex-start; */
+    /* margin: auto; */
+    margin-left: 5vw;
+    /* background-color: antiquewhite; */
     margin-bottom: 3vh;
 }
 
@@ -43,12 +65,14 @@
 
 }
 
+
+
 .feedback-form{
     display: flex;
     flex-direction: column;
     /* align-items: center; */
     /* height: 6vh; */
-    width: 30%;
+    width: 100%;
     /* background-color: aqua; */
     /* justify-content: space-between; */
 }

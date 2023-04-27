@@ -44,7 +44,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: -4vw;
+    margin-left: -6vw;
     /* font-size: 4vh; */
 }
 
@@ -66,6 +66,7 @@ body{
 }
 
 #nav-logo{
-    width: 65%;
+    width: 60%;
+    height: 40%;
     /* background-color: black; */
 }

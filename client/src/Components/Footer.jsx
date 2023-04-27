@@ -29,7 +29,8 @@ export default function Footer() {
     <div className='footer'>
 
         <div className="footer-title">
-        <img src={require("../Assets/devfeed-logo2.png")} alt="" id='footer-logo' />
+        {/* <img src={require("../Assets/devfeed-logo2.png")} alt="" id='footer-logo' /> */}
+        DevFeed
         </div>
         <div className="copyright">
             &copy; Copyrights by DevFeed. All rights reserved 

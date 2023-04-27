@@ -9,7 +9,7 @@ export default function Hero() {
                 Inspire. Educate. Aware.
             </div>
             <div className="hero-text">
-                We are a community of tech enthusiast for your betterment and ayush chutiya hai.
+                We are a community of tech enthusiast for your betterment.
             </div>
         </div>
         

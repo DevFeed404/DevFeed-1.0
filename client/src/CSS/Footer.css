@@ -2,11 +2,12 @@
     display: flex;
     flex-direction: row;
     width: 100vw;
-    height: 7vh;
+    height: fit-content;
     align-items: center;
     justify-content: space-between;
     /* margin-bottom: 4vh; */
     background-color: black;
+ 
 }
 
 .footer-title{
@@ -21,6 +22,12 @@
     font-size: 2.5vh;
     margin-right: 5vw;
     font-weight: 500;
+}
+
+#footer-logo{
+    height: 13vh;
+
+
 }
 
 .feedback{
@@ -38,6 +45,8 @@
     color: #fefcff;
     font-size: 2.5vh;
 }
+
+
 
 .feedback-form{
     display: flex;

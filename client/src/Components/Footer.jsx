@@ -35,7 +35,7 @@ export default function Footer() {
                         DevFeed
                     </div>
                     <div className="copyright">
-                        &copy; Copyrights by DevFeed. All rights reserved
+                        &copy; Copyrights by DevFeed. All rights reserved minor check
                     </div>
                 </div>
 

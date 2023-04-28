@@ -22,14 +22,26 @@ export default function Footer() {
                     </form>
                 </div>
 
-        <div className="footer-title">
-        {/* <img src={require("../Assets/devfeed-logo2.png")} alt="" id='footer-logo' /> */}
-        DevFeed
-        </div>
-        <div className="copyright">
-            &copy; Copyrights by DevFeed. All rights reserved 
-        </div>
-    </div>
-    </>
-  )
+                <div className="feedback-doodle  nm:hidden">
+                    <img src={require("../Assets/feedback.png")} alt="" />
+                </div>
+            </div>
+
+            <div className='footer'>
+            {/* <div className="hr" style={{ "width": "90%" , "marginTop":"3vh"}}></div> */}
+                <div className='footer-main'>
+                    <div className="footer-title">
+                        {/* <img src={require("../Assets/devfeed-logo2.png")} alt="" id='footer-logo' /> */}
+                        DevFeed
+                    </div>
+                    <div className="copyright">
+                        &copy; Copyrights by DevFeed. All rights reserved minor check
+                    </div>
+                </div>
+
+            
+                
+            </div>
+        </>
+    )
 }

@@ -54,3 +54,20 @@
     margin-left: 7vw;
     margin-top: 12vh;
 }
+
+.about-image{
+    width: 45vw;
+    background-color: transparent;
+    filter:invert(1);
+    margin-right: 5vw;
+
+    @media (max-width:668px)
+    {
+        width: 50vw;
+   }
+  
+}
+ 
+.background{
+    background-color: #00000072;
+}

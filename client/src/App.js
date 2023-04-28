@@ -1,6 +1,6 @@
 
 import './App.css';
-// import About from './Components/About';
+import About from './Components/About';
 import Count from './Components/Count';
 import Footer from './Components/Footer';
 import Hero from './Components/Hero';
@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <Navbar/>
       <Hero/>
-      {/* <About/> */}
+      <About/>
       <Count/>
       <Testimonials/>
       {/* <RecentEvents/> */}

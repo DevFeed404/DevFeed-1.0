@@ -30,6 +30,7 @@ body{
     flex-direction: row;
     width: 100vw;
     height: 12vh;
+    background: linear-gradient(90deg, #736cfe61,#AE8CFA61);
     /* background-color: #242132; */
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(5px);
@@ -57,8 +58,10 @@ body{
     padding: 1vw;
     background-color: #746CFE;
     background-color: #AE8CFA;
-    background: linear-gradient(90deg, #746CFE, #AE8CFA);
+    /* background: linear-gradient(90deg, #746CFE, #AE8CFA); */
+    background-color: #FEFCFF;
     font-size: 2.3vh;
+    color: #242132;
 }
 
 .subscribe img{

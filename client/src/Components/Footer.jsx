@@ -1,7 +1,28 @@
 import React from 'react'
 import "../CSS/Footer.css"
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 
 export default function Footer() {
+    const baseurl = "http://localhost:5000/api";//baseurl for posting
+    const [feedback, setfeedback] = useState("");
+    const feedbackmain = () => {
+        axios.post("http://localhost:5000/api/feedback", {
+
+            feedback: feedback
+
+        }).then((Response) => {
+            if (Response.status = 200) {
+
+                console.log("success");
+                alert("feedback recorded");
+            }
+            console.log(Response);
+        })
+
+    }
+
+
 
     return (
         <>
@@ -14,11 +35,15 @@ export default function Footer() {
 
                     <div className="hr" style={{ "width": "10%" }}></div>
 
-                    <form action="" method="post" className='feedback-form mt-3 ' id='feedback-form'>
+                    <form className='feedback-form mt-3 ' id='feedback-form'>
                         {/* <h2>Feedback</h2> */}
-                        <textarea name="feedback" id="feedback" placeholder='Your feedback'></textarea>
+                        <textarea name="feedback" id="feedback" placeholder='Your feedback' onChange={(e) => {
+
+                            setfeedback(e.target.value);
+
+                        }}></textarea>
                         {/* <input type="text" name="feedback" id="feedback" placeholder='Your feedback'/> */}
-                        <button type="submit">SEND</button>
+                        <button type="submit" onClick={feedbackmain}>SEND</button>
                     </form>
                 </div>
 
@@ -39,8 +64,8 @@ export default function Footer() {
                     </div>
                 </div>
 
-            
-                
+
+
             </div>
         </>
     )

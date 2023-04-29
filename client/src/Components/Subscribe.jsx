@@ -24,7 +24,7 @@ export default function Subscribe() {
 
   }
   return (
-    <div className='subscribe-con '>
+    <div className='subscribe-con ' data-aos = "slide-up">
       <div className="subs-doodle lg:hidden">
         <img src={require("../Assets/subs-doodle.png")} alt="" />
       </div>

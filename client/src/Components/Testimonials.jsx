@@ -7,7 +7,7 @@ export default function Testimonials() {
       <div className="testimonials-title">
         Testimonials
       </div>
-      <div className='testimonials-body'>
+      <div className='testimonials-body' data-aos = "slide-left">
           <Testimonial img_src = "../Assets/himesh.jpg" text = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti sunt odio necessitatibus aliquam doloremque incidunt, quo id alias optio laborum? " name = "Himesh Nayak" email = "Himeshnayak23@gmail.com"/>
           <Testimonial img_src = "../Assets/himesh.jpg" text = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti sunt odio necessitatibus aliquam doloremque incidunt, quo id alias optio laborum? " name = "Himesh Nayak" email = "Himeshnayak23@gmail.com"/>
           <Testimonial img_src = "../Assets/himesh.jpg" text = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti sunt odio necessitatibus aliquam doloremque incidunt, quo id alias optio laborum? " name = "Himesh Nayak" email = "Himeshnayak23@gmail.com"/>

@@ -30,7 +30,7 @@ export default function About() {
 
       <div className='h-fit flex flex-row w-screen background mh-[2vh]' >
         <div className='w-[50%] mlg:hidden'>
-          <img src={require("../Assets/about.png")} alt="" className='about-image' />
+          <img src={require("../Assets/meetup.png")} data-aos = "fade-up" alt="" className='about-image' />
 
 
         </div>

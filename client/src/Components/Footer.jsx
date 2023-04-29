@@ -26,7 +26,7 @@ export default function Footer() {
 
     return (
         <>
-            <div className="feedback-con">
+            <div className="feedback-con" data-aos = "fade-up">
 
                 <div className="feedback ">
                     <h3 className='mx-auto'>

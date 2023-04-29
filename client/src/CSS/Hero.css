@@ -64,7 +64,7 @@
 .hero-img{
     width: 38vw;
     background-color: transparent;
-    filter:invert(1);
+    /* filter:invert(1); */
     margin-right: 5vw;
     margin-left: 3vw;
     @media (max-width:668px)

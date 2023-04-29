@@ -34,14 +34,14 @@ export default function About() {
 
 
         </div>
-        <div className='flex flex-col w-[50%] mlg:w-[80%] mr-[4vw]'>
-          <h1 className='mt-[9vh] xlg:mt-[2vh] ml-[5vw] sm:text-4xl xsm:text-3xl text-5xl font-mono items-center font-bold text-white'>Nice to meet you</h1>
-          <p className='text-xl mt-[3vh]  text-white font-normal font-sans'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis Ut enim ad minim veniam, quis  Ut enim ad minim veniam, quis  nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        <div className='flex flex-col items-center w-[50%] mlg:w-[100%] mr-[4vw]'>
+          <h1 className='mt-[9vh] xlg:mt-[2vh]  sm:text-4xl xsm:text-3xl text-5xl font-mono items-center font-bold text-white'>Nice to meet you</h1>
+          <p className='text-xl mt-[3vh] ml-[4vw] text-white font-normal font-sans'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis Ut enim ad minim veniam, quis  Ut enim ad minim veniam, quis  nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
           <ul class="list-disc ml-[1.2vw] pt-3 text-lg text-white">
-  <li className='pt-3'>Now this is a story all about how, my life got flipped-turned upside down</li>
-  <li className='pt-3'>Now this is a story all about how, my life got flipped-turned upside down</li>
-  <li className='pt-3'>Now this is a story all about how, my life got flipped-turned upside down</li>
-  <li className='pt-3'>Now this is a story all about how, my life got flipped-turned upside down</li>
+  <li className='pt-3  ml-[4vw]'>Now this is a story all about how, my life got flipped-turned upside down</li>
+  <li className='pt-3  ml-[4vw]'>Now this is a story all about how, my life got flipped-turned upside down</li>
+  <li className='pt-3  ml-[4vw]'>Now this is a story all about how, my life got flipped-turned upside down</li>
+  <li className='pt-3  ml-[4vw]'>Now this is a story all about how, my life got flipped-turned upside down</li>
   
 
 </ul>

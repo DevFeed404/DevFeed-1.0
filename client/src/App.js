@@ -11,7 +11,7 @@ import Testimonials from './Components/Testimonials';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App w-screen">
       <Navbar/>
       <Hero/>
       <About/>

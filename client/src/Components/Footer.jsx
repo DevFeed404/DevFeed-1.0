@@ -1,6 +1,6 @@
 import React from 'react'
 import "../CSS/Footer.css"
-import { useState, useEffect } from 'react';
+import { useState} from 'react';
 import axios from 'axios';
 
 export default function Footer() {
@@ -29,11 +29,11 @@ export default function Footer() {
             <div className="feedback-con">
 
                 <div className="feedback ">
-                    <h3>
+                    <h3 className='mx-auto'>
                         Your feedback is highly valuable to us.
                     </h3>
 
-                    <div className="hr" style={{ "width": "10%" }}></div>
+                    <div className="hr mx-auto" style={{ "width": "30%" }}></div>
 
                     <form className='feedback-form mt-3 ' id='feedback-form'>
                         {/* <h2>Feedback</h2> */}
@@ -56,8 +56,10 @@ export default function Footer() {
             {/* <div className="hr" style={{ "width": "90%" , "marginTop":"3vh"}}></div> */}
                 <div className='footer-main'>
                     <div className="footer-title">
-                        {/* <img src={require("../Assets/devfeed-logo2.png")} alt="" id='footer-logo' /> */}
                         DevFeed
+                    </div>
+                    <div className="footer-para">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis doloribus ipsum iusto enim nam? Consequuntur, a necessitatibus nam quo rerum quod? At odit neque minima nihil, saepe reiciendis consequatur excepturi.
                     </div>
                     <div className="copyright">
                         &copy; Copyrights by DevFeed. All rights reserved minor check

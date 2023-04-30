@@ -24,7 +24,7 @@ export default function Subscribe() {
 
   }
   return (
-    <div className='subscribe-con ' data-aos = "slide-up">
+    <div className='subscribe-con ' id='subscribe-con' data-aos = "slide-up" data-aos-once = "true">
       <div className="subs-doodle lg:hidden">
         <img src={require("../Assets/subs-doodle.png")} alt="" />
       </div>
@@ -63,7 +63,7 @@ export default function Subscribe() {
 
           }} />
 
-          <button type="submit" id='subscribe-btn' onClick={subscribe} >SUBSCRIBE</button>
+          <button type="submit" id='subscribe-btn' onClick={subscribe} ><p className='text-[#FFC000]'>SUBSCRIBE</p></button>
         </form>
       </div>
     </div>

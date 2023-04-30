@@ -56,18 +56,24 @@
 }
 
 .about-image{
-    width: 45vw;
+    width: 50vw;
     background-color: transparent;
+   
     /* filter:invert(1); */
-    margin-right: 5vw;
+  
 
     @media (max-width:668px)
     {
         width: 50vw;
    }
+   @media (max-width:450px)
+   {
+       height: 67vw;
+       width: 65vw;
+  }
   
 }
  
 .background{
-    background-color: #00000072;
+    background-color: #373737;
 }

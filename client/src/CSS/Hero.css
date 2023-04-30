@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     margin: auto;
     align-self: center;
     padding: 0px;
@@ -26,10 +26,11 @@
 }
 
 .hero-head{
-    width: 100%;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
+    justify-content: space-between;
     font-weight: 800;
     color: #FEFCFF;
     font-size: 12vh;

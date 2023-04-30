@@ -14,14 +14,14 @@ export default function Hero() {
     <div className='hero'>
         <div className="hero-data">
             <div className="hero-head" >
-                Inspire. Educate. Aware.
+            Educate. Connect. Aware.
             </div>
             <div className="hero-text">
-                We are a community of tech enthusiast for your betterment .
+           <span className='text-[#FAFA33]'>what are you waiting for? </span> Join our community and be a part of the tech revolution! 
             </div>
         </div>
             <div className="hero-image nm:hidden">
-                <img src={require("../Assets/hero-doodle-2.png")} data-aos = "fade-up" alt="" className='hero-img'/>
+                <img src={require("../Assets/hero-doodle-2.png")} data-aos = "fade-up" data-aor-once = "true" alt="" className='hero-img'/>
             </div>
     </div>
   )

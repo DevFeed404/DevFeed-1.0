@@ -1,0 +1,8 @@
+.width{
+    @media (max-width:710px)
+    {
+       
+        width: 22vw;
+        height:21vw;
+   }
+}

@@ -1,12 +1,13 @@
 .subscribe-con{
     display: flex;
     flex-direction: row;
-    background-color: #00000072;
+    background-color: #333333;
     align-items: center;
     justify-content: center;
     width: 100vw;
     /* background-color: blue; */
     margin-top: 5vh;
+    scroll-behavior: smooth;
 }
 
 .subscribe-body{
@@ -122,7 +123,7 @@
 
 #subscribe-btn{
     padding: 1vh;
-    background-color: #FEFCFF;
+    background-color: #384f41;
     border-radius: 5px;
     width: 100%;
     align-self: center;

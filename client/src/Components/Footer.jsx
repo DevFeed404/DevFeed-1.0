@@ -26,7 +26,7 @@ export default function Footer() {
 
     return (
         <>
-            <div className="feedback-con" data-aos = "fade-up">
+            <div className="feedback-con" data-aos = "fade-up" data-aos-once = "true">
 
                 <div className="feedback ">
                     <h3 className='mx-auto'>
@@ -43,7 +43,7 @@ export default function Footer() {
 
                         }}></textarea>
                         {/* <input type="text" name="feedback" id="feedback" placeholder='Your feedback'/> */}
-                        <button type="submit" onClick={feedbackmain}>SEND</button>
+                        <button type="submit"   onClick={feedbackmain}><span className='buttontext'>SEND</span></button>
                     </form>
                 </div>
 
@@ -59,7 +59,7 @@ export default function Footer() {
                         DevFeed
                     </div>
                     <div className="footer-para">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis doloribus ipsum iusto enim nam? Consequuntur, a necessitatibus nam quo rerum quod? At odit neque minima nihil, saepe reiciendis consequatur excepturi.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     </div>
                     <div className="copyright">
                         &copy; Copyrights by DevFeed. All rights reserved minor check

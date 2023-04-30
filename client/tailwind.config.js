@@ -5,12 +5,16 @@ module.exports = {
     screens: {
       '2xl': {'max': '1535px'},
       // => @media (max-width: 1535px) { ... }
+    
+
+      
 
       'xl': {'max': '1380px'},
       // => @media (max-width: 1279px) { ... }
 
       'lg': {'max': '1103px'},
       // => @media (max-width: 1103px) { ... }
+      'xllg': {'max': '1146px'},
 
       'xlg': {'max': '1243px'},
 

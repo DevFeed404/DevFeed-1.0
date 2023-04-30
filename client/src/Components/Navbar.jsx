@@ -5,7 +5,6 @@ export default function Navbar() {
 
   function scrollToSubs(){
     var element = document.getElementById("subscribe-con");
-    element.setAttribute("data-aos", "none");
     element.scrollIntoView();
   }
 

@@ -8,6 +8,7 @@ import Navbar from './Components/Navbar';
 // import RecentEvents from './Components/Recent_events';
 import Subscribe from './Components/Subscribe';
 import Testimonials from './Components/Testimonials';
+import Images from './Components/Image';
 
 function App() {
   return (
@@ -15,7 +16,10 @@ function App() {
       <Navbar/>
       <Hero/>
       <About/>
+      <Images/>
+      
       <Count/>
+      
       <Subscribe/>
       <Testimonials/>
       {/* <RecentEvents/> */}

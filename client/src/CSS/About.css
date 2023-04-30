@@ -66,6 +66,11 @@
     {
         width: 50vw;
    }
+   @media (max-width:450px)
+   {
+       height: 67vw;
+       width: 65vw;
+  }
   
 }
  

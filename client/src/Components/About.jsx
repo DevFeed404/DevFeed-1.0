@@ -29,15 +29,15 @@ export default function About() {
     </div>  */}
 
       <div className='h-fit flex flex-row mlg:flex-col w-screen background mh-[2vh] pb-5 ' >
-        <div className='w-[50%] xxlg:w-[40%]  lg:w-[35%] lg:pt-[4vh] mlg:w-[100%] flex flex-row justify-center'>
+        <div className='w-[40%] xxlg:w-[40%]  lg:w-[35%] lg:pt-[4vh] mlg:w-[100%] flex flex-row justify-center'>
           <img src={require("../Assets/meetup.png")} data-aos = "fade-up" alt="" className='about-image ' />
 
 
         </div>
-        <div className='flex flex-col items-center xxlg:w-[60%] lg:w-[65%] w-[50%] mlg:w-[100%] pr-[4vw]'>
+        <div className='flex flex-col items-center xxlg:w-[60%] lg:w-[65%] w-[60%] mlg:w-[100%] pr-[4vw] '>
           <h1 className='mt-[9vh] xlg:mt-[2vh]  sm:text-4xl xsm:text-3xl text-5xl font-mono items-center font-bold text-white'>Nice to meet you</h1>
-          <p className='text-xl mt-[3vh] ml-[4vw] mr-2 text-white  font-medium font-sans'>With DevFeed, you'll never miss out on an opportunity to expand your skills and connect with other tech professionals in your community. Our newsletter is your personal roadmap to navigating the tech scene, providing you with exclusive updates on the latest events, speakers, and topics that matter most to you.</p>
-          <ul class="list-disc ml-[1.2vw] pt-3 text-xl text-white font-medium ">
+          <p className='text-xl  xsm:text-sms sm:text-lg mt-[3vh] ml-[4vw] mr-2 text-white  font-medium font-sans'>With DevFeed, you'll never miss out on an opportunity to expand your skills and connect with other tech professionals in your community. Our newsletter is your personal roadmap to navigating the tech scene, providing you with exclusive updates on the latest events, speakers, and topics that matter most to you.</p>
+          <ul class="list-disc ml-[1.2vw] pt-3 text-xl sm:text-lg xsm:text-sms text-white font-medium ">
   <li className='pt-3  ml-[4vw] '>Centralized location for subscribers to receive all the relevant information about tech events happening in their city</li>
   <li className='pt-3  ml-[4vw]'>Attending tech events can provide valuable networking opportunities for professionals and enthusiasts in the industry</li>
   <li className='pt-3  ml-[4vw]'>All the relevant information you need in one place, instead of having to search for events individually.</li>

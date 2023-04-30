@@ -17,7 +17,7 @@ export default function Hero() {
                 Inspire. Educate. Aware.
             </div>
             <div className="hero-text">
-                We are a community of tech enthusiast for your betterment.
+                We are a community of tech enthusiast for your betterment .
             </div>
         </div>
             <div className="hero-image nm:hidden">

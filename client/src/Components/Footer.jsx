@@ -43,7 +43,7 @@ export default function Footer() {
 
                         }}></textarea>
                         {/* <input type="text" name="feedback" id="feedback" placeholder='Your feedback'/> */}
-                        <button type="submit" onClick={feedbackmain}>SEND</button>
+                        <button type="submit"   onClick={feedbackmain}><span className='buttontext'>SEND</span></button>
                     </form>
                 </div>
 

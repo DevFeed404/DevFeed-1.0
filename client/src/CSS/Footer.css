@@ -102,7 +102,7 @@
 }
 
 .feedback h3{
-    color: #ae8cfa;
+    color: #c3abf8;
     font-size: 3vh;
     font-weight: 500;
     margin-bottom: 1vh;
@@ -148,7 +148,7 @@
 }
 
 .feedback-form button{
-    background-color: #FEFCFF;
+    background-color: #696666;
     border-radius: 5px;
     width: fit-content;
     align-self: center;
@@ -168,3 +168,6 @@
     margin-bottom: 2vh;
 }
 
+.buttontext{
+    color: s#ffffff;
+}

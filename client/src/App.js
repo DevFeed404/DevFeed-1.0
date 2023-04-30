@@ -1,5 +1,6 @@
 
 import './App.css';
+import { Helmet } from 'react-helmet';
 import About from './Components/About';
 import Count from './Components/Count';
 import Footer from './Components/Footer';
@@ -13,6 +14,9 @@ import Images from './Components/Image';
 function App() {
   return (
     <div className="App w-screen">
+     <Helmet>
+          <title>DevFeed</title>
+        </Helmet>
       <Navbar/>
       <Hero/>
       <About/>

@@ -46,7 +46,16 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 1vh;
     margin-left: -6vw;
+    @media (max-width:940px)
+    {
+        margin-left: -12vw;
+   }
+   @media (max-width:575px)
+   {
+       margin-left: -15vw;
+  }
     /* font-size: 4vh; */
 }
 
@@ -63,6 +72,20 @@ body{
     background-color: #FEFCFF;
     font-size: 2.3vh;
     color: #242132;
+    @media (max-width:710px)
+    {
+        padding: 1.5vw;
+   }
+   @media (max-width:500px)
+   {
+       padding: 2vw;
+  }
+  @media (max-width:390px)
+  {
+      padding: 2.5vw;
+      font-size: 2vh;
+ }
+     
 }
 
 .subscribe img{

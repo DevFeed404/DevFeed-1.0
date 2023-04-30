@@ -7,9 +7,9 @@ export default function Navbar() {
         <div className="logo">
             <img src={require("../Assets/devfeed-logo.png")} alt="" id='nav-logo' />
         </div>
-        <div className="subscribe">
+        <div className="subscribe font-medium">
             Subscribe 
-            <img src={require("../Assets/right.png")} alt=""  />
+            {/* <img src={require("../Assets/right.png")} alt=""  /> */}
         </div>
     </div>
   )

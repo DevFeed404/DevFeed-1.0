@@ -14,10 +14,10 @@ export default function Hero() {
     <div className='hero'>
         <div className="hero-data">
             <div className="hero-head" >
-                Inspire. Educate. Aware.
+            Educate. Connect. Aware.
             </div>
             <div className="hero-text">
-                We are a community of tech enthusiast for your betterment.
+            what are you waiting for? Join our community and be a part of the tech revolution! 
             </div>
         </div>
             <div className="hero-image nm:hidden">

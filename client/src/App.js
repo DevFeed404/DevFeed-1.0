@@ -16,9 +16,10 @@ function App() {
       <Hero/>
       <About/>
       <Count/>
+      <Subscribe/>
       <Testimonials/>
       {/* <RecentEvents/> */}
-      <Subscribe/>
+     
       <Footer/>
     </div>
   );

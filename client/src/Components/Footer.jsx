@@ -59,7 +59,7 @@ export default function Footer() {
                         DevFeed
                     </div>
                     <div className="footer-para">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis doloribus ipsum iusto enim nam? Consequuntur, a necessitatibus nam quo rerum quod? At odit neque minima nihil, saepe reiciendis consequatur excepturi.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     </div>
                     <div className="copyright">
                         &copy; Copyrights by DevFeed. All rights reserved minor check

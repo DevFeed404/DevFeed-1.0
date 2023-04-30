@@ -24,8 +24,8 @@
 }
 
 .Testimonial{
-    background: rgb(36,33,50);
-background: linear-gradient(142deg, rgba(36,33,50,1) 27%, rgba(45,42,61,1) 59%, rgba(44,41,60,1) 100%);
+    background: rgb(26,26,26);
+    background: linear-gradient(142deg, rgba(26,26,26,1) 0%, rgba(26,26,26,0.19849658613445376) 47%, rgba(149,45,45,0.10886073179271705) 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,7 +34,7 @@ background: linear-gradient(142deg, rgba(36,33,50,1) 27%, rgba(45,42,61,1) 59%, 
     min-width: 30vw;
     height: 60vh;
     border-radius: 10px;
-    border: 1px #FEFCFF solid;
+    border: 1px #b5f30c solid;
     margin-right: 3vh;
     @media (max-width:1151px)
     {

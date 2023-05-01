@@ -30,7 +30,7 @@ export default function Footer() {
 
                 <div className="feedback ">
                     <h3 className='mx-auto'>
-                        Your feedback is highly valuable to us.
+                    Shape us with your feedback.
                     </h3>
 
                     <div className="hr mx-auto" style={{ "width": "30%" }}></div>

@@ -44,6 +44,7 @@ body{
 }
 
 .logo{
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,6 +62,7 @@ body{
 }
 
 .subscribe{
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,7 +72,7 @@ body{
     background-color: #746CFE;
     background-color: #AE8CFA;
     /* background: linear-gradient(90deg, #746CFE, #AE8CFA); */
-    background-color: #FEFCFF;
+    background-color: #dad1df;
     font-size: 2.3vh;
     color: #242132;
     @media (max-width:710px)

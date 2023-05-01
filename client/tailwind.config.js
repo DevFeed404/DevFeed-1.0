@@ -34,6 +34,7 @@ module.exports = {
       // => @media (max-width: 639px) { ... }
 
       'xsm': {'max': '380px'},
+      'xssm': {'max': '340'},
     },
     extend: {},
   },

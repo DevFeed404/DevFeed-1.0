@@ -74,6 +74,14 @@
     width: 60%;
     margin-top: 6vh;
     margin-bottom: 6vh;
+    
+    @media (max-width:520px)
+    {
+        width: 70%;
+        margin-left:1.5vw;
+        margin-right:1.5w;
+        
+   }
 }
 
 #person-name-heading{
@@ -122,6 +130,7 @@
 }
 
 #subscribe-btn{
+    cursor: pointer;
     padding: 1vh;
     background-color: #384f41;
     border-radius: 5px;

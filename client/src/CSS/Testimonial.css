@@ -16,9 +16,10 @@
 #testimonial-con{
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 100% !important;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
 }
 
 #left-control img{

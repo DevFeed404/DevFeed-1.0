@@ -37,21 +37,28 @@
     font-size: 12vh;
     margin-left: 5vw;
     /* background-color: aliceblue; */
-    @media (max-width: 1154px)
+    @media (max-width : 1154px)
     {
         font-size: 10vh;
+        margin-left: 0vw;
    }
-   @media (max-width: 962px)
+   @media (max-width : 962px)
     {
         font-size: 8vh;
+        margin-left: 0vw;
+
    }
-   @media (max-width:770px)
+   @media (max-width : 770px)
    {
        font-size: 7vh;
+       margin-left: 0vw;
+
   }
-  @media (max-width:680px)
+  @media (max-width : 680px)
   {
       font-size: 10vh;
+      margin-left: 0vw;
+
  }
 
 }

@@ -1,8 +1,16 @@
 .width{
     @media (max-width:710px)
     {
-       
-        width: 22vw;
-        height:21vw;
+        /* width: 22vw; */
+        height:21vh;
    }
+}
+
+.image-con{
+    width: 100vw;
+    overflow-x: scroll;
+}
+
+.image-con::-webkit-scrollbar{
+    display: none;
 }

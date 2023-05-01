@@ -15,7 +15,7 @@ export default function Hero() {
         <div className="hero-data">
             <div className="hero-head" >
             Educate. <p>Connect.</p> 
-            Aware.
+            Aware. 
             </div>
             <div className="hero-text">
            <span className='text-[#FAFA33]'>what are you waiting for? </span> Join our community and be a part of the tech revolution! 

@@ -13,9 +13,10 @@ export default function Footer() {
 
         }).then((Response) => {
             if (Response.status = 200) {
+                alert("Thankyou for your feedback");
 
                 console.log("success");
-                alert("feedback recorded");
+                
             }
             console.log(Response);
         })

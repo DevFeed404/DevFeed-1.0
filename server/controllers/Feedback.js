@@ -6,9 +6,8 @@ exports.feedback = async (req, res) => {
             if (err) {
               console.log(err)
             }
-            res.send({
-                message:"you are added"
-             });
+            res.send(result);
+            console.log(result);
         })
              
         

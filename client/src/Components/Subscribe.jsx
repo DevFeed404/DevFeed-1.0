@@ -16,9 +16,14 @@ export default function Subscribe() {
       organization: organisation
     }).then((Response) => {
       if (Response.status = 200) {
+        alert("Thankyou for Subscrisbing");
 
         console.log("success");
       }
+      else{
+        alert(Response);
+      }
+      console.log(Response);
 
     })
 

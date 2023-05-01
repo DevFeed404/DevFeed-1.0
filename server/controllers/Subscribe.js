@@ -15,9 +15,11 @@ exports.subscribe = async (req, res) => {
             console.log(err)
           }
           if (result.length > 0) {
-            res.json({
+            res.send({
+              result,
                message:"you are already subscribed"
             });
+            console.log(result)
            
           }
            else {
@@ -27,9 +29,11 @@ exports.subscribe = async (req, res) => {
                 console.log(err)
               }
               console.log(err)
-              res.json({
+              res.send({
+                result,
                 message:"you are added"
              });
+             console.log(result)
             
               
               

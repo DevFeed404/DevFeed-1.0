@@ -28,6 +28,7 @@
 .hero-head{
     width: 90%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     justify-content: space-between;
@@ -35,6 +36,7 @@
     color: #FEFCFF;
     font-size: 12vh;
     margin-left: 5vw;
+    /* background-color: aliceblue; */
     @media (max-width: 1154px)
     {
         font-size: 10vh;
@@ -52,6 +54,10 @@
       font-size: 10vh;
  }
 
+}
+
+.hero-head p{
+    color: #FADA5E;
 }
 
 .hero-text{

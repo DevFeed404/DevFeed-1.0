@@ -98,3 +98,7 @@ body{
     height: 40%;
     /* background-color: black; */
 }
+
+/* :window-inactive{
+    scroll-behavior: smooth;
+} */

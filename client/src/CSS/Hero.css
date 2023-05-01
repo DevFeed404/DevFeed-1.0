@@ -40,24 +40,24 @@
     @media (max-width : 1154px)
     {
         font-size: 10vh;
-        margin-left: 0vw;
+        margin-left: 1vw;
    }
    @media (max-width : 962px)
     {
-        font-size: 8vh;
-        margin-left: 0vw;
+        font-size: 7vh;
+        margin-left: 1vw;
 
    }
    @media (max-width : 770px)
    {
-       font-size: 7vh;
-       margin-left: 0vw;
+       font-size: 8.5vh;
+       margin-left: 1vw;
 
   }
   @media (max-width : 680px)
   {
-      font-size: 10vh;
-      margin-left: 0vw;
+      font-size: 8vh;
+      margin-left: 1vw;
 
  }
 

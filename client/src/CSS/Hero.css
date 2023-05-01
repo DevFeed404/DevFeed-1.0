@@ -73,6 +73,11 @@
     margin-left: 5vw;
     margin-top: 2vh;
     font-size: 3vh;
+    @media (max-width : 1154px)
+    {
+      
+        margin-left: 1vw;
+   }
 }
 
 .hero-img{

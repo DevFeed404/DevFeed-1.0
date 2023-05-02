@@ -2,11 +2,11 @@
     display: flex;
     flex-direction: column;
     width: 100vw;
-    /* height: 12vh; */
+    height: 10vh;
     align-items: center;
     justify-content: space-between;
     /* margin-bottom: 4vh; */
-    background-color: black;
+    background-color: #313131;
  
 }
 .footer-main{
@@ -50,18 +50,19 @@
     justify-content: center;
     font-weight: 500;
     background-color: #313131;
-    @media (max-width:710px)
-    {
-        font-size: 2vh;
-   }
+
    @media (max-width:566px)
    {
-       font-size: 1.7vh;
+       font-size: 2.3vh;
   }
   @media (max-width:590px)
    {
-       font-size: 1.4vh;
+       font-size: 2.3vh;
   }
+  @media (max-width:360px)
+  {
+      font-size: 1.9vh;
+ }
 }
 
 #footer-logo{
@@ -109,8 +110,12 @@
   
 }
 
+.comme{
+    font-family: Comme;
+}
+
 .feedback h3{
-    color: #c3abf8;
+    color: #dbc6c6;
     align-items: center;
     font-size: 3vh;
     font-weight: 500;

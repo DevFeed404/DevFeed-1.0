@@ -28,7 +28,7 @@ export default function About() {
         <img src="https://www.installation-international.com/wp-content/uploads/2019/01/airstar-neo-e-sports.jpg" alt="" id="about-photo-3" />
     </div>  */}
 
-      <div className='h-fit flex flex-row mlg:flex-col w-screen background mh-[2vh] pb-9 ' >
+      <div className='h-fit flex flex-row mlg:flex-col w-screen background mh-[2vh] pb-9 ' id='about'>
         <div className='w-[40%] xxlg:w-[40%]  lg:w-[35%] lg:pt-[4vh] mlg:w-[100%] flex flex-row justify-center'>
           <img src={require("../Assets/meetup.png")} data-aos-once = "true" data-aos = "fade-up" alt="" className='about-image ' />
 

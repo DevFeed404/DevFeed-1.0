@@ -24,8 +24,17 @@ export default function Footer() {
         })
 
     }
+    function scrollToAbout(){
+        var element = document.getElementById("about");
+        element.scrollIntoView();
+      }
 
 
+    function scrollToSubs(){
+        var element = document.getElementById("subscribe-con");
+        element.scrollIntoView();
+      }
+    
 
     return (
         <>
@@ -55,13 +64,16 @@ export default function Footer() {
                 </div>
             </div>
 
-            <div className='footer comme'>
+            <div className='footer comme  '>
             {/* <div className="hr" style={{ "width": "90%" , "marginTop":"3vh"}}></div> */}
                 <div className='footer-main'>
                     {/* <div className="footer-title">
                         DevFeed
                     </div> */}
-                    <div className="copyright">
+                    <div className='text-md p-2 flex flex-row font-normal comme cursor-pointer'>
+                       <div className='hover:text-[#FADA5E]' onClick={scrollToAbout} >About |</div> <div className='hover:text-[#FADA5E]'><a href="mailto:devfeed.in@gmail.com">&nbsp; Contact |</a>  </div> <div className='hover:text-[#FADA5E]' onClick={scrollToSubs}>&nbsp; Subscribe</div>
+                    </div>
+                    <div className="copyright pb-2 ">
                         &copy; Copyrights by DevFeed. All rights reserved.
                     </div>
                 </div>

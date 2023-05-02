@@ -60,8 +60,8 @@ export default function Subscribe() {
 
           }} />
 
-          <h3 id="person-org-heading">Organisation/College</h3>
-          <input type="text" name="person-org" id="person-org" className='text-white' placeholder='Enter your organisation name' onChange={(e) => {
+          <h3 id="person-org-heading">Organization/College</h3>
+          <input type="text" name="person-org" id="person-org" className='text-white' placeholder='Enter your organization name' onChange={(e) => {
             if(e.target.value === "" || " " || "."){setorganisation(e.target.value); console.log("Success");};
             
             

@@ -132,9 +132,9 @@
     {
         font-size: 2.5vh;
    }
-   @media (max-width:350px)
+   @media (max-width:380px)
    {
-       font-size: 2.2vh;
+       font-size: 2.1vh;
   }
   @media (max-width:305px)
   {

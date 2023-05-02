@@ -56,14 +56,11 @@ export default function Footer() {
             <div className='footer'>
             {/* <div className="hr" style={{ "width": "90%" , "marginTop":"3vh"}}></div> */}
                 <div className='footer-main'>
-                    <div className="footer-title">
+                    {/* <div className="footer-title">
                         DevFeed
-                    </div>
-                    <div className="footer-para">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    </div>
+                    </div> */}
                     <div className="copyright">
-                        &copy; Copyrights by DevFeed. All rights reserved minor check
+                        &copy; Copyrights by DevFeed. All rights reserved.
                     </div>
                 </div>
 

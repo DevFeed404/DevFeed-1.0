@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors')
 const db =require('./db');
 const PORT = 5000;
+let Validator = require('validatorjs');
 const app = express();
 const route = require('./routes/routes');
 const router = express.Router();

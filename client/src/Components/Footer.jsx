@@ -7,13 +7,15 @@ export default function Footer() {
     const baseurl = "http://localhost:5000/api";//baseurl for posting
     const [feedback, setfeedback] = useState("");
     const feedbackmain = () => {
-        axios.post("http://localhost:5000/api/feedback", {
+        axios.post(baseurl+"/feedback", {
 
             feedback: feedback
 
         }).then((Response) => {
             if (Response.status = 200) {
-                alert("Thankyou for your feedback");
+               
+                alert(Response.data.message);
+
 
                 console.log("success");
                 

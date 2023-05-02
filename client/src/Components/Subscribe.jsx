@@ -1,6 +1,6 @@
 import React from 'react'
 import "../CSS/Subscribe.css"
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import axios from 'axios';
 
 export default function Subscribe() {
@@ -15,14 +15,13 @@ export default function Subscribe() {
       email: email,
       organization: organisation
     }).then((Response) => {
+      
       if (Response.status = 200) {
-        alert("Thankyou for Subscrisbing");
+        alert(Response.data.message);
 
         console.log("success");
       }
-      else{
-        alert(Response);
-      }
+     
       console.log(Response);
 
     })

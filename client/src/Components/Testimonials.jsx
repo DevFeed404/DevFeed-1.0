@@ -3,7 +3,7 @@ import Testimonial from './Testimonial'
 
 export default function Testimonials() {
   let vw = window.screen.width / 100;
-  let vh = window.Screen.height / 100;
+  // let vh = window.Screen.height / 100;
   // var vw = window.screen.availWidth;
   // const vh = screen.height;
   // console.log("Height is :", vw);

@@ -1,5 +1,5 @@
 import React from 'react';
-import CountUp, { useCountUp } from 'react-countup';
+import { useCountUp } from 'react-countup';
 
 function Count() {
     useCountUp({

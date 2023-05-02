@@ -13,7 +13,9 @@ export default function Footer() {
 
         }).then((Response) => {
             if (Response.status = 200) {
-                alert("Thankyou for your feedback");
+               
+                alert(Response.data.message);
+
 
                 console.log("success");
                 

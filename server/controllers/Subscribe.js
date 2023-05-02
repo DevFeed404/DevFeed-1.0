@@ -9,13 +9,15 @@ exports.subscribe = async (req, res) => {
   const date = new Date().toISOString();
 
   try {
-    if (!validator.isEmail(email)) {
-      res.send({ title: 'Email is not Valid' });
-    }
+  
     if (validator.isEmpty(name) || validator.isEmpty(organization)) {
-      res.send({ title: 'one or more fields are empty' });
+      res.send({ message: 'one or more fields are empty' });
 
-    } if (validator.isEmail(email) == true && validator.isEmpty(name) == false && validator.isEmpty(organization) == false) {
+    }
+    if (!validator.isEmail(email)) {
+      res.send({ message: 'Email is not Valid' });
+    }
+     if (validator.isEmail(email) == true && validator.isEmpty(name) == false && validator.isEmpty(organization) == false) {
 
       db.query("SELECT * FROM users WHERE email=? ", [email], (err, result) => {
         if (err) {
@@ -24,7 +26,7 @@ exports.subscribe = async (req, res) => {
         if (result.length > 0) {
           res.send({
             result,
-            message: "you are already subscribed"
+            message: "You are already subscribed"
           });
           console.log(result)
 
@@ -39,7 +41,7 @@ exports.subscribe = async (req, res) => {
             console.log(result)
             res.send({
               result,
-              message: "you are added"
+              message: "Thankyou for Subscribing"
             });
 
 

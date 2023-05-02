@@ -15,7 +15,7 @@ export default function Subscribe() {
       email: email,
       organization: organisation
     }).then((Response) => {
-      console.log(Response);
+      
       if (Response.status = 200) {
         alert(Response.data.message);
 

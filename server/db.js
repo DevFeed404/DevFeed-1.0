@@ -1,10 +1,10 @@
 
 const mysql = require('mysql2');
 const db = mysql.createConnection({
-host: "127.0.0.1",
-user: "root",
-password: "12345678",
-port : 3306,
+host: "mysql-124301-0.cloudclusters.net",
+user: "admin",
+password: "YeT6ToDm",
+port : 12800,
 database:"devfeed" 
 })
 db.connect(function (err) {

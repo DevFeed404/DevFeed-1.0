@@ -27,7 +27,7 @@ function Count() {
     return (
         <div className='w-screen h-fit flex flex-col justify-between'>
             <div className='items-center w-screen flex flex-col '>
-                <h1 className='mt-[11vh] sm:text-4xl xsm:text-3xl xssm:text-xl text-5xl  font-bold text-white'>Let The Stats Speak</h1>
+                <h1 className='mt-[11vh] sm:text-4xl xsm:text-3xl xssm:text-xl text-5xl  font-bold text-white' style={{'fontFamily': "Poppins"}}>Let The Stats Speak</h1>
 
                 <div className="hr" style={{"width": "27%","marginTop": "3vh"}}></div>
             </div>

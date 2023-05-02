@@ -35,9 +35,9 @@ export default function About() {
 
         </div>
         <div className='flex flex-col items-center xxlg:w-[60%] lg:w-[65%] w-[60%] mlg:w-[100%] pr-[4vw] about-con'>
-          <h1 className='mt-[9vh] xlg:mt-[2vh]  sm:text-4xl xsm:text-3xl text-5xl font-mono items-center font-bold text-[#FCF55F]'>Nice to meet you</h1>
-          <p className='text-xl  xsm:text-sms sm:text-lg mt-[3vh] ml-[4vw] mr-2 text-white  font-medium font-sans'>With <span className='text-[#FADA5E]'>DevFeed</span>, you'll never miss out on an opportunity to expand your skills and connect with other tech professionals in your community. Our newsletter is your personal roadmap to navigating the tech scene, providing you with exclusive updates on the latest events, speakers, and topics that matter most to you.</p>
-          <ul class="list-disc ml-[1.2vw] pt-3 text-xl sm:text-lg xsm:text-sms text-white font-medium ">
+          <h1 className=' about-title mt-[9vh] xlg:mt-[2vh]  sm:text-4xl xsm:text-3xl text-5xl font-mono items-center font-bold text-[#FCF55F]'>Nice to meet you</h1>
+          <p className='text-xl  xsm:text-sms sm:text-lg mt-[3vh] ml-[4vw] mr-2 text-white  font-medium font-sans comme'>With <span className='text-[#FADA5E] comme'>DevFeed</span>, you'll never miss out on an opportunity to expand your skills and connect with other tech professionals in your community. Our newsletter is your personal roadmap to navigating the tech scene, providing you with exclusive updates on the latest events, speakers, and topics that matter most to you.</p>
+          <ul class="list-disc about-pts ml-[1.2vw] pt-3 text-xl sm:text-lg xsm:text-sms text-white font-medium ">
   <li className='pt-3  ml-[4vw] '>Centralized location for subscribers to receive all the relevant information about tech events happening in their city</li>
   <li className='pt-3  ml-[4vw]'>Attending tech events can provide valuable networking opportunities for professionals and enthusiasts in the industry</li>
   <li className='pt-3  ml-[4vw]'>All the relevant information you need in one place, instead of having to search for events individually.</li>

@@ -32,7 +32,7 @@ export default function Footer() {
             <div className="feedback-con" data-aos = "fade-up" data-aos-once = "true">
 
                 <div className="feedback ">
-                    <h3 className='mx-auto'>
+                    <h3 className='mx-auto poppins'>
                     Shape us with your feedback.
                     </h3>
 
@@ -55,7 +55,7 @@ export default function Footer() {
                 </div>
             </div>
 
-            <div className='footer'>
+            <div className='footer comme'>
             {/* <div className="hr" style={{ "width": "90%" , "marginTop":"3vh"}}></div> */}
                 <div className='footer-main'>
                     {/* <div className="footer-title">

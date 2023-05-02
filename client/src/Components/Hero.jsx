@@ -13,12 +13,11 @@ export default function Hero() {
   return (
     <div className='hero'>
         <div className="hero-data">
-            <div className="hero-head" >
-            Educate. <p>Connect.</p> 
-            Aware. 
+            <div className="hero-head">
+            Educate. <p>Connect. </p> Aware. 
             </div>
             <div className="hero-text">
-           <span className='text-[#FAFA33]'>what are you waiting for? </span> Join our community and be a part of the tech revolution! 
+           <span className='text-[#FAFA33] comme'>what are you waiting for? </span> Join our community and be a part of the tech revolution! 
             </div>
         </div>
             <div className="hero-image nm:hidden">

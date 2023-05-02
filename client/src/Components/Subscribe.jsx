@@ -36,16 +36,16 @@ export default function Subscribe() {
       <div className="subscribe-body ">
 
         <div className="subscribe-heading ">
-          <h2 className=''>Subscribe to our newsletter</h2>
+          <h2 className='poppins'>Subscribe to our newsletter</h2>
         </div>
 
         <div className="hr"></div>
 
-        <div className="form-subheading">
+        <div className="form-subheading comme">
           <h3>Stay updated and never miss an event</h3>
         </div>
 
-        <form className="subscribe-form" method='POST' action = "localhost:3000">
+        <form className="subscribe-form comme" method='POST' action = "localhost:3000">
           <h3 id="person-name-heading">Full name</h3>
           <input type="text" name="person-name" id="person-name" className='text-white' placeholder='Enter your full name' onChange={(e) => {
 

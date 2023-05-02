@@ -23,7 +23,7 @@ export default function Subscribe() {
       }
      
       console.log(Response);
-
+      // window.location(baseurl);
     })
 
   }
@@ -45,7 +45,7 @@ export default function Subscribe() {
           <h3>Stay updated and never miss an event</h3>
         </div>
 
-        <form className="subscribe-form">
+        <form className="subscribe-form" method='POST' action = "localhost:3000">
           <h3 id="person-name-heading">Full name</h3>
           <input type="text" name="person-name" id="person-name" className='text-white' placeholder='Enter your full name' onChange={(e) => {
 
@@ -62,9 +62,9 @@ export default function Subscribe() {
 
           <h3 id="person-org-heading">Organisation/College</h3>
           <input type="text" name="person-org" id="person-org" className='text-white' placeholder='Enter your organisation name' onChange={(e) => {
-
-            setorganisation(e.target.value);
-
+            if(e.target.value === "" || " " || "."){setorganisation(e.target.value); console.log("Success");};
+            
+            
           }} />
 
           <button type="submit" id='subscribe-btn' onClick={subscribe} ><p className='text-[#FFC000]'>SUBSCRIBE</p></button>

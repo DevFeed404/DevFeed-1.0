@@ -33,8 +33,8 @@ export default function Testimonials() {
             <Testimonial img_src = "../Assets/himesh.jpg" text = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti sunt odio necessitatibus aliquam doloremque incidunt, quo id alias optio laborum? " name = "Himesh Nayak" email = "Himeshnayak23@gmail.com"/>
             <Testimonial img_src = "../Assets/himesh.jpg" text = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti sunt odio necessitatibus aliquam doloremque incidunt, quo id alias optio laborum? " name = "Himesh Nayak" email = "Himeshnayak23@gmail.com"/>
             <Testimonial img_src = "../Assets/himesh.jpg" text = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti sunt odio necessitatibus aliquam doloremque incidunt, quo id alias optio laborum? " name = "Himesh Nayak" email = "Himeshnayak23@gmail.com"/>
-            <Testimonial img_src = "../Assets/himesh.jpg" text = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti sunt odio necessitatibus aliquam doloremque incidunt, quo id alias optio laborum? " name = "Himesh Nayak" email = "Himeshnayak23@gmail.com"/>
-            <Testimonial img_src = "../Assets/himesh.jpg" text = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti sunt odio necessitatibus aliquam doloremque incidunt, quo id alias optio laborum? " name = "Himesh Nayak" email = "Himeshnayak23@gmail.com"/>
+            {/* <Testimonial img_src = "../Assets/himesh.jpg" text = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti sunt odio necessitatibus aliquam doloremque incidunt, quo id alias optio laborum? " name = "Himesh Nayak" email = "Himeshnayak23@gmail.com"/>
+            <Testimonial img_src = "../Assets/himesh.jpg" text = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti sunt odio necessitatibus aliquam doloremque incidunt, quo id alias optio laborum? " name = "Himesh Nayak" email = "Himeshnayak23@gmail.com"/> */}
         </div>
         <div className="testimonials-control" id='right-control' onClick={scrollLeft}><img src={require("../Assets/right.png")} alt=""/></div>
       </div>

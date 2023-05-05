@@ -69,7 +69,7 @@ export default function Footer() {
                 <div className='text-white text-lg items-center font-medium pt-3 '>Connect with us for any kind of query at</div>
 
                 <div className='flex flex-row justify-between'>
-                    <button type="submit" className='button'  ><span className='buttontext'>devfeed.in@gmail.com</span></button>
+                    <button type="submit" className='button'  ><span className='buttontext'><a href="mailto:devfeed.in@gmail.com">devfeed.in@gmail.com</a></span></button>
                   
                         <div className='copybutton' onClick={() => {
                             navigator.clipboard.writeText("devfeed.in@gmail.com");

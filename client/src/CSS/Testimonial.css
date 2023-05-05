@@ -29,7 +29,8 @@
 .testimonials-control{
     /* width: 1vw !important; */
     width: 2vw ;
-    background-color: #c6c3e7;
+    border-radius: 30%;
+    background-color: #afabe6;
     z-index: 6;
     @media (max-width:680px)
     {
@@ -71,7 +72,7 @@
     min-width: 30vw;
     height: 60vh;
     border-radius: 10px;
-    border: 1px #716bbd solid;
+    border: 1px #574ddf solid;
     margin-right: 3vh;
     @media (max-width:1151px)
     {

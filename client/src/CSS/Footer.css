@@ -211,7 +211,9 @@
 }
 .copybutton{
     cursor: pointer;
-    background-color: #463fac;
+    border: 1px solid #dadada;
+    
+    background-color: #6a65b6;
     border-radius: 150px;
     width:30%;
     margin-left: 1vw;
@@ -226,7 +228,7 @@
     /* margin-left: 5vh; */
 }
 .copybutton:hover{
-    background-color: #373097;
+    background-color: #5149bd;
 
 }
 

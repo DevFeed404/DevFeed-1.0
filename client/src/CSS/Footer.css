@@ -80,8 +80,28 @@
 }
 
 .feedback-doodle img{
-    width: 25vw;
+    width: 34vw;
+    height: 38vh;
     margin-right: 5vw;
+    @media (max-width:1317px)
+    {
+        width: 32vw;
+    height: 36vh;
+        
+   }
+   @media (max-width:1020px)
+   {
+       width: 36vw;
+   height: 33vh;
+       
+  }
+  @media (max-width:880px)
+  {
+      width: 38vw;
+  height: 29vh;
+      
+ }
+  
 }
 
 .feedback{
@@ -173,17 +193,40 @@
     display: none;
 }
 
-.feedback-form button{
-    background-color: #696666;
-    border-radius: 5px;
-    width: fit-content;
+.button{
+    background-color: transparent;
+    border:1px solid;
+    border-color: white;
+    border-width: ;
+    border-radius: 40px;
+    width:100%;
+    
+    align-self: center;
+    font-size: 2.5vh;
+    font-weight: 500;
+    padding: 3vh;
+    margin-top: 2vh;
+    
+    /* margin-left: 5vh; */
+}
+.copybutton{
+    background-color: #b6aaaa;
+    border-radius: 150px;
+    width:30%;
+    margin-left: 1vw;
+    position: relative;
     align-self: center;
     font-size: 2.5vh;
     font-weight: 600;
-    padding: 0.5vh;
+    padding: 3svh;
     margin-top: 2vh;
-    width: 100%;
+    
+    
     /* margin-left: 5vh; */
+}
+.copybutton:hover{
+    background-color: #ddcccc;
+
 }
 
 .feedback-form h2{
@@ -195,5 +238,15 @@
 }
 
 .buttontext{
-    color: s#ffffff;
+    color: #ffffff;
+}
+#custom-tooltip {
+    display: none;
+    margin-left: 257px;
+    z-index: 100;
+    padding: 2px 2px;
+    background-color: #695858df;
+    border-radius: 4px;
+    position: absolute;
+    color: #f8f5f5;
 }

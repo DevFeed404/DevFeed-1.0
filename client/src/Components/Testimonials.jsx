@@ -19,9 +19,11 @@ export default function Testimonials() {
   
   return (
     <>
-      <div className="testimonials-title poppins">
+      <div className="testimonials-title poppins text-4xl font-bold">
         Testimonials
+ 
       </div>
+      
       <div id="testimonial-con">
 
         <div className="testimonials-control" id='left-control' onClick={scrollRight}><img src={require("../Assets/right.png")} alt="" /></div>

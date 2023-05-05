@@ -1,67 +1,102 @@
 import React from 'react'
 import "../CSS/Footer.css"
-import { useState} from 'react';
+import { useState } from 'react';
 import axios from 'axios';
 
 export default function Footer() {
     const baseurl = "http://localhost:5000/api";//baseurl for posting
     const [feedback, setfeedback] = useState("");
     const feedbackmain = () => {
-        axios.post(baseurl+"/feedback", {
+        axios.post(baseurl + "/feedback", {
 
             feedback: feedback
 
         }).then((Response) => {
             if (Response.status = 200) {
-               
+
                 alert(Response.data.message);
 
 
                 console.log("success");
-                
+
             }
             console.log(Response);
         })
 
     }
+    function scrollToAbout() {
+        var element = document.getElementById("about");
+        element.scrollIntoView();
+    }
 
+
+    function scrollToSubs() {
+        var element = document.getElementById("subscribe-con");
+        element.scrollIntoView();
+    }
 
 
     return (
         <>
-            <div className="feedback-con" data-aos = "fade-up" data-aos-once = "true">
-
+            {/* <div className="feedback-con" data-aos = "fade-up" data-aos-once = "true"> */}
+            {/* 
                 <div className="feedback ">
                     <h3 className='mx-auto poppins'>
                     Shape us with your feedback.
-                    </h3>
+                    </h3> */}
 
-                    <div className="hr mx-auto" style={{ "width": "30%" }}></div>
+            {/* <div className="hr mx-auto" style={{ "width": "30%" }}></div>
 
-                    <form className='feedback-form mt-3 ' id='feedback-form'>
-                        {/* <h2>Feedback</h2> */}
-                        <textarea name="feedback" id="feedback" placeholder='Your feedback' onChange={(e) => {
+                    <form className='feedback-form mt-3 ' id='feedback-form'> */}
+            {/* <h2>Feedback</h2> */}
+            {/* <textarea name="feedback" id="feedback" placeholder='Your feedback' onChange={(e) => {
 
                             setfeedback(e.target.value);
 
-                        }}></textarea>
-                        {/* <input type="text" name="feedback" id="feedback" placeholder='Your feedback'/> */}
-                        <button type="submit"   onClick={feedbackmain}><span className='buttontext'>SEND</span></button>
+                        }}></textarea> */}
+            {/* <input type="text" name="feedback" id="feedback" placeholder='Your feedback'/> */}
+            {/* <button type="submit"   onClick={feedbackmain}><span className='buttontext'>SEND</span></button>
                     </form>
+                </div> */}
+
+            {/* <div className="feedback-doodle  nm:hidden">
+                    <img src={require("../Assets/contact.png")} alt="" />
+                </div>
+            </div> */}
+
+            <div className='flex flex-col justify-center items-center comme m-5 mb-[7vh] mt-[5vh]'>
+                <div className='text-white text-3xl items-center font-bold'>Reach out to us</div>
+                <div className='text-white text-lg items-center font-medium pt-3 '>Connect with us for any kind of query at</div>
+
+                <div className='flex flex-row justify-between'>
+                    <button type="submit" className='button'  ><span className='buttontext'>devfeed.in@gmail.com</span></button>
+                  
+                        <div className='copybutton' onClick={() => {
+                            navigator.clipboard.writeText("devfeed.in@gmail.com");
+                            document.getElementById("custom-tooltip").style.display = "inline";
+                            setTimeout(function () {
+                                document.getElementById("custom-tooltip").style.display = "none";
+                            }, 1000);
+                        }}> <img src={require("../Assets/copymain2.png")} alt="" style={{"width":"1.5vw"}} /></div>
+                         <span id="custom-tooltip">copied!</span>
+                    
+
+                     
+                
                 </div>
 
-                <div className="feedback-doodle  nm:hidden">
-                    <img src={require("../Assets/feedback.png")} alt="" />
-                </div>
             </div>
 
-            <div className='footer comme'>
-            {/* <div className="hr" style={{ "width": "90%" , "marginTop":"3vh"}}></div> */}
+            <div className='footer comme  '>
+                {/* <div className="hr" style={{ "width": "90%" , "marginTop":"3vh"}}></div> */}
                 <div className='footer-main'>
                     {/* <div className="footer-title">
                         DevFeed
                     </div> */}
-                    <div className="copyright">
+                    <div className='text-md p-2 flex flex-row font-normal comme cursor-pointer'>
+                        <div className='hover:text-[#FADA5E]' onClick={scrollToAbout} >About |</div> <div className='hover:text-[#FADA5E]'><a href="mailto:devfeed.in@gmail.com">&nbsp; Contact |</a>  </div> <div className='hover:text-[#FADA5E]' onClick={scrollToSubs}>&nbsp; Subscribe</div>
+                    </div>
+                    <div className="copyright pb-2 ">
                         &copy; Copyrights by DevFeed. All rights reserved.
                     </div>
                 </div>

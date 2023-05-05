@@ -8,6 +8,7 @@
     color: #FEFCFF;
     z-index: 5;
     position: absolute;
+
 }
 
 .vision-headline{
@@ -69,18 +70,18 @@
 
     @media (max-width:668px)
     {
-        width: 50vw;
+        width: 80vw;
    }
    @media (max-width:450px)
    {
-       height: 67vw;
-       width: 65vw;
+       height: 75vw;
+       width: 80vw;
   }
   
 }
  
 .background{
-    background-color: #373737;
+    /* background-color: #373737; */
 }
 
 

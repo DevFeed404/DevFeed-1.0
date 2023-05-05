@@ -1,12 +1,15 @@
 .subscribe-con{
     display: flex;
     flex-direction: row;
-    background-color: #33333390;
+    /* background-color: #33333390; */
     align-items: center;
     justify-content: center;
     width: 100vw;
     /* background-color: blue; */
-    margin-top: 5vh;
+    margin-top: 3vh;
+
+    padding-bottom: 5vh;
+    padding-top: 5vh;
     scroll-behavior: smooth;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
@@ -53,14 +56,14 @@
 .hr{
     height: 4px;
     width: 20%;
-    background-color: #FEFCFF;
+    background-color: #574ed5;
     border-radius: 5px;
     margin-top: 1vh;
     margin-bottom: 1vh;
 }
 
 .form-subheading{
-    color: #AE8CFA;
+    color: whitesmoke;
     font-size: 3vh;
     font-weight: 500;
     @media (max-width: 430px)
@@ -134,11 +137,12 @@
 #subscribe-btn{
     cursor: pointer;
     padding: 1vh;
-    background-color: #384f41;
+    background-color: #574ed5;
     border-radius: 5px;
     width: 100%;
+    color: whitesmoke;
     align-self: center;
-    font-size: 2.5vh;
+    font-size: 2.3vh;
     font-weight: 600;
     margin-top: 3vh;
 }

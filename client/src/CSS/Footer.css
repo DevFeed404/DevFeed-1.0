@@ -2,11 +2,11 @@
     display: flex;
     flex-direction: column;
     width: 100vw;
-    /* height: 12vh; */
+    height: 10vh;
     align-items: center;
     justify-content: space-between;
     /* margin-bottom: 4vh; */
-    background-color: black;
+    background-color: #313131;
  
 }
 .footer-main{
@@ -50,18 +50,19 @@
     justify-content: center;
     font-weight: 500;
     background-color: #313131;
-    @media (max-width:710px)
-    {
-        font-size: 2vh;
-   }
+
    @media (max-width:566px)
    {
-       font-size: 1.7vh;
+       font-size: 2.3vh;
   }
   @media (max-width:590px)
    {
-       font-size: 1.4vh;
+       font-size: 2.3vh;
   }
+  @media (max-width:360px)
+  {
+      font-size: 1.9vh;
+ }
 }
 
 #footer-logo{
@@ -79,8 +80,28 @@
 }
 
 .feedback-doodle img{
-    width: 25vw;
+    width: 34vw;
+    height: 38vh;
     margin-right: 5vw;
+    @media (max-width:1317px)
+    {
+        width: 32vw;
+    height: 36vh;
+        
+   }
+   @media (max-width:1020px)
+   {
+       width: 36vw;
+   height: 33vh;
+       
+  }
+  @media (max-width:880px)
+  {
+      width: 38vw;
+  height: 29vh;
+      
+ }
+  
 }
 
 .feedback{
@@ -109,8 +130,12 @@
   
 }
 
+.comme{
+    font-family: Comme;
+}
+
 .feedback h3{
-    color: #c3abf8;
+    color: #dbc6c6;
     align-items: center;
     font-size: 3vh;
     font-weight: 500;
@@ -127,6 +152,18 @@
     {
         font-size: 2.5vh;
    }
+   @media (max-width:380px)
+   {
+       font-size: 2.1vh;
+  }
+  @media (max-width:305px)
+  {
+      font-size: 1.9vh;
+ }
+ @media (max-width:260px)
+ {
+     font-size: 1.6vh;
+}
 
 }
 
@@ -156,17 +193,40 @@
     display: none;
 }
 
-.feedback-form button{
-    background-color: #696666;
-    border-radius: 5px;
-    width: fit-content;
+.button{
+    background-color: transparent;
+    border:1px solid;
+    border-color: white;
+    border-width: 2px;
+    border-radius: 40px;
+    width:100%;
+    
+    align-self: center;
+    font-size: 2.5vh;
+    font-weight: 500;
+    padding: 3vh;
+    margin-top: 2vh;
+    
+    /* margin-left: 5vh; */
+}
+.copybutton{
+    background-color: #574ed5;
+    border-radius: 150px;
+    width:30%;
+    margin-left: 1vw;
+    position: relative;
     align-self: center;
     font-size: 2.5vh;
     font-weight: 600;
-    padding: 0.5vh;
+    padding: 3svh;
     margin-top: 2vh;
-    width: 100%;
+    
+    
     /* margin-left: 5vh; */
+}
+.copybutton:hover{
+    background-color: #574ed5;
+
 }
 
 .feedback-form h2{
@@ -178,5 +238,15 @@
 }
 
 .buttontext{
-    color: s#ffffff;
+    color: #ffffff;
+}
+#custom-tooltip {
+    display: none;
+    margin-left: 257px;
+    z-index: 100;
+    padding: 2px 2px;
+    background-color: #695858df;
+    border-radius: 4px;
+    position: absolute;
+    color: #f8f5f5;
 }

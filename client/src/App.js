@@ -21,9 +21,10 @@ function App() {
       <Navbar/>
       <Hero/>
       <About/>
-      <Images/>
+
       
       <Count/>
+      <Images/>
       
       <Subscribe/>
       <Testimonials/>

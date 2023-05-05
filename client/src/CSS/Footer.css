@@ -210,7 +210,8 @@
     /* margin-left: 5vh; */
 }
 .copybutton{
-    background-color: #574ed5;
+    cursor: pointer;
+    background-color: #463fac;
     border-radius: 150px;
     width:30%;
     margin-left: 1vw;
@@ -225,7 +226,7 @@
     /* margin-left: 5vh; */
 }
 .copybutton:hover{
-    background-color: #574ed5;
+    background-color: #373097;
 
 }
 

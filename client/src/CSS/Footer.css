@@ -206,6 +206,12 @@
     font-weight: 500;
     padding: 3vh;
     margin-top: 2vh;
+    @media (max-width:400px)
+    {
+        width:80%;
+
+    }
+    
     
     /* margin-left: 5vh; */
 }
@@ -221,7 +227,7 @@
     align-self: center;
     font-size: 2.5vh;
     font-weight: 600;
-    padding: 3svh;
+    padding: 2.5vh;
     margin-top: 2vh;
     
     

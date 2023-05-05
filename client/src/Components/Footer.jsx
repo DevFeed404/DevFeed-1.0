@@ -77,7 +77,7 @@ export default function Footer() {
                             setTimeout(function () {
                                 document.getElementById("custom-tooltip").style.display = "none";
                             }, 1000);
-                        }}> <img src={require("../Assets/copymain.png")} alt="" /></div>
+                        }}> <img src={require("../Assets/copymain2.png")} alt="" style={{"width":"1.5vw"}} /></div>
                          <span id="custom-tooltip">copied!</span>
                     
 

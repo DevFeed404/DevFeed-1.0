@@ -17,7 +17,7 @@ export default function Hero() {
             Educate. <p>Connect. </p> Aware. 
             </div>
             <div className="hero-text">
-           <span className='text-[#FAFA33] comme'>what are you waiting for? </span> Join our community and be a part of the tech revolution! 
+           <span className='text-[#574ed5] comme'>what are you waiting for? </span> Join our community and be a part of the tech revolution! 
             </div>
         </div>
             <div className="hero-image nm:hidden">

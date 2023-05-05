@@ -67,7 +67,7 @@ export default function Subscribe() {
             
           }} />
 
-          <button type="submit" id='subscribe-btn' onClick={subscribe} ><p className='text-[#FFC000]'>SUBSCRIBE</p></button>
+          <button type="submit" id='subscribe-btn' onClick={subscribe} ><p>SUBSCRIBE</p></button>
         </form>
       </div>
     </div>

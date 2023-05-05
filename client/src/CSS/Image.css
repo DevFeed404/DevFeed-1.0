@@ -1,8 +1,10 @@
 .width{
+    padding-right:8px ;
+    border-radius: 8%;
     @media (max-width:710px)
     {
         /* width: 22vw; */
-        height:21vh;
+        height:24vh;
    }
 }
 

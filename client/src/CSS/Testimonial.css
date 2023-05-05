@@ -62,9 +62,10 @@
 }
 
 .Testimonial{
-    background: rgb(26,26,26);
-    background: linear-gradient(142deg, rgba(26,26,26,1) 0%, rgba(26,26,26,0.19849658613445376) 47%, rgba(149,45,45,0.10886073179271705) 100%);
+    background: rgb(0,0,0);
+background: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(27,27,27,1) 37%, rgba(36,36,36,1) 77%, rgba(46,46,46,1) 97%);
     display: flex;
+    
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -72,7 +73,7 @@
     min-width: 30vw;
     height: 60vh;
     border-radius: 10px;
-    border: 1px #574ddf solid;
+    border: 1px #b3adf0 solid;
     margin-right: 3vh;
     @media (max-width:1151px)
     {

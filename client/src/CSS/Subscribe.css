@@ -11,8 +11,8 @@
     padding-bottom: 5vh;
     padding-top: 5vh;
     scroll-behavior: smooth;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    /* backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px); */
 }
 
 .subscribe-body{

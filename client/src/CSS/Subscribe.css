@@ -1,13 +1,15 @@
 .subscribe-con{
     display: flex;
     flex-direction: row;
-    background-color: #333333;
+    background-color: #33333390;
     align-items: center;
     justify-content: center;
     width: 100vw;
     /* background-color: blue; */
     margin-top: 5vh;
     scroll-behavior: smooth;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 }
 
 .subscribe-body{

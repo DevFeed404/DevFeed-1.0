@@ -93,7 +93,9 @@ export default function Footer() {
                     {/* <div className="footer-title">
                         DevFeed
                     </div> */}
+
                     <div className='text-md p-2 flex flex-row font-normal comme cursor-pointer'>
+     
                         <div className='hover:text-[#FADA5E]' onClick={scrollToAbout} >About |</div> <div className='hover:text-[#FADA5E]'><a href="mailto:devfeed.in@gmail.com">&nbsp; Contact |</a>  </div> <div className='hover:text-[#FADA5E]' onClick={scrollToSubs}>&nbsp; Subscribe</div>
                     </div>
                     <div className="copyright pb-2 ">

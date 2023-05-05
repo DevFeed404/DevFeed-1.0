@@ -6,7 +6,10 @@
     justify-content: center;
     width: 100vw;
     /* background-color: blue; */
-    margin-top: 5vh;
+    margin-top: 3vh;
+
+    padding-bottom: 5vh;
+    padding-top: 5vh;
     scroll-behavior: smooth;
 }
 

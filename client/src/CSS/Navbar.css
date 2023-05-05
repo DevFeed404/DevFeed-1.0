@@ -18,7 +18,7 @@ body{
     background-color:#242132;
 }
 ::-webkit-scrollbar-thumb{
-    background-color: #746CFE;
+    background-color: #25243a;
     border-radius: 5px;
 }
 
@@ -30,8 +30,8 @@ body{
     display: flex;
     flex-direction: row;
     width: 100vw;
-    height: 12vh;
-    background: linear-gradient(90deg, #46404061,rgba(80, 75, 75, 0.301));
+    height: 11vh;
+    /* background: linear-gradient(90deg, #46404061,rgba(0, 0, 0, 0.301)); */
     /* background: #3c3c3c; */
     /* background-color: #242132; */
     -webkit-backdrop-filter: blur(20px);
@@ -68,12 +68,15 @@ body{
     justify-content: center;
     margin-right: 5vw;
     border-radius: 50px;
-    padding: 1vw;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    padding-top: 0.8vw;
+    padding-bottom: 0.8vw;
     background-color: #746CFE;
     background-color: #AE8CFA;
     /* background: linear-gradient(90deg, #746CFE, #AE8CFA); */
     background-color: #dad1df;
-    font-size: 2.3vh;
+    font-size: 2.4vh;
     color: #242132;
     @media (max-width:710px)
     {
@@ -92,11 +95,11 @@ body{
 }
 
 .subscribe img{
-    height: 2.5vh;
+    height: 2.4vh;
 }
 
 #nav-logo{
-    width: 60%;
+    width: 50%;
     height: 40%;
     /* background-color: black; */
 }

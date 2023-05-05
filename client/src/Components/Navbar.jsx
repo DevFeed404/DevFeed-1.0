@@ -16,7 +16,7 @@ export default function Navbar() {
   return (
     <div className='nav-body'>
         <div className="logo">
-            <img src={require("../Assets/devfeed-logo.png")} alt="" id='nav-logo' onClick={scrollToTop}/>
+            <img src={require("../Assets/devfeed-logocrop.png")} alt="" id='nav-logo' onClick={scrollToTop}/>
         </div>
         <div className="subscribe font-medium" onClick={scrollToSubs}>
             Subscribe 

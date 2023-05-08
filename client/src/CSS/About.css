@@ -81,16 +81,18 @@
 }
  
 .background{
-    /* background-color: #373737; */
+    background-color: #ffffff;
 }
 
 
 .about-title{
-    font-family: Poppins;
+    font-family: "Eudoxus Sans", sans-serif;
+    font-size: 3rem;
+    color: #0D2F3F;
 }
 
 .about-pts{
-    font-family: Comme;
+    font-family: "Eudoxus Sans", sans-serif;
 }
 
 .poppins{
@@ -99,4 +101,7 @@
 
 .comme{
     font-family: Comme;
+}
+.sans-serif{
+    font-family: "Eudoxus Sans", sans-serif;
 }

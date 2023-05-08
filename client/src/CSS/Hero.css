@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100vw;
-    height: 90vh;
+    height: 95vh;
     margin: auto;
     align-self: center;
     padding: 0px;
@@ -33,7 +33,8 @@
     justify-content: center;
     justify-content: space-between;
     font-weight: 800;
-    color: #FEFCFF;
+    color: #0D2F3F;
+
     font-size: 12vh;
     margin-left: 5vw;
     /* background-color: aliceblue; */
@@ -64,12 +65,12 @@
 }
 
 .hero-head p{
-    color: #ffff32;
+    color: #a7f111;
 }
 
 .hero-text{
     width: 100%;
-    color: #FEFCFF;
+    color: #0D2F3F;
     margin-left: 5vw;
     margin-top: 2vh;
     font-size: 3vh;

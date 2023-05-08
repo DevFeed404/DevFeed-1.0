@@ -19,8 +19,8 @@ export default function Testimonials() {
   
   return (
     <>
-      <div className="testimonials-title poppins text-4xl font-bold">
-        Testimonials
+      <div className="testimonials-title  sans-serif font-bold">
+        People Talk About Us
  
       </div>
       

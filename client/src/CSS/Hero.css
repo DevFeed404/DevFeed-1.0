@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     margin: auto;
     align-self: center;
     padding: 0px;
@@ -12,7 +12,7 @@
     {
         flex-direction: column-reverse;
         justify-content: center;
-   }
+   }background-color: black;
 }
 
 .hero-data{
@@ -65,6 +65,7 @@
 
 .hero-head p{
     color: #ffff32;
+    color: #6ACFC7;
 }
 
 .hero-text{

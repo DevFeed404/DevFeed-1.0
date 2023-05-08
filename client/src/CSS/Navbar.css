@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: #1a1a1a;
+    background-color: #0c1a1a;
     width: 100vw !important;
     overflow-x: hidden;
     scroll-behavior: smooth !important;
@@ -75,8 +75,9 @@ body{
     background-color: #746CFE;
     background-color: #AE8CFA;
     /* background: linear-gradient(90deg, #746CFE, #AE8CFA); */
-    background-color: #1c1742;
-    background-color: #574ed5;
+    /* background-color: #1c1742; */
+    /* background-color: #574ed5; */
+    /* background-color: #6ACFC7; */
     font-size: 2.4vh;
     color: whitesmoke;
     @media (max-width:710px)

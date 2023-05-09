@@ -64,9 +64,9 @@ export default function Footer() {
                 </div>
             </div> */}
 
-            <div className='flex flex-col justify-center items-center comme m-5 mb-[7vh] mt-[5vh]'>
+            <div className='flex flex-col w-screen justify-center items-center comme mb-[7vh] mt-[5vh]'>
                 <div className='text-white text-3xl items-center font-bold'>Reach out to us</div>
-                <div className='text-white text-lg items-center font-medium pt-3 '>Connect with us for any kind of query at</div>
+                <div className='text-white text-lg items-center font-medium pt-3 xsm:text-base xssm:text-xs'>Connect with us for any kind of query at</div>
 
                 <div className='flex flex-row justify-between'>
                     <button type="submit" className='button'  ><span className='buttontext'><a href="mailto:devfeed.in@gmail.com">devfeed.in@gmail.com</a></span></button>
@@ -77,7 +77,7 @@ export default function Footer() {
                             setTimeout(function () {
                                 document.getElementById("custom-tooltip").style.display = "none";
                             }, 1000);
-                        }}> <img src={require("../Assets/copymain2.png")} alt="" style={{"width":"1.5vw"}} /></div>
+                        }}> <img src={require("../Assets/copymain2.png")} alt="" style={{"width":"20px"}} /></div>
                          <span id="custom-tooltip">copied!</span>
                     
 

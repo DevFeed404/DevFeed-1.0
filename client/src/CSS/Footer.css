@@ -206,6 +206,12 @@
     font-weight: 500;
     padding: 3vh;
     margin-top: 2vh;
+    @media (max-width:400px)
+    {
+        width:80%;
+
+    }
+    
     
     /* margin-left: 5vh; */
 }
@@ -213,7 +219,7 @@
     cursor: pointer;
     border: 1px solid #dadada;
     
-    background-color: #6a65b6;
+    background-color: #312a99;
     border-radius: 150px;
     width:30%;
     margin-left: 1vw;
@@ -221,16 +227,20 @@
     align-self: center;
     font-size: 2.5vh;
     font-weight: 600;
-    padding: 3svh;
+    padding: 2.5vh;
     margin-top: 2vh;
     
     
     /* margin-left: 5vh; */
 }
 .copybutton:hover{
-    background-color: #5149bd;
+    background-color: #706abb;
 
 }
+
+
+  
+
 
 .feedback-form h2{
     color: #FEFCFF;

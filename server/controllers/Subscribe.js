@@ -1,5 +1,7 @@
 const db = require('../db');
-const validator = require("validator")
+const validator = require("validator");
+require("dotenv").config();
+
 
 exports.subscribe = async (req, res) => {
   console.log("test1")

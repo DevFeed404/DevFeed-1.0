@@ -29,17 +29,10 @@ To run DevFeed locally, you'll need to have the following software installed on 
    npm install
    ```
 
-3. Set up environment variables:
-
-   - In the `server` folder, create a file named `.env` and define the necessary environment variables. Make sure to include any required API keys, database credentials, or configuration settings. Example:
 
      ```
-     PORT=3000
-     DB_HOST=localhost
-     API_KEY=your-api-key
-     ```
 
-4. Start the development environment:
+3. Start the development environment:
 
    ```shell
    npm run dev
@@ -47,7 +40,7 @@ To run DevFeed locally, you'll need to have the following software installed on 
 
    This command will start both the frontend and backend servers concurrently.
 
-5. Access DevFeed:
+4. Access DevFeed:
 
    Open your web browser and navigate to `http://localhost:3000` to access the DevFeed website.
 

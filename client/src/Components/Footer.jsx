@@ -64,9 +64,9 @@ export default function Footer() {
                 </div>
             </div> */}
 
-            <div className='flex flex-col w-screen justify-center items-center comme mb-[7vh] mt-[5vh]'>
-                <div className='text-white text-3xl items-center font-bold'>Reach out to us</div>
-                <div className='text-white text-lg items-center font-medium pt-3 xsm:text-base xssm:text-xs'>Connect with us for any kind of query at</div>
+            <div className='flex flex-col w-screen justify-center bg-white items-center sans-serif  pt-[5vh] pb-[7vh]'>
+                <div className='text-black title items-center sans-serif  font-bold'>Reach out to us</div>
+                <div className='text-black text-lg items-center pt-1 pb-3 xsm:text-base xssm:text-xs'>Connect with us for any kind of query at</div>
 
                 <div className='flex flex-row justify-between'>
                     <button type="submit" className='button'  ><span className='buttontext'><a href="mailto:devfeed.in@gmail.com">devfeed.in@gmail.com</a></span></button>
@@ -94,11 +94,11 @@ export default function Footer() {
                         DevFeed
                     </div> */}
 
-                    <div className='text-md p-2 flex flex-row font-normal comme cursor-pointer'>
+                    <div className='text-md p-2 flex flex-row font-normal sans-serif cursor-pointer'>
      
                         <div className='hover:text-[#FADA5E]' onClick={scrollToAbout} >About |</div> <div className='hover:text-[#FADA5E]'><a href="mailto:devfeed.in@gmail.com">&nbsp; Contact |</a>  </div> <div className='hover:text-[#FADA5E]' onClick={scrollToSubs}>&nbsp; Subscribe</div>
                     </div>
-                    <div className="copyright pb-2 ">
+                    <div className="copyright sans-serif pb-2 ">
                         &copy; Copyrights by DevFeed. All rights reserved.
                     </div>
                 </div>

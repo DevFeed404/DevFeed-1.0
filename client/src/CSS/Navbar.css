@@ -1,10 +1,11 @@
 *{
     padding: 0px;
     margin: 0px;
+   
 }
 
 body{
-    background-color: #0c1a1a;
+    background-color: #f8f7f1;
     width: 100vw !important;
     overflow-x: hidden;
     scroll-behavior: smooth !important;
@@ -30,10 +31,11 @@ body{
     display: flex;
     flex-direction: row;
     width: 100vw;
-    height: 11vh;
+    height: 12vh;
     /* background: linear-gradient(90deg, #46404061,rgba(0, 0, 0, 0.301)); */
     /* background: #3c3c3c; */
-    /* background-color: #242132; */
+    background-color: #f8f7f1;
+ box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     color: #FEFCFF;
@@ -49,20 +51,21 @@ body{
     align-items: center;
     justify-content: center;
     padding-top: 1vh;
-    margin-left: -6vw;
+
     @media (max-width:940px)
     {
-        margin-left: -12vw;
+      
    }
    @media (max-width:575px)
    {
-       margin-left: -15vw;
+      
   }
     /* font-size: 4vh; */
 }
 
 .subscribe{
     cursor: pointer;
+    font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,14 +75,14 @@ body{
     padding-right: 1.5vw;
     padding-top: 0.8vw;
     padding-bottom: 0.8vw;
-    background-color: #746CFE;
-    background-color: #AE8CFA;
+    background-color: transparent;
+    border: 1px solid #0D2F3F;
+    font-family: "Eudoxus Sans", sans-serif;
+
     /* background: linear-gradient(90deg, #746CFE, #AE8CFA); */
-    /* background-color: #1c1742; */
-    /* background-color: #574ed5; */
-    /* background-color: #6ACFC7; */
-    font-size: 2.4vh;
-    color: whitesmoke;
+
+    font-size: 2.5vh;
+    color: #0D2F3F;
     @media (max-width:710px)
     {
         padding: 1.5vw;
@@ -101,8 +104,13 @@ body{
 }
 
 #nav-logo{
-    width: 50%;
-    height: 40%;
+    width: 90%;
+    height: 80%;
+    @media (max-width:650px )
+    {
+        width: 70%;
+    height: 60%;
+   }
     /* background-color: black; */
 }
 

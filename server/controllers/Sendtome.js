@@ -34,6 +34,7 @@ exports.sendtome = async (req, res) => {
                 return console.log(error);
             }
             console.log(info);
+            res.send({message:"sent"})
             console.log('Message sent: %s', info.messageId);
         });
 

@@ -23,7 +23,7 @@ function App() {
       <About/>
 
       
-      <Count/>
+      {/* <Count/> */}
       <Images/>
       
       <Subscribe/>

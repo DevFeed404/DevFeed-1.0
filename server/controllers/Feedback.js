@@ -1,4 +1,6 @@
 const db = require('../db');
+require("dotenv").config();
+
 const validator = require("validator")
 exports.feedback = async (req, res) => {
     const feedback =req.body.feedback;

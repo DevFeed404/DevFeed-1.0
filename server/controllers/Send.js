@@ -1,5 +1,7 @@
 const db = require('../db');
 var nodemailer = require('nodemailer');
+require("dotenv").config();
+
 
 exports.send = async (req, res) => {
   try {
@@ -23,8 +25,8 @@ exports.send = async (req, res) => {
           host: "smtp.gmail.com",
           port: 587,
           auth: {
-            user: "ayush4002gupta@gmail.com",
-            pass: ""
+            user: process.env.EMAIL_SENDER,
+            pass: process.env.EMAIL_PASSWORD
           },
           tls: {
             rejectUnauthorized: false
@@ -32,7 +34,7 @@ exports.send = async (req, res) => {
         });
 
         var mailOptions = {
-          from: '"DevFeed.in" <ayush4002gupta@gmail.com>',
+          from: `"DevFeed.in" <${process.env.EMAIL_SENDER}>`,
           to: array,
           subject: `${title}`,
           text: `Hey there, Welcome to DevFeed.in , Your daily solution to keep you updated`,

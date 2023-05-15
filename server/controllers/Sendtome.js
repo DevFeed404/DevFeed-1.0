@@ -21,7 +21,8 @@ exports.sendtome = async (req, res) => {
 
         var mailOptions = {
             from: `"DevFeed.in" <${process.env.EMAIL_SENDER}>`,
-            to: process.env.EMAIL_ME,
+            to: `${process.env.EMAIL_ME},${process.env.EMAIL_ME2}`,
+       
             subject: `${title}`,
             text: `Hey there, Welcome to DevFeed.in , Your daily solution to keep you updated`,
             html: `${message}`,

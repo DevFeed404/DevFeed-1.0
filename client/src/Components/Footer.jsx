@@ -4,7 +4,7 @@ import { useState } from 'react';
 import axios from 'axios';
 
 export default function Footer() {
-    const baseurl = "http://localhost:5000/api";//baseurl for posting
+    const baseurl = "https://dev-feedmain.vercel.app/api";//baseurl for posting
     const [feedback, setfeedback] = useState("");
     const feedbackmain = () => {
         axios.post(baseurl + "/feedback", {

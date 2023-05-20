@@ -1,5 +1,5 @@
 
-## DevFeed
+# DevFeed
 
 <div align="center">
 <img src="https://forthebadge.com/images/badges/built-with-love.svg" />
@@ -19,14 +19,15 @@
         
    </div>
 
+
 DevFeed is a newsletter website that allows users to subscribe and receive newsletters. It consists of two main components: a client-side frontend built with React.js and a server-side backend built with Node.js.
 
 ## Prerequisites
 
 To run DevFeed locally, you'll need to have the following software installed on your machine:
 
-- Node.js
-- npm (Node Package Manager)
+- [Node.js](https://nodejs.org/en)
+- [npm (Node Package Manager)](https://www.npmjs.com/)
 
 ## Getting Started
 
@@ -44,9 +45,6 @@ To run DevFeed locally, you'll need to have the following software installed on 
    cd ../server
    npm install
    ```
-
-
-     ```
 
 3. Start the development environment:
 
@@ -81,5 +79,5 @@ Contributions are welcome! If you'd like to contribute to DevFeed, please follow
 This project is licensed under the [MIT License](LICENSE).
 
 ```
-
 Feel free to customize the README.md file further based on the specific details and requirements of your project.
+```

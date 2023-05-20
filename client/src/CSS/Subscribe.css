@@ -143,6 +143,7 @@
     cursor: pointer;
     padding: 1vh;
     background-color: #aaff00;
+    border: 1px solid #aaff00;
     border-radius: 5px;
     width: 100%;
     color: rgb(0, 0, 0);
@@ -150,4 +151,10 @@
     font-size: 2.3vh;
     font-weight: 600;
     margin-top: 3vh;
+    transition: all 0.2s ease-in;
+}
+
+#subscribe-btn:hover {
+    background-color: transparent;
+    border: 1px solid #0D2F3F;
 }

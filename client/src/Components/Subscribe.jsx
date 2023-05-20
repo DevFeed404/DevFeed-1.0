@@ -46,26 +46,27 @@ export default function Subscribe() {
         </div>
 
         <form className="subscribe-form comme" method='POST' action = "localhost:3000">
-          <h3 id="person-name-heading">Full name</h3>
-          <input type="text" name="person-name" id="person-name" className='text-[0D2F3F]' placeholder='Enter your full name' onChange={(e) => {
+          <h3 id="person-name-heading">Full name *</h3>
+          <input type="text" name="person-name" id="person-name" required className='text-[0D2F3F]' placeholder='Enter your full name' onChange={(e) => {
 
             setname(e.target.value);
 
           }} />
 
-          <h3 id="person-email-heading">Email</h3>
-          <input type="email" name="person-email" id="person-email" className='text-[0D2F3F]' placeholder='Enter your email' onChange={(e) => {
+          <h3 id="person-email-heading">Email *</h3>
+          <input type="email" name="person-email" id="person-email" required className='text-[0D2F3F]' placeholder='Enter your email' onChange={(e) => {
 
             setemail(e.target.value);
 
           }} />
 
-          <h3 id="person-org-heading">Organization/College</h3>
-          <input type="text" name="person-org" id="person-org" className='text-[0D2F3F]' placeholder='Enter your organization name' onChange={(e) => {
+          <h3 id="person-org-heading">Organization/College *</h3>
+          <input type="text" name="person-org" id="person-org" required className='text-[0D2F3F]' placeholder='Enter your organization name' onChange={(e) => {
             if(e.target.value === "" || " " || "."){setorganisation(e.target.value); console.log("Success");};
             
             
           }} />
+          <h4>* (Required)</h4>
 
           <button type="submit" id='subscribe-btn' onClick={subscribe} ><p>SUBSCRIBE</p></button>
         </form>

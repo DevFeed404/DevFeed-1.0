@@ -14,6 +14,16 @@
     scroll-margin-top:2rem ;
     /* backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px); */
+    overflow: hidden;
+}
+.subs-doodle{
+    height: 100vh;
+    margin-top: 4vh;
+    margin-right: 4vw;
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px 2px #e5e7eb;
+    /* transition: 0.3s; */
+    overflow: hidden;
 }
 
 .subscribe-body{
@@ -22,7 +32,11 @@
     align-items: center;
     justify-content: center;
     width: 50vw;
+    height: 100vh;
     margin-top: 4vh;
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px 2px #e5e7eb;
+
     @media (max-width: 1103px)
  {
     width: 100vw;
@@ -57,7 +71,7 @@
 .hr{
     height: 4px;
     width: 20%;
-    background-color: #6acfc7;
+    background-color: #5d5dd1;
     border-radius: 5px;
     margin-top: 1vh;
     margin-bottom: 1vh;
@@ -143,12 +157,20 @@
 #subscribe-btn{
     cursor: pointer;
     padding: 1vh;
-    background-color: #aaff00;
-    border-radius: 5px;
+    background-color: #9fcf3f;
+    border-radius: 10px;
     width: 100%;
     color: rgb(0, 0, 0);
     align-self: center;
     font-size: 2.3vh;
     font-weight: 600;
     margin-top: 3vh;
+    width: 200px;
+}
+#subscribe-btn:hover{
+    background-color: #5d5dd1;
+    color: whitesmoke;
+}
+*:required{
+    background-color: #175d7d;
 }

@@ -1,7 +1,7 @@
 .width{
     padding-right:8px ;
-    border-radius: 8%;
-    box-shadow: 0px 21px 13px rgba(0, 0, 0, 0.13);
+    border-radius: 12px;
+    /* box-shadow: 0px 21px 13px rgba(0, 0, 0, 0.13); */
     @media (max-width:710px)
     {
         /* width: 22vw; */
@@ -10,8 +10,10 @@
 }
 
 .image-con{
-    width: 100vw;
+    width: 98vw;
     overflow-x: scroll;
+    margin:0px 10px;
+    border-radius: 12px;
 }
 
 .image-con::-webkit-scrollbar{

@@ -9,12 +9,12 @@ export default function Testimonials() {
   // console.log("Height is :", vw);
   function scrollLeft(){
     var element = document.getElementById('testimonials-body');
-    element.scrollLeft += 30*vw;
+    element.scrollLeft += 31*vw;
   }
 
   function scrollRight(){
     var element = document.getElementById('testimonials-body');
-    element.scrollLeft -= 30*vw;
+    element.scrollLeft -= 31*vw;
   }
   
   return (

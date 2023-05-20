@@ -21,8 +21,6 @@ export default function Subscribe() {
 
         console.log("success");
       }
-     
-      console.log(Response);
       // window.location(baseurl);
     })
 

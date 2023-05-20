@@ -6,6 +6,7 @@ import Count from './Components/Count';
 import Footer from './Components/Footer';
 import Hero from './Components/Hero';
 import Navbar from './Components/Navbar';
+import ScrollToTop from './Components/ScrollToTop';
 // import RecentEvents from './Components/Recent_events';
 import Subscribe from './Components/Subscribe';
 import Testimonials from './Components/Testimonials';
@@ -19,6 +20,7 @@ function App() {
           <title>DevFeed</title>
         </Helmet>
       <Navbar/>
+      <ScrollToTop/>
       <Hero/>
       <About/>
 

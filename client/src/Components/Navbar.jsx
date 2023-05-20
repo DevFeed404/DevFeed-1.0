@@ -7,7 +7,7 @@ export default function Navbar() {
             <a href="#home">
             <div className="logo">
                 <img
-                    src={require("../Assets/logoimage.png")}
+                    src={require("../Assets/newLogo.png")}
                     alt=""
                     id="nav-logo"
                 />

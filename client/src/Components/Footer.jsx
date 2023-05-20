@@ -35,6 +35,10 @@ export default function Footer() {
         element.scrollIntoView();
     }
 
+    const getCurrentYear = () => {
+        return new Date().getFullYear();
+    };
+
 
     return (
         <>
@@ -99,7 +103,7 @@ export default function Footer() {
                         <div className='hover:text-[#FADA5E]' onClick={scrollToAbout} >About |</div> <div className='hover:text-[#FADA5E]'><a href="mailto:devfeed.in@gmail.com">&nbsp; Contact |</a>  </div> <div className='hover:text-[#FADA5E]' onClick={scrollToSubs}>&nbsp; Subscribe</div>
                     </div>
                     <div className="copyright sans-serif pb-2 ">
-                        &copy; Copyrights by DevFeed. All rights reserved.
+                        &copy; Copyright {getCurrentYear()} by DevFeed. All rights reserved.
                     </div>
                 </div>
 

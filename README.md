@@ -113,6 +113,11 @@ Once your pull request is approved, your changes will be merged into the main re
 
 Thank you for your contribution to making DevFeed better!
 
+## Contributors
+<p align="center">
+<a href="https://github.com/DevFeed404/DevFeed-1.0/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=DevFeed404/DevFeed-1.0" />
+</a></p>
 
 
 ## License

@@ -112,11 +112,7 @@ Wait for the maintainers to review your pull request. They may provide feedback 
 Once your pull request is approved, your changes will be merged into the main repository.
 
 Thank you for your contribution to making DevFeed better!
-<div align="center">
-  <a href="https://github.com/DevFeed404/DevFeed-1.0/graphs/contributors">
-    <img src="https://contrib.rocks/image?repo=DevFeed404/DevFeed-1.0" alt="Contributors" />
-  </a>
-</div>
+
 
 
 ## License

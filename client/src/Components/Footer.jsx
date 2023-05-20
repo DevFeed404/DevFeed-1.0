@@ -1,7 +1,17 @@
 import React from 'react'
+import { Container, Row, Col } from "react-bootstrap";
 import "../CSS/Footer.css"
 import { useState } from 'react';
 import axios from 'axios';
+
+import {
+    AiFillGithub,
+    AiOutlineTwitter,
+    AiFillInstagram,
+    
+  } from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 export default function Footer() {
     const baseurl = "https://dev-feedmain.vercel.app/api";//baseurl for posting
@@ -34,6 +44,10 @@ export default function Footer() {
         var element = document.getElementById("subscribe-con");
         element.scrollIntoView();
     }
+
+    const getCurrentYear = () => {
+        return new Date().getFullYear();
+    };
 
 
     return (
@@ -68,6 +82,56 @@ export default function Footer() {
                 <div className='text-black title items-center sans-serif  font-bold'>Reach out to us</div>
                 <div className='text-black text-lg items-center pt-1 pb-3 xsm:text-base xssm:text-xs'>Connect with us for any kind of query at</div>
 
+                    <Container>
+                        <Row>
+                        <Col md={12} className="home-about-social">
+
+                            <ul className="home-about-social-links">
+                            <li className="social-icons">
+                                <a
+                                href=""
+                                target="_blank"
+                                rel="noreferrer"
+                                className="icon-colour  home-social-icons"
+                                >
+                                <AiFillGithub size={35} />
+                                </a>
+                            </li>
+                            <li className="social-icons">
+                                <a
+                                href=""
+                                target="_blank"
+                                rel="noreferrer"
+                                className="icon-colour  home-social-icons"
+                                >
+                                <AiOutlineTwitter size={35} />
+                                </a>
+                            </li>
+                            <li className="social-icons">
+                                <a
+                                href=""
+                                target="_blank"
+                                rel="noreferrer"
+                                className="icon-colour  home-social-icons"
+                                >
+                                <FaLinkedinIn size={35} />
+                                </a>
+                            </li>
+                            <li className="social-icons">
+                                <a
+                                href=""
+                                target="_blank"
+                                rel="noreferrer"
+                                className="icon-colour home-social-icons"
+                                >
+                                <AiFillInstagram size={35} />
+                                </a>
+                            </li>
+                            </ul>
+                        </Col>
+                        </Row>
+                    </Container>
+
                 <div className='flex flex-row justify-between'>
                     <button type="submit" className='button'  ><span className='buttontext'><a href="mailto:devfeed.in@gmail.com">devfeed.in@gmail.com</a></span></button>
                   
@@ -79,9 +143,6 @@ export default function Footer() {
                             }, 1000);
                         }}> <img src={require("../Assets/copymain2.png")} alt="" style={{"width":"20px"}} /></div>
                          <span id="custom-tooltip">copied!</span>
-                    
-
-                     
                 
                 </div>
 
@@ -99,12 +160,9 @@ export default function Footer() {
                         <div className='hover:text-[#FADA5E]' onClick={scrollToAbout} >About |</div> <div className='hover:text-[#FADA5E]'><a href="mailto:devfeed.in@gmail.com">&nbsp; Contact |</a>  </div> <div className='hover:text-[#FADA5E]' onClick={scrollToSubs}>&nbsp; Subscribe</div>
                     </div>
                     <div className="copyright sans-serif pb-2 ">
-                        &copy; Copyrights by DevFeed. All rights reserved.
+                        &copy; Copyright {getCurrentYear()} by DevFeed. All rights reserved.
                     </div>
                 </div>
-
-
-
             </div>
         </>
     )

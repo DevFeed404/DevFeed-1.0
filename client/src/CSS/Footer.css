@@ -280,8 +280,31 @@
    @media (max-width:448px)
    {
        font-size: 2rem;
-  };
-
-
-    
+  }; 
 }
+
+/* Social Media icon Start */
+
+.home-about-social {
+    text-align: center !important;
+    padding: 10px;
+  }
+  
+  .home-about-social-links {
+    justify-content: center !important;
+    display: inline-block !important;
+    position: relative !important;
+    padding-inline-start: 0 !important;
+  }
+
+  .social-icons {
+    display: inline-block !important;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  .icon-colour {
+    color: black !important;
+  }
+
+/* Social Media icon End */

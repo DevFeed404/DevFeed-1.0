@@ -11,7 +11,7 @@ export default function Hero() {
     }, []);
 
   return (
-    <div className='hero'>
+    <div className='hero' id='home'>
         <div className="hero-data">
             <div className="hero-head">
             Educate. <p>Connect. </p> Aware. 

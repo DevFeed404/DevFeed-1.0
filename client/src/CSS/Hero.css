@@ -35,7 +35,6 @@
     justify-content: space-between;
     font-weight: 800;
     color: #0D2F3F;
-
     font-size: 12vh;
     margin-left: 5vw;
     /* background-color: aliceblue; */
@@ -63,6 +62,21 @@
 
  }
 
+}
+
+.animation{
+    animation: typing 2s steps(12), blink .5s step-end infinite;
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
 }
 
 .hero-head p{

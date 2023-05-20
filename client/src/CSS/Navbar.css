@@ -79,7 +79,7 @@ body{
     border: 1px solid #0D2F3F;
     font-family: "Eudoxus Sans", sans-serif;
 
-    /* background: linear-gradient(90deg, #746CFE, #AE8CFA); */
+     /* background: linear-gradient(90deg, #746CFE, #AE8CFA);  */
 
     font-size: 2.5vh;
     color: #0D2F3F;
@@ -98,10 +98,10 @@ body{
  }
      
 }
+/* .subscribe:hover(){
+    background: #aaff00;
+} */
 
-.subscribe img{
-    height: 2.4vh;
-}
 
 #nav-logo{
     width: 90%;

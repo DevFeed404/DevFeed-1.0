@@ -16,9 +16,8 @@ export default function Subscribe() {
       organization: organisation
     }).then((Response) => {
       
-      if (Response.status = 200) {
+      if (Response.status === 200) {
         alert(Response.data.message);
-
         console.log("success");
       }
      

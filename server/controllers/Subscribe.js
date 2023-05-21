@@ -1,5 +1,6 @@
 const db = require('../db');
 const validator = require("validator");
+const emailable = require("emailable")(process.env.EMAILAPIKEY);
 require("dotenv").config();
 
 
@@ -23,47 +24,44 @@ exports.subscribe = async (req, res) => {
 
       db.query("SELECT * FROM users WHERE email=? ", [email], (err, result) => {
         if (err) {
-          console.log(err)
+          console.log(err);
         }
         if (result.length > 0) {
           res.send({
             result,
-            message: "You are already subscribed"
+            message: "You are already subscribed",
           });
-          console.log(result)
-
-        }
-        else {
-
-          db.query("INSERT INTO users (name,email,organization,date,isSubscribed)  VALUES (?, ?, ?,?, TRUE)", [name, email, organization, date], (err, result) => {
-            if (err) {
-              console.log(err)
+          console.log(result);
+        } else {
+          emailable.verify(email).then(function (response) {
+            console.log(response)
+            if (response.reason !== "deliverable") {
+              db.query(
+                "INSERT INTO users (name,email,organization,date,isSubscribed)  VALUES (?, ?, ?,?, TRUE)",
+                [name, email, organization, date],
+                (err, result) => {
+                  if (err) {
+                    console.log(err);
+                  }
+                  console.log(err);
+                  console.log(result);
+                  res.send({
+                    result,
+                    message: "Thankyou for Subscribing",
+                  });
+                }
+              );
             }
-            console.log(err)
-            console.log(result)
-            res.send({
-              result,
-              message: "Thankyou for Subscribing"
-            });
-
-
-
-
+            else{
+              res.send({
+                message: "Invalid Email"
+              })
+            }
           });
         }
-
-      })
-
+      });
     }
   } catch (error) {
     console.log(error);
-
   }
-
-
-
-
 };
-
-
-

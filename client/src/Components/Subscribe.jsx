@@ -10,18 +10,20 @@ export default function Subscribe() {
   const [organisation, setorganisation] = useState("");
   //function to post data in backend
   const subscribe = () => {
-    axios
-      .post(baseurl + "/subscribe", {
-        name: name,
-        email: email,
-        organization: organisation,
-      })
-      .then((Response) => {
-        if ((Response.status = 200)) {
-          alert(Response.data.message);
-
-          console.log("success");
-        }
+    axios.post( baseurl+"/subscribe", {
+      name: name,
+      email: email,
+      organization: organisation
+    }).then((Response) => {
+      
+      if (Response.status === 200) {
+        alert(Response.data.message);
+        console.log("success");
+      }
+     
+      console.log(Response);
+      // window.location(baseurl);
+    })
 
         console.log(Response);
         // window.location(baseurl);

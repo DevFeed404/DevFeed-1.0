@@ -12,7 +12,7 @@ export default function Footer() {
             feedback: feedback
 
         }).then((Response) => {
-            if (Response.status = 200) {
+            if (Response.status === 200) {
 
                 alert(Response.data.message);
 

@@ -1,11 +1,19 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import "../CSS/Footer.css"
-import { useState } from 'react';
 import axios from 'axios';
+import Translation from './Translate/Footer.json'
 
-export default function Footer() {
+export default function Footer({language}) {
+    const [content, setContent] = useState(Translation.english);
     const baseurl = "https://dev-feedmain.vercel.app/api";//baseurl for posting
     const [feedback, setfeedback] = useState("");
+    useEffect(() => {
+        if (language === "english") {
+          setContent(Translation.english);
+        } else if (language === "hindi") {
+          setContent(Translation.hindi);
+        }
+      }, [language]);
     const feedbackmain = () => {
         axios.post(baseurl + "/feedback", {
 
@@ -69,8 +77,8 @@ export default function Footer() {
             </div> */}
 
             <div className='flex flex-col w-screen justify-center bg-white items-center sans-serif  pt-[5vh] pb-[7vh]'>
-                <div className='text-black title items-center sans-serif  font-bold'>Reach out to us</div>
-                <div className='text-black text-lg items-center pt-1 pb-3 xsm:text-base xssm:text-xs'>Connect with us for any kind of query at</div>
+                <div className='text-black title items-center sans-serif  font-bold'>{content.tit1}</div>
+                <div className='text-black text-lg items-center pt-1 pb-3 xsm:text-base xssm:text-xs'>{content.tit2}</div>
 
                 <div className='flex flex-row justify-between'>
                     <button type="submit" className='button'  ><span className='buttontext'><a href="mailto:devfeed.in@gmail.com">devfeed.in@gmail.com</a></span></button>

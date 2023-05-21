@@ -1,0 +1,24 @@
+{
+    "english":{
+        "p":{
+            "p1":"Educate.",
+            "p2":"Connect.",
+            "p3":"Aware."
+        },
+        "span":{
+            "span1":"what are you waiting for?",
+            "span2":"Join our community and be a part of the tech revolution! "
+        }
+    },
+    "hindi":{
+        "p":{
+            "p1":"शिक्षित.",
+            "p2":"जोड़ना.",
+            "p3":"अवगत."
+        },
+        "span":{
+            "span1":"आप किस का इंतजार कर रहे हैं?",
+            "span2":"हमारे समुदाय में शामिल हों और तकनीकी क्रांति का हिस्सा बनें!"
+        }
+    }
+}

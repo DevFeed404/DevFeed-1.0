@@ -1,0 +1,12 @@
+{
+    "english":{
+        "heading": "People Talk About Us",
+        "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti sunt odio necessitatibus aliquam doloremque incidunt, quo id alias optio laborum? ",
+        "name": "ipsum dolor"
+    },
+    "hindi":{
+        "heading": "लोग हमारे बारे में बात करते हैं",
+        "text": "लोरेम, इप्सम डोलर सिट अमेट कंसेटेटर एडिपिसिसिंग एलीट। करप्शन संट ओडियो नेसेसिटैटिबस एलिकम डोलोरेम्क्यू घटना, क्या आईडी उर्फ ​​ऑप्टियो लेबरम? ",
+        "name": "इप्सम डोलर"
+    }
+}

@@ -8,3 +8,22 @@
 .App{
     overflow-x: hidden;
 }
+.rightContents{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    justify-content: space-evenly;
+    margin-right: 25px;
+}
+.translate-btn{
+    height: 35px;
+    width: fit-content;
+    padding: 2px;
+    background-color: black;
+    color: #FFF;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-family:sans-serif;
+}

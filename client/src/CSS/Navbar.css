@@ -78,6 +78,7 @@ body{
     background-color: transparent;
     border: 1px solid #0D2F3F;
     font-family: "Eudoxus Sans", sans-serif;
+    transition: all 0.2s ease-in;
 
     /* background: linear-gradient(90deg, #746CFE, #AE8CFA); */
 
@@ -97,6 +98,11 @@ body{
       font-size: 2vh;
  }
      
+}
+
+.subscribe:hover {
+    background-color: #aaff00;
+    border: 1px solid #aaff00;
 }
 
 .subscribe img{

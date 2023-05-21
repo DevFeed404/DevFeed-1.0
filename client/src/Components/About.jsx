@@ -29,7 +29,7 @@ export default function About() {
     </div>  */}
 
       <div
-        className="h-fit flex mlg:flex-col w-screen background mh-[2vh] pb-[13vh] pt-[6vh] gap-10"
+        className="h-fit flex mlg:flex-col w-screen background mh-[2vh] pb-[13vh] pt-[6vh] justify-around"
         id="about"
       >
         <div className="w-[60%] h-[100%] xxlg:w-[40%] mt-[12vh] mlg:mt-[6vh] mlg:mb-[5vh] mlg:ml-[1vw] lg:w-[35%] lg:pt-[4vh] mlg:w-[100%] flex flex-row justify-center ml-[2vw] ">
@@ -41,11 +41,11 @@ export default function About() {
             className="about-image "
           />
         </div>
-        <div className="flex flex-col items-center xxlg:w-[60%] lg:w-[65%] w-[63%] mlg:w-[100%] pr-[4vw] about-con bg-[#0d2f3f] text-white rounded-xl border border-[#0d2f3f] text-start p-10 shadow-lg shadow-[#0d2f3f] m-5">
+        <div className="flex flex-col items-center xxlg:w-[60%] lg:w-[65%] w-[63%] mlg:w-[100%] pr-[4vw] about-con bg-[#0d2f3f] text-white rounded-xl border border-[#0d2f3f] text-start p-5 shadow-lg shadow-[#0d2f3f] m-5">
           <h1 className=" about-title xlg:mt-[2vh]  sm:text-4xl xsm:text-3xl text-5xl font-mono items-center font-bold text-white">
             Nice to meet you
           </h1>
-          <p className="text-xl  xsm:text-sms sm:text-lg mt-[3vh] ml-[4vw] mr-2 font-medium font-sans sans-serif">
+          <p className="text-lg  xsm:text-sms sm:text-lg mt-[3vh] ml-[4vw] mr-2 font-medium font-sans sans-serif">
             With <span className="text-[#a7f111] comme">DevFeed</span>, you'll
             never miss out on an opportunity to not only expand your skills but
             also connect with other tech professionals in your community. Our

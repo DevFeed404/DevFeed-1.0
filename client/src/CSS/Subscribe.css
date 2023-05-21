@@ -11,6 +11,7 @@
     padding-bottom: 5vh;
     padding-top: 5vh;
     scroll-behavior: smooth;
+    scroll-margin-top:2rem ;
     /* backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px); */
 }

@@ -1,7 +1,16 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import "../CSS/About.css"
+import Translation from './Translate/About.json'
 
-export default function About() {
+export default function About({language}) {
+  const [content, setContent] = useState(Translation.english);
+  useEffect(() => {
+    if (language === "english") {
+      setContent(Translation.english);
+    } else if (language === "hindi") {
+      setContent(Translation.hindi);
+    }
+  }, [language]);
   return (
     <>
       {/* <div className='about'>
@@ -35,12 +44,12 @@ export default function About() {
 
         </div>
         <div className='flex flex-col items-center xxlg:w-[60%] lg:w-[65%] w-[63%] mlg:w-[100%] pr-[4vw] about-con'>
-          <h1 className=' about-title mt-[9vh] xlg:mt-[2vh]  sm:text-4xl xsm:text-3xl text-5xl font-mono items-center font-bold text-black'>Nice to meet you</h1>
-          <p className='text-xl  xsm:text-sms sm:text-lg mt-[3vh] ml-[4vw] mr-2 text-[#0D2F3F]  font-medium font-sans sans-serif'>With <span className='text-[#1c145f] comme'>DevFeed</span>, you'll never miss out on an opportunity to not only expand your skills but also connect with other tech professionals in your community. Our newsletter is your personal roadmap to navigating the tech scene, providing you with exclusive <span >updates on the latest events, speakers, and topics that matter most to you.</span></p>
+          <h1 className=' about-title mt-[9vh] xlg:mt-[2vh]  sm:text-4xl xsm:text-3xl text-5xl font-mono items-center font-bold text-black'>{content.h1}</h1>
+          <p className='text-xl  xsm:text-sms sm:text-lg mt-[3vh] ml-[4vw] mr-2 text-[#0D2F3F]  font-medium font-sans sans-serif'>{content.p.p1} <span className='text-[#1c145f] comme'>DevFeed</span>{content.p.p2}<span >{content.p.p3}</span></p>
           <ul class="list-disc about-pts ml-[1.2vw]  pt-3 text-xl sm:text-lg xsm:text-sms text-[#0D2F3F] font-medium ">
-  <li className='pt-3  ml-[4vw] '>Centralized location for subscribers to receive all the relevant information about tech events happening in their city</li>
-  <li className='pt-3  ml-[4vw]'>Attending tech events can provide valuable networking opportunities for professionals and enthusiasts in the industry</li>
-  <li className='pt-3  ml-[4vw]'>All the relevant information you need in one place, instead of having to search for events individually.</li>
+  <li className='pt-3  ml-[4vw] '>{content.li.li1}</li>
+  <li className='pt-3  ml-[4vw]'>{content.li.li2}</li>
+  <li className='pt-3  ml-[4vw]'>{content.li.li3}</li>
   {/* <li className='pt-3  ml-[4vw]'>Now this is a story all about how, my life got flipped-turned upside down</li> */}
   
 

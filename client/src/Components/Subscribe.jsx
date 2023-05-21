@@ -1,13 +1,21 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import "../CSS/Subscribe.css"
-import { useState } from 'react';
 import axios from 'axios';
+import Translation from './Translate/Subscribe.json'
 
-export default function Subscribe() {
+export default function Subscribe({language}) {
   const baseurl = "https://dev-feedmain.vercel.app/api";//baseurl for posting
+  const [content, setContent] = useState(Translation.english);
   const [name, setname] = useState("");
   const [email, setemail] = useState("");
   const [organisation, setorganisation] = useState("");
+  useEffect(() => {
+    if (language === "english") {
+      setContent(Translation.english);
+    } else if (language === "hindi") {
+      setContent(Translation.hindi);
+    }
+  }, [language]);
   //function to post data in backend
   const subscribe = () => {
     axios.post( baseurl+"/subscribe", {
@@ -36,38 +44,38 @@ export default function Subscribe() {
       <div className="subscribe-body ">
 
         <div className="subscribe-heading ">
-          <h2 className='poppins'>Subscribe to our newsletter</h2>
+          <h2 className='poppins'>{content.h2}</h2>
         </div>
 
         <div className="hr"></div>
 
         <div className="form-subheading comme">
-          <h3>Stay updated and never miss an event</h3>
+          <h3>{content.h3}</h3>
         </div>
 
         <form className="subscribe-form comme" method='POST' action = "localhost:3000">
-          <h3 id="person-name-heading">Full name</h3>
-          <input type="text" name="person-name" id="person-name" className='text-[0D2F3F]' placeholder='Enter your full name' onChange={(e) => {
+          <h3 id="person-name-heading">{content.form.f1.h3}</h3>
+          <input type="text" name="person-name" id="person-name" className='text-[0D2F3F]' placeholder={content.form.f1.placeholder} onChange={(e) => {
 
             setname(e.target.value);
 
           }} />
 
-          <h3 id="person-email-heading">Email</h3>
-          <input type="email" name="person-email" id="person-email" className='text-[0D2F3F]' placeholder='Enter your email' onChange={(e) => {
+          <h3 id="person-email-heading">{content.form.f2.h3}</h3>
+          <input type="email" name="person-email" id="person-email" className='text-[0D2F3F]' placeholder={content.form.f2.placeholder} onChange={(e) => {
 
             setemail(e.target.value);
 
           }} />
 
-          <h3 id="person-org-heading">Organization/College</h3>
-          <input type="text" name="person-org" id="person-org" className='text-[0D2F3F]' placeholder='Enter your organization name' onChange={(e) => {
+          <h3 id="person-org-heading">{content.form.f3.h3}</h3>
+          <input type="text" name="person-org" id="person-org" className='text-[0D2F3F]' placeholder={content.form.f3.h3} onChange={(e) => {
             if(e.target.value === "" || " " || "."){setorganisation(e.target.value); console.log("Success");};
             
             
           }} />
 
-          <button type="submit" id='subscribe-btn' onClick={subscribe} ><p>SUBSCRIBE</p></button>
+          <button type="submit" id='subscribe-btn' onClick={subscribe} ><p>{content.form.button}</p></button>
         </form>
       </div>
     </div>

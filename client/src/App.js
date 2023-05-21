@@ -1,4 +1,3 @@
-
 import './App.css';
 import { Helmet } from 'react-helmet';
 import About from './Components/About';
@@ -12,27 +11,29 @@ import Subscribe from './Components/Subscribe';
 import Testimonials from './Components/Testimonials';
 import Images from './Components/Image';
 import "../src/CSS/MediaQuery.css"
+import { useState } from 'react';
 
 function App() {
+  const [language,setLanguage] = useState('english');
   return (
     <div >
      <Helmet>
           <title>DevFeed</title>
         </Helmet>
-      <Navbar/>
+      <Navbar language={language} updatelang={setLanguage}/>
       <ScrollToTop/>
-      <Hero/>
-      <About/>
+      <Hero language={language}/>
+      <About language={language}/>
 
       
       {/* <Count/> */}
       <Images/>
       
-      <Subscribe/>
-      <Testimonials/>
+      <Subscribe language={language}/>
+      <Testimonials language={language}/>
       {/* <RecentEvents/> */}
      
-      <Footer/>
+      <Footer language={language}/>
     </div>
   );
 }

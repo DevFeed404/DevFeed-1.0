@@ -1,0 +1,28 @@
+{
+    "hindi":{
+        "h1":"आपसे मिलकर अच्छा लगा",
+        "p":{
+            "p1": "आप ",
+            "p2":" के साथ आप कभी भी न केवल अपने कौशल का विस्तार करने बल्कि अपने समुदाय के अन्य तकनीकी पेशेवरों से जुड़ने का अवसर नहीं चूकेंगे। हमारा न्यूज़लेटर तकनीकी परिदृश्य को नेविगेट करने के लिए आपका व्यक्तिगत रोडमैप है,",
+            "p3":"जो आपको नवीनतम घटनाओं, वक्ताओं और विषयों पर विशेष अपडेट प्रदान करता है जो आपके लिए सबसे महत्वपूर्ण हैं।"
+        },
+        "li":{
+            "li1":"अपने शहर में होने वाली तकनीकी घटनाओं के बारे में सभी प्रासंगिक जानकारी प्राप्त करने के लिए ग्राहकों के लिए केंद्रीकृत स्थान",
+            "li2":"तकनीकी कार्यक्रमों में भाग लेने से उद्योग में पेशेवरों और उत्साही लोगों के लिए नेटवर्किंग के मूल्यवान अवसर मिल सकते हैं",
+            "li3":"अलग-अलग घटनाओं की खोज करने के बजाय आपको सभी प्रासंगिक जानकारी एक ही स्थान पर चाहिए।"
+        }
+    },
+    "english":{
+        "h1":"Nice to meet you",
+        "p":{
+            "p1": "With",
+            "p2":", you'll never miss out on an opportunity to not only expand your skills but also connect with other tech professionals in your community. Our newsletter is your personal roadmap to navigating the tech scene, providing you with exclusive",
+            "p3":"updates on the latest events, speakers, and topics that matter most to you."
+        },
+        "li":{
+            "li1":"Centralized location for subscribers to receive all the relevant information about tech events happening in their city",
+            "li2":"Attending tech events can provide valuable networking opportunities for professionals and enthusiasts in the industry",
+            "li3":"All the relevant information you need in one place, instead of having to search for events individually."
+        }
+    }
+}

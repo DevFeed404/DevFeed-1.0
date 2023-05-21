@@ -1,0 +1,40 @@
+{
+    "english":{
+        "h2":"Subscribe to our newsletter",
+        "h3":"Stay updated and never miss an event",
+        "form":{
+            "f1":{
+                "h3":"Full name",
+                "placeholder":"Enter your full name"
+            },
+            "f2":{
+                "h3":"Email",
+                "placeholder":"Enter your email"
+            },
+            "f3":{
+                "h3":"Organization/College",
+                "placeholder":"Enter your organization name"
+            },
+            "button":"SUBSCRIBE"
+        }
+    },
+    "hindi":{
+        "h2":"हमारे न्युजलेटर की सदस्यता प्राप्त करें",
+        "h3":"अपडेट रहें और कभी भी कोई इवेंट मिस न करें",
+        "form":{
+            "f1":{
+                "h3":"पूरा नाम",
+                "placeholder":"अपना पूरा नाम भरें"
+            },
+            "f2":{
+                "h3":"ईमेल",
+                "placeholder":"अपना ईमेल दर्ज करें"
+            },
+            "f3":{
+                "h3":"संगठन / कॉलेज",
+                "placeholder":"अपने संगठन का नाम दर्ज करें"
+            },
+            "button":"सदस्यता लें"
+        }
+    }
+}

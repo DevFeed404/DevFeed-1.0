@@ -27,7 +27,7 @@ export default function Navbar() {
         </div>
       </a>
       <a href="#subscribe-con">
-        <div className="subscribe font-medium">
+        <div className={navbar ? "subscribe--scrolled" : "subscribe"}>
           Subscribe
           {/* <img src={require("../Assets/right.png")} alt=""  /> */}
         </div>

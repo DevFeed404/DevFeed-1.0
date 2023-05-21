@@ -65,6 +65,8 @@ body {
 }
 
 .logo {
+  width: 200px;
+  height: 65px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -74,6 +76,21 @@ body {
   @media (max-width: 575px) {
   }
   /* font-size: 4vh; */
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin-left: 5vw;
+  @media (max-width: 940px) {
+    height: 6vh;
+    width: 6vh;
+  }
+  @media (max-width: 575px) {
+    height: 5vh;
+    width: 5vh;
+  }
 }
 
 .subscribe {
@@ -88,8 +105,40 @@ body {
   padding-right: 1.5vw;
   padding-top: 0.8vw;
   padding-bottom: 0.8vw;
-  background-color: transparent;
-  border: 1px solid #0d2f3f;
+  background: #0d2f3f;
+  font-family: "Eudoxus Sans", sans-serif;
+  transition: all 0.3s ease-in-out;
+
+  /* background: linear-gradient(90deg, #746CFE, #AE8CFA); */
+
+  font-size: 2.5vh;
+  color: white;
+  @media (max-width: 710px) {
+    padding: 1.5vw;
+  }
+  @media (max-width: 500px) {
+    padding: 2vw;
+  }
+  @media (max-width: 390px) {
+    padding: 2.5vw;
+    font-size: 2vh;
+  }
+}
+
+.subscribe--scrolled {
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5vw;
+  border-radius: 50px;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+  padding-top: 0.8vw;
+  padding-bottom: 0.8vw;
+  background-color: white;
+  border: 1px solid black;
   font-family: "Eudoxus Sans", sans-serif;
   transition: all 0.3s ease-in-out;
 
@@ -110,8 +159,15 @@ body {
 }
 
 .subscribe:hover {
-  background-color: #0d2f3f;
-  color: #fefcff;
+  background-color: #a7f111;
+  color: black;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid black;
+}
+
+.subscribe--scrolled:hover {
+  background-color: #a7f111;
+  color: black;
   transition: all 0.3s ease-in-out;
   border: 1px solid black;
 }
@@ -127,7 +183,6 @@ body {
     width: 70%;
     height: 60%;
   }
-  /* background-color: black; */
 }
 
 /* :window-inactive{

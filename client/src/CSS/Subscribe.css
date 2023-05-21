@@ -21,9 +21,13 @@
     margin-top: 4vh;
     margin-right: 4vw;
     border-radius: 10px;
-    box-shadow: 2px 4px 5px 2px #e5e7eb;
+    box-shadow: 2px 4px 5px 4px #e5e7eb;
     /* transition: 0.3s; */
     overflow: hidden;
+    @media (max-width: 1103px)
+    {
+       height: 100vh;
+    }
 }
 
 .subscribe-body{
@@ -35,7 +39,7 @@
     height: 100vh;
     margin-top: 4vh;
     border-radius: 10px;
-    box-shadow: 2px 4px 5px 2px #e5e7eb;
+    box-shadow: 2px 4px 5px 4px #e5e7eb;
 
     @media (max-width: 1103px)
  {
@@ -63,10 +67,38 @@
    {
        font-size: 3vh;
   }
+  @media (max-width: 497px)
+  {
+      font-size: 3vh;
+ }
 
-
-
+} 
+.subscribe-con h3{
+    /* font-size: 7vh;
+    font-weight: 700;
+    color: #0D2F3F; */
+    @media (max-width: 1946px)
+    {
+        font-size: 4vh;
+   }
+   @media (max-width: 1410px)
+    {
+        font-size: 3vh;
+   }
+   @media (max-width: 597px)
+   {
+       font-size: 3vh;
+  }
+   @media (max-width: 597px)
+   {
+       font-size: 3vh;
+  }
+  @media (max-width: 497px)
+  {
+      font-size: 2vh;
+ }
 }
+
 
 .hr{
     height: 4px;

@@ -189,20 +189,12 @@
 #subscribe-btn{
     cursor: pointer;
     padding: 1vh;
-    background-color: #9fcf3f;
-    border-radius: 10px;
+    background-color: #aaff00;
+    border-radius: 5px;
     width: 100%;
     color: rgb(0, 0, 0);
     align-self: center;
     font-size: 2.3vh;
     font-weight: 600;
     margin-top: 3vh;
-    width: 200px;
-}
-#subscribe-btn:hover{
-    background-color: #0D2F3F;
-    color: whitesmoke;
-}
-*:required{
-    background-color: #175d7d;
 }

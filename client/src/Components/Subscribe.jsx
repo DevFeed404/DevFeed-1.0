@@ -4,7 +4,7 @@ import { useState } from 'react';
 import axios from 'axios';
 
 export default function Subscribe() {
-  const baseurl = "https://dev-feedmain.vercel.app/api";//baseurl for posting
+  const baseurl = "https://dev-feed-1-0-ka8g.vercel.app/api";//baseurl for posting
   const [name, setname] = useState("");
   const [email, setemail] = useState("");
   const [organisation, setorganisation] = useState("");
@@ -16,9 +16,8 @@ export default function Subscribe() {
       organization: organisation
     }).then((Response) => {
       
-      if (Response.status = 200) {
+      if (Response.status === 200) {
         alert(Response.data.message);
-
         console.log("success");
       }
      

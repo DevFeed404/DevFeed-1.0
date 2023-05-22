@@ -9,6 +9,7 @@ import Subscribe from "./Components/Subscribe";
 import Testimonials from "./Components/Testimonials";
 import Images from "./Components/Image";
 import "../src/CSS/MediaQuery.css";
+import Faq from "./Components/Faq";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <Images />
 
       <Subscribe />
+      <Faq />
       <Testimonials />
       {/* <RecentEvents/> */}
 

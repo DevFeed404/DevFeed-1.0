@@ -1,6 +1,7 @@
 import React from "react";
 import Testimonial from "./Testimonial";
 import testimonialList from "../utils/TestimonialData";
+import Carousel from './Carousel'
 
 export default function Testimonials() {
   let vw = window.screen.width / 100;
@@ -20,35 +21,15 @@ export default function Testimonials() {
 
   return (
     <>
-      <div className="testimonials-title  sans-serif font-bold">
+      <div className="testimonials-title  sans-serif font-bold text-center">
         People Talk About Us
       </div>
-
-      <div id="testimonial-con">
-        <div
-          className="testimonials-control"
-          id="left-control"
-          onClick={scrollRight}
-        >
-          <img src={require("../Assets/right.png")} alt="" />
-        </div>
-        <div
-          className="testimonials-body comme"
-          id="testimonials-body"
-          data-aos="slide-left"
-          data-aos-once="true"
-        >
+      <div className="flex justify-center py-16">
+        <Carousel>
           {testimonialList.map((testi, index) => {
-           return <Testimonial key={index} img_src={testi.img_src} text={testi.text} name={testi.name} email={testi.email} />;
+            return <Testimonial key={index} img_src={testi.img_src} text={testi.text} name={testi.name} email={testi.email} />;
           })}
-        </div>
-        <div
-          className="testimonials-control"
-          id="right-control"
-          onClick={scrollLeft}
-        >
-          <img src={require("../Assets/right.png")} alt="" />
-        </div>
+        </Carousel>
       </div>
     </>
   );

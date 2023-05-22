@@ -5,17 +5,25 @@ import axios from "axios";
 
 export default function Subscribe() {
   const baseurl = "https://dev-feed-1-0-ka8g.vercel.app/api"; //baseurl for posting
-  const [name, setname] = useState("");
-  const [email, setemail] = useState("");
-  const [organisation, setorganisation] = useState("");
+  const [subscribeForm, setSubscribeForm] = useState({
+    name: "",
+    email: "",
+    organization: "",
+  });
+
+  // Function to set Form data
+  const handleChange = (e) => {
+    const key = e.target.name;
+    const value = e.target.value;
+    setSubscribeForm((prev) => {
+      return { ...prev, [key]: value };
+    });
+  };
+
   //function to post data in backend
   const subscribe = () => {
     axios
-      .post(baseurl + "/subscribe", {
-        name: name,
-        email: email,
-        organization: organisation,
-      })
+      .post(baseurl + "/subscribe", subscribeForm)
       .then((Response) => {
         if (Response.status === 200) {
           alert(Response.data.message);
@@ -55,39 +63,35 @@ export default function Subscribe() {
         >
           <input
             type="text"
-            name="person-name"
+            name="name"
             id="person-name"
+            required
             className="text-[0D2F3F]"
             placeholder="Enter your full name"
-            onChange={(e) => {
-              setname(e.target.value);
-            }}
+            onChange={handleChange}
           />
+
 
           <input
             type="email"
-            name="person-email"
+            name="email"
             id="person-email"
+            required
             className="text-[0D2F3F]"
             placeholder="Enter your email"
-            onChange={(e) => {
-              setemail(e.target.value);
-            }}
-          />
-          <input
-            type="text"
-            name="person-org"
-            id="person-org"
-            className="text-[0D2F3F]"
-            placeholder="Enter your organization/college name"
-            onChange={(e) => {
-              if (e.target.value === "" || " " || ".") {
-                setorganisation(e.target.value);
-                console.log("Success");
-              }
-            }}
+            onChange={handleChange}
           />
 
+          <input
+            type="text"
+            name="organization"
+            id="person-org"
+            required
+            className="text-[0D2F3F]"
+            placeholder="Enter your organization name"
+            onChange={handleChange}
+          />
+          <h4>* (Required)</h4>
           <button type="submit" id="subscribe-btn" onClick={subscribe}>
             <p>SUBSCRIBE</p>
           </button>

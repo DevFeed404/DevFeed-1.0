@@ -26,8 +26,8 @@ function App() {
       <Images />
 
       <Subscribe />
-      <Faq />
       <Testimonials />
+      <Faq />
       {/* <RecentEvents/> */}
 
       <Footer />

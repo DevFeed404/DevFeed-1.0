@@ -13,6 +13,20 @@
   scroll-margin-top: 2rem;
   /* backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px); */
+    overflow: hidden;
+}
+.subs-doodle{
+    height: 100vh;
+    margin-top: 4vh;
+    margin-right: 4vw;
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px 4px #e5e7eb;
+    /* transition: 0.3s; */
+    overflow: hidden;
+    @media (max-width: 1103px)
+    {
+       height: 100vh;
+    }
 }
 
 .poppins {
@@ -29,8 +43,11 @@
     justify-content: center;
 
   @media (max-width: 1103px) {
-    width: 100vw;
-    margin: 10px;
+    width: 50vw;
+    height: 100vh;
+    margin-top: 4vh;
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px 4px #e5e7eb;
   }
 }
 
@@ -59,7 +76,13 @@
   border-radius: 5px;
   margin-top: 1vh;
   margin-bottom: 1vh;
-}
+  @media (max-width: 497px)
+  {
+      font-size: 3vh;
+ }
+
+} 
+
 
 .form-subheading {
   font-family: "Eudoxus Sans", sans-serif;

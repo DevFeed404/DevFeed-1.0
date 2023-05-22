@@ -70,7 +70,12 @@ Make sure to have these prerequisites in place before proceeding with the setup.
    npm run dev
    ```
 
-   This command will start both the frontend and backend servers concurrently.
+   This command will start the backend servers.
+ ```shell
+   npm start
+   ```
+This command is for Starting the front-end
+
 
 4. Access DevFeed:
 
@@ -119,13 +124,14 @@ Thank you for your contribution to making DevFeed better!
   <img src="https://contrib.rocks/image?repo=DevFeed404/DevFeed-1.0" />
 </a></p>
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=DevFeed404/DevFeed-1.0&type=Date)](https://star-history.com/#DevFeed404/DevFeed-1.0&Date)
 
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
 
 ```
-
 Feel free to customize the README.md file further based on the specific details and requirements of your project.
-
-
+```

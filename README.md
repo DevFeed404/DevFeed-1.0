@@ -70,7 +70,12 @@ Make sure to have these prerequisites in place before proceeding with the setup.
    npm run dev
    ```
 
-   This command will start both the frontend and backend servers concurrently.
+   This command will start the backend servers.
+ ```shell
+   npm start
+   ```
+This command is for Starting the front-end
+
 
 4. Access DevFeed:
 

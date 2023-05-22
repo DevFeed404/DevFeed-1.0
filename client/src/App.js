@@ -30,6 +30,7 @@ function App() {
       <Images/>
       
       <Subscribe/>
+      <Faq/>
       <Testimonials/>
       {/* <RecentEvents/> */}
      

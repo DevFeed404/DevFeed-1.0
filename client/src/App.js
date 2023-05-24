@@ -1,4 +1,5 @@
 
+
 import './App.css';
 import { Helmet } from 'react-helmet';
 import Navbar from "../src/Components/Navbar"
@@ -25,6 +26,7 @@ function App() {
           </Routes>
           <Footer/>
         </BrowserRouter></>
+</>
   );
 }
 

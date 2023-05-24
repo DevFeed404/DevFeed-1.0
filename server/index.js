@@ -7,8 +7,8 @@ const app = express();
 const route = require('./routes/routes');
 const router = express.Router();
 app.use(express.json());
-app.use(cors());
 
+app.use(cors());
 
 app.use("/api",route);
 

@@ -1,5 +1,6 @@
 const db = require('../db');
 const validator = require("validator");
+
 require("dotenv").config();
 
 

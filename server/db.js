@@ -8,9 +8,11 @@ user:  process.env.DATABASE_USER,
 password:  process.env.DATABASE_PASSWORD,
 port :  process.env.DATABASE_PORT,
 database: process.env.DATABASE_NAME 
-})
+
+})  
 db.connect(function (err) {
     if(err){
+        console.log(process.env.DATABASE_HOST);
         console.log("error occurred while connecting");
     }
     else{

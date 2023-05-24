@@ -1,5 +1,6 @@
 import React from 'react'
 import "../CSS/Recent_events.css"
+import meetUpList from '../utils/MeetupImageList';
 
 export default function RecentEvents() {
     var min = 10;
@@ -24,11 +25,11 @@ export default function RecentEvents() {
         Recent Events
     </div>
     <div className="recent-meetups-gallery">
-        <img src="https://secure.meetupstatic.com/photos/event/c/8/e/2/highres_472311426.jpeg" alt="" className='meetup-photo' id='meetup-photo-1' />
-        <img src="https://substackcdn.com/image/fetch/h_600,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fpbs.substack.com%2Fmedia%2FFSzbIv-VEAABDP6.jpg" className='meetup-photo' alt="" id='meetup-photo-2' />
-        {/* <img src="https://secure.meetupstatic.com/photos/event/d/a/d/3/600_468476019.jpeg" alt="" className='meetup-photo' id='meetup-photo-3'/> */}
-        <img src="https://assets.telegraphindia.com/telegraph/2022/Nov/1668743799_untitled-design-2022-11-18t092905-972.jpg" alt="" className='meetup-photo' id='meetup-photo-3' />
-        <img src="https://www.codemotion.com/magazine/wp-content/uploads/2020/04/35344608_1932760713412894_8299069717268660224_o-1024x683.jpg" alt="" className='meetup-photo' id='meetup-photo-4' />
+    {
+      meetUpList.map((meetup,index)=>{
+        return <img src={meetup.src} alt=""  className="meetup-photo" id={meetup.id} key={index} />
+      })
+    }
     </div>
     </>
   )

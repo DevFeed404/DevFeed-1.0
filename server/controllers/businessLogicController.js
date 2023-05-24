@@ -2,6 +2,7 @@ require("dotenv").config();
 const db = require('../config/dbConnection');
 const validator = require("validator");
 const nodemailer = require('nodemailer');
+const apiResponse = require("../utils/apiResponses");
 
 class MailController {
     static feedback = async (req, res) => {
@@ -14,10 +15,10 @@ class MailController {
 
             const result = await db.query("INSERT INTO feedback (feedback) VALUES (?)", [feedback]);
             console.log(result);
-            return res.send({ result, message: 'Thank you for your feedback' });
+            return apiResponse.successResponseWithData(res,"Thank you for your feedback",result,"200");
         } catch (error) {
             console.log(error);
-            return res.status(500).send({ message: 'Internal server error' });
+            return apiResponse.errorResponse(res,"Internal server error","500")
         }
     };
 
@@ -41,7 +42,7 @@ class MailController {
                     rejectUnauthorized: false
                 }
             });
-
+            
             const mailOptions = {
                 from: `"DevFeed.in" <${EMAIL_SENDER}>`,
                 to: emails.join(", "),
@@ -49,14 +50,15 @@ class MailController {
                 text: 'Hey there, Welcome to DevFeed.in, Your daily solution to keep you updated',
                 html: message,
             };
-
+            
             const info = await transport.sendMail(mailOptions);
             console.log(info);
             console.log('Message sent: %s', info.messageId);
-            return res.send({ message: 'Email sent successfully' });
+            
+            return apiResponse.successResponse(res,"Email sent successfully","200");
         } catch (error) {
             console.log(error);
-            return res.status(500).send({ message: 'Internal server error' });
+            return apiResponse.errorResponse(res,"Internal server error","500")
         }
     };
 
@@ -85,14 +87,14 @@ class MailController {
                 text: 'Hey there, Welcome to DevFeed.in, Your daily solution to keep you updated',
                 html: message,
             };
-
+            
             const info = await transport.sendMail(mailOptions);
             console.log(info);
             console.log('Message sent: %s', info.messageId);
-            return res.send({ message: 'Email sent successfully' });
+            return apiResponse.successResponse(res,"Email sent successfully","200");
         } catch (error) {
             console.log(error);
-            return res.status(500).send({ message: 'Internal server error' });
+            return apiResponse.errorResponse(res,"Internal server error","500")
         }
     };
 
@@ -124,13 +126,10 @@ class MailController {
             const newUser = await db.query("INSERT INTO users (name, email, organization, date, isSubscribed) VALUES (?, ?, ?, ?, TRUE)", [name, email, organization, date]);
 
             console.log(newUser);
-            return res.send({
-                result: newUser,
-                message: 'Thank you for subscribing'
-            });
+            return apiResponse.successResponseWithData(res,"Thank you for subscribing",newUser,"200")
         } catch (error) {
             console.log(error);
-            return res.status(500).send({ message: 'Internal server error' });
+            return apiResponse.errorResponse(res,"Internal server error","500")
         }
     };
 }

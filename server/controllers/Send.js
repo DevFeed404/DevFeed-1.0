@@ -1,12 +1,13 @@
 const db = require('../db');
 var nodemailer = require('nodemailer');
-require("dotenv").config();
+// require("dotenv").config();
 
-
+console.log("this is Send");
 exports.send = async (req, res) => {
+  var message=req.body.message;
+  var title= req.body.title;
+  console.log(message,title);
   try {
-    var message=req.body.message;
-    var title= req.body.title;
     db.query("SELECT email FROM users ", (err, result) => {
       if (err) {
         console.log(err)
@@ -44,8 +45,8 @@ exports.send = async (req, res) => {
 
         transport.sendMail(mailOptions, (error, info) => {
           if (error) {
-
-            return console.log(error);
+       
+            return console.log(error,"message not sent",process.env.EMAIL_SENDER);
           }
           console.log(info);
           console.log('Message sent: %s', info.messageId);

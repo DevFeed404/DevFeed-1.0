@@ -2,6 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
+
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
@@ -15,6 +16,7 @@
     "react-countup": "^6.4.2",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
+    "react-router-dom": "^6.11.2",
     "react-scripts": "5.0.1",
     "react-scroll-parallax": "^3.4.2",
     "web-vitals": "^2.1.4"

@@ -1,37 +1,32 @@
-import { Helmet } from "react-helmet";
-import About from "./About";
-import Footer from "./Footer";
-import Hero from "./Hero";
-import Navbar from "./Navbar";
-import ScrollToTop from "./ScrollToTop";
-import Subscribe from "./Subscribe";
-import Testimonials from "./Testimonials";
-import Images from "./Image";
-import "../CSS/MediaQuery.css";
-import Faq from "./Faq";
 
+import React from 'react'
+import ScrollToTop from './ScrollToTop';
+import Subscribe from './Subscribe';
+import { Helmet } from "react-helmet";
+import Testimonials from './Testimonials';
+import Hero from './Hero';
+import About from './About';
+import Images from "./Image";
 const Home = () => {
   return (
-    <div>
-      <Helmet>
+    <>
+    <Helmet>
         <title>DevFeed</title>
       </Helmet>
-      <Navbar />
-      <ScrollToTop />
-      <Hero />
-      <About />
+     <ScrollToTop/>
+      <Hero/>
+      <About/>
 
+      
       {/* <Count/> */}
-      <Images />
-
-      <Subscribe />
-      <Testimonials />
-      <Faq />
+      <Images/>
+      
+      <Subscribe/>
+      <Testimonials/>
       {/* <RecentEvents/> */}
-
-      <Footer />
-    </div>
-  );
+     
+    </>
+  )
 }
 
-export default Home;
+export default Home

@@ -2,6 +2,8 @@ import React from "react";
 import "../CSS/Subscribe.css";
 import { useState } from "react";
 import axios from "axios";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Subscribe() {
   const baseurl = "https://dev-feed-1-0-ka8g.vercel.app/api"; //baseurl for posting
@@ -20,20 +22,34 @@ export default function Subscribe() {
     });
   };
 
-  //function to post data in backend
+  //function to post data to backend
   const subscribe = () => {
     axios
       .post(baseurl + "/subscribe", subscribeForm)
-      .then((Response) => {
-        if (Response.status === 200) {
-          alert(Response.data.message);
+      .then((response) => {
+        if (response.status === 200) {
+          // toast.error(response.data.message);
+          toast.warn(response.data.message, {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+          });
           console.log("success");
         }
 
-        console.log(Response);
+        console.log(response);
         // window.location(baseurl);
+      })
+      .catch((error) => {
+        toast.error(error.message);
       });
   };
+
   return (
     <div
       className="subscribe-con "

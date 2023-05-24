@@ -21,7 +21,7 @@ export default function Hero() {
             </div>
         </div>
             <div className="hero-image nm:hidden">
-                <img src={require("../Assets/hero-doodle-2.png")} data-aos = "fade-up" data-aor-once = "true" alt="" className='hero-img'/>
+                <img src={require("../Assets/3d-casual-life-colleagues-discussing-team-project.png")} data-aos = "fade-up" data-aor-once = "true" alt="" className='hero-img'/>
             </div>
     </div>
   )

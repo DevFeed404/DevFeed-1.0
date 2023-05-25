@@ -1,34 +1,24 @@
 import "./App.css";
-import { Helmet } from "react-helmet";
-import About from "./Components/About";
-import Footer from "./Components/Footer";
-import Hero from "./Components/Hero";
-import Navbar from "./Components/Navbar";
-import ScrollToTop from "./Components/ScrollToTop";
-import Subscribe from "./Components/Subscribe";
-import Testimonials from "./Components/Testimonials";
-import Images from "./Components/Image";
-import "../src/CSS/MediaQuery.css";
+import Home from "./Components/Home";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
     <div>
-      <Helmet>
-        <title>DevFeed</title>
-      </Helmet>
-      <Navbar />
-      <ScrollToTop />
-      <Hero />
-      <About />
-
-      {/* <Count/> */}
-      <Images />
-
-      <Subscribe />
-      <Testimonials />
-      {/* <RecentEvents/> */}
-
-      <Footer />
+      <Home />
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
     </div>
   );
 }

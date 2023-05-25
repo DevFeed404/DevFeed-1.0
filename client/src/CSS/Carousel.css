@@ -42,3 +42,46 @@
     right: 0;
     transform: translateX(100%) translatey(-50%);
   }
+
+  @media all and (max-width: 350px) {
+    .carousel {
+      width: 10rem;
+      height: 12rem;
+      perspective: 10rem;
+      margin-right: min(5%, 5rem);
+    }
+
+    .nav {
+      font-size: 3rem;
+    }
+    .right {
+      right : -20%;
+    }
+  }
+
+  @media all and (max-width: 450px) and (min-width:349px) {
+    .carousel {
+      width: 10rem;
+      height: 12rem;
+      perspective: 10rem;
+      margin-right: min(5%, 5rem);
+    }
+
+    .nav {
+      font-size: 3rem;
+    }
+    .right {
+      right : -40%;
+    }
+  }
+
+  @media all and  (max-width: 768px) and (min-width: 449px){
+    .carousel {
+      width: 22rem;
+      height: 15rem;
+      perspective: 15rem;
+      
+    }
+  }
+
+  

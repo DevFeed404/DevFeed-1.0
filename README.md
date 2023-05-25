@@ -67,7 +67,7 @@ Make sure to have these prerequisites in place before proceeding with the setup.
 3. Start the development environment:
 
    ```shell
-   npm run dev
+   npm run start
    ```
 
    This command will start the backend servers.

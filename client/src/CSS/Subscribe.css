@@ -18,6 +18,8 @@
 }
 .subs-doodle{
     height: 100vh;
+    display: flex;
+    align-items: center;
     margin-top: 4vh;
     margin-right: 4vw;
     border-radius: 10px;

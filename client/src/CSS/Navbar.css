@@ -75,10 +75,12 @@ body{
     padding-right: 1.5vw;
     padding-top: 0.8vw;
     padding-bottom: 0.8vw;
-    background-color: transparent;
+    background-color: #aaff00;
     border: 1px solid #0D2F3F;
     font-family: "Eudoxus Sans", sans-serif;
-    transition: all 0.2s ease-in;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 0px #000;
+
 
     /* background: linear-gradient(90deg, #746CFE, #AE8CFA); */
 
@@ -101,8 +103,10 @@ body{
 }
 
 .subscribe:hover {
-    background-color: #aaff00;
-    border: 1px solid #aaff00;
+    background-color: #f8f7f1;
+    border: 1px solid #25243a;
+    box-shadow: 5px 5px 0px #25243a;
+    color:#25243a;
 }
 
 .subscribe img{

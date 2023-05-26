@@ -11,7 +11,7 @@ export default function Hero() {
     }, []);
 
   return (
-    <div className='hero' id='home'>
+    <div className='hero bg-gradient-to-b from-customColor to-white' id='home'>
         <div className="hero-data">
             <div className="hero-head">
             Educate. <p>Connect. </p> Aware. 

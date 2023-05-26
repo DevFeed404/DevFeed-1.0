@@ -37,7 +37,11 @@ module.exports = {
       'xsm': {'max': '380px'},
       'xssm': {'max': '340'},
     },
-    extend: {},
+    extend: {
+      colors: {
+        customColor: '#f8f7f1',
+      },
+    },
   },
   plugins: [],
 }

@@ -24,16 +24,16 @@ export default function Testimonials() {
         People Talk About Us
       </div>
 
-      <div id="testimonial-con">
+      <div id="testimonial-con" className="bg-gradient-to-b from-customColor to-white">
         <div
-          className="testimonials-control"
+          className="testimonials-control bg-gradient-to-b from-customColor to-white"
           id="left-control"
           onClick={scrollRight}
         >
           <img src={require("../Assets/right.png")} alt="" />
         </div>
         <div
-          className="testimonials-body comme"
+          className="testimonials-body comme bg-gradient-to-b from-customColor to-white"
           id="testimonials-body"
           data-aos="slide-left"
           data-aos-once="true"
@@ -43,7 +43,7 @@ export default function Testimonials() {
           })}
         </div>
         <div
-          className="testimonials-control"
+          className="testimonials-control bg-gradient-to-b from-customColor to-white"
           id="right-control"
           onClick={scrollLeft}
         >

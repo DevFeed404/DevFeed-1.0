@@ -207,6 +207,9 @@
     font-weight: 500;
     padding: 3vh;
     margin-top: 2vh;
+    margin-right: 3vh;
+    box-shadow: -5px 5px 0px 0px #0D2F3F;
+    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
     @media (max-width:400px)
     {
         width:80%;
@@ -216,30 +219,11 @@
     
     /* margin-left: 5vh; */
 }
-.copybutton{
-    cursor: pointer;
-    border: 1px solid #a59898;
-    
-    background-color: #413b3b;
-    border-radius: 150px;
-    width:30%;
-    margin-left: 1vw;
-    position: relative;
-    align-self: center;
-    font-size: 2.5vh;
-    font-weight: 600;
-    padding: 2.5vh;
-    margin-top: 2vh;
-    
-    
-    /* margin-left: 5vh; */
-}
-.copybutton:hover{
-    background-color: #706abb;
-
-}
 
 
+button:hover {
+    transform: translate(5px, -5px);
+  } 
   
 
 

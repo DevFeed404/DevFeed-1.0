@@ -187,14 +187,70 @@
 }
 
 #subscribe-btn{
+    align-self: center;
     cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 1vh;
     background-color: #aaff00;
     border-radius: 5px;
     width: 100%;
     color: rgb(0, 0, 0);
-    align-self: center;
     font-size: 2.3vh;
     font-weight: 600;
     margin-top: 3vh;
+    transition-duration: .3s;
+    box-shadow: 5px 5px 0px #25243a;
+}
+
+#subscribe-btn:hover {
+    background-color: transparent;
+    border: 1px solid #0D2F3F;
+}
+
+.bell {
+    width: 18px;
+    margin-left: 10px;
+    align-self: center;
+  }
+  
+  .bell path {
+    fill: #0D2F3F;
+  }
+
+#subscribe-btn .bell{
+    animation: bellRing 0.9s both;
+}
+
+@keyframes bellRing {
+    0%,
+    100% {
+      transform-origin: top;
+    }
+  
+    15% {
+      transform: rotateZ(10deg);
+    }
+  
+    30% {
+      transform: rotateZ(-10deg);
+    }
+  
+    45% {
+      transform: rotateZ(5deg);
+    }
+  
+    60% {
+      transform: rotateZ(-5deg);
+    }
+  
+    75% {
+      transform: rotateZ(2deg);
+    }
+  }
+
+#subscribe-btn:active{
+    transform: scale(0.8);
 }

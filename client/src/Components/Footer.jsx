@@ -1,6 +1,8 @@
 import React from 'react'
 import "../CSS/Footer.css"
 import { useState } from 'react';
+import { FaGithub, FaDiscord} from 'react-icons/fa';
+import {HiOutlineMail} from 'react-icons/hi';
 import axios from 'axios';
 
 export default function Footer() {
@@ -68,25 +70,20 @@ export default function Footer() {
                 </div>
             </div> */}
 
-            <div className='flex flex-col w-screen justify-center bg-white items-center sans-serif  pt-[5vh] pb-[7vh]'>
+            <div className='flex flex-col w-screen justify-center bg-gradient-to-b from-white to-customColor items-center sans-serif  pt-[5vh] pb-[7vh]'>
                 <div className='text-black title items-center sans-serif  font-bold'>Reach out to us</div>
                 <div className='text-black text-lg items-center pt-1 pb-3 xsm:text-base xssm:text-xs'>Connect with us for any kind of query at</div>
 
-                <div className='flex flex-row justify-between'>
-                    <button type="submit" className='button'  ><span className='buttontext'><a href="mailto:devfeed.in@gmail.com">devfeed.in@gmail.com</a></span></button>
-                  
-                        <div className='copybutton' onClick={() => {
-                            navigator.clipboard.writeText("devfeed.in@gmail.com");
-                            document.getElementById("custom-tooltip").style.display = "inline";
-                            setTimeout(function () {
-                                document.getElementById("custom-tooltip").style.display = "none";
-                            }, 1000);
-                        }}> <img src={require("../Assets/copymain2.png")} alt="" style={{"width":"20px"}} /></div>
-                         <span id="custom-tooltip">copied!</span>
-                    
-
-                     
-                
+                <div className='flex items-center justify-between'>
+                    <button type="submit" className='button'  >
+                            <a href="mailto:devfeed.in@gmail.com"><HiOutlineMail size={30}/></a>
+                    </button>
+                    <button type="submit" className='button'  >
+                            <a href="https://github.com/DevFeed404/DevFeed-1.0"><FaGithub size={30}/></a>
+                    </button>
+                    <button type="submit" className='button'  >
+                            <a href="mailto:devfeed.in@gmail.com"><FaDiscord size={30}/></a>
+                    </button>
                 </div>
 
             </div>

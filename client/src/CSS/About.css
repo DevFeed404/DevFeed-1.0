@@ -62,7 +62,7 @@
 }
 
 .about-image{
-    width: 50vw;
+    width: 25vw;
     background-color: transparent;
    
     /* filter:invert(1); */
@@ -86,13 +86,19 @@
 
 
 .about-title{
-    font-family: "Eudoxus Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 3rem;
     color: #0D2F3F;
 }
 
 .about-pts{
-    font-family: "Eudoxus Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+.about-p{
+    font-family: "Poppins", cursive;
+    font-weight: 500;
 }
 
 .poppins{
@@ -101,7 +107,4 @@
 
 .comme{
     font-family: Comme;
-}
-.sans-serif{
-    font-family: "Eudoxus Sans", sans-serif;
 }

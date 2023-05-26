@@ -1,14 +1,8 @@
-
-    @media only screen and (max-width: 330px){
- 
-        .root{
-          padding: 15px;
-        }
-      
-      }
-      
-
-
+@media only screen and (max-width: 330px){
+    .root{
+        padding: 15px;
+    }
+}
 .hero{
     display: flex;
     flex-direction: row;

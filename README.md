@@ -67,7 +67,7 @@ Make sure to have these prerequisites in place before proceeding with the setup.
 3. Start the development environment:
 
    ```shell
-   npm run dev
+   npm run start
    ```
 
    This command will start the backend servers.
@@ -94,16 +94,16 @@ Contributing to DevFeed is greatly appreciated! Follow the steps below to contri
 
 Fork the repository by clicking on the "Fork" button on the top right of the repository page. This will create a copy of the repository in your GitHub account.
 Clone the forked repository to your local machine using the command git clone **https://github.com/your-username/DevFeed.git.**
-Create a new branch for your feature or bug fix using the command git checkout
+Create a new branch for your feature or bug fix using the command 
 ```
--b your-branch-name.
+git checkout -b your-branch-name
 ```
 Make sure to give your branch a descriptive name.Implement your changes in the codebase.
 
-Commit your changes with a descriptive commit message using the command git commit 
+Commit your changes with a descriptive commit message using the command  
 
 ```
--m "Your commit message"
+git commit -m "Your commit message"
 ```
 
 Push your changes to your forked repository using the command 

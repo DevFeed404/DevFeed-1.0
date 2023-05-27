@@ -5,6 +5,8 @@ const PORT = 5000;
 let Validator = require('validatorjs');
 const app = express();
 const route = require('./routes/routes');
+const notFound = require("./errors/customAPIError");
+const errorHandler = require("./errors/customAPIError");
 const router = express.Router();
 app.use(express.json());
 app.use(cors());
@@ -20,10 +22,12 @@ app.get("/",(req,res) => {
 
 
 
-
+// Error handling
+app.use(notFound);
+app.use(errorHandler);
 
 
 
 app.listen(PORT, () => {
     console.log(`Server is running on 5000`)
-  });
+});

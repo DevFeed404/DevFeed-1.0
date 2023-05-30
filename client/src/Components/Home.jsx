@@ -9,24 +9,25 @@ import Subscribe from "./Subscribe";
 import Testimonials from "./Testimonials";
 import Images from "./Image";
 import "../CSS/MediaQuery.css";
+import "../CSS/Home.css";
 import Faq from "./Faq";
 
 const Home = () => {
   return (
-    <div>
+    <div className="Home">
       <Helmet>
         <title>DevFeed</title>
       </Helmet>
       <ToastContainer
         position="top-center"
-         autoClose={5000}
-         hideProgressBar={false}
-         newestOnTop={false}
-         closeOnClick
-         rtl={false}
-         pauseOnFocusLoss
-         draggable
-         pauseOnHover
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
         theme="light"
       />
       <Navbar />
@@ -45,6 +46,6 @@ const Home = () => {
       <Footer />
     </div>
   );
-}
+};
 
 export default Home;

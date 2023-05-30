@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,600&display=swap');  
+
+
 .hero{
     display: flex;
     flex-direction: row;
@@ -34,6 +37,8 @@
     justify-content: center;
     justify-content: space-between;
     font-weight: 800;
+    font-family: 'Poppins', serif;
+
     color: #0D2F3F;
 
     font-size: 12vh;
@@ -88,6 +93,7 @@
     /* filter:invert(1); */
     margin-right: 5vw;
     margin-left: 3vw;
+    margin-top: 200px;
     @media (max-width:668px)
     {
         width: 50vw;

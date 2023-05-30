@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 *{
     padding: 0px;
     margin: 0px;
@@ -69,16 +71,17 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 5vw;
-    border-radius: 50px;
-    padding-left: 1.5vw;
-    padding-right: 1.5vw;
-    padding-top: 0.8vw;
-    padding-bottom: 0.8vw;
-    background-color: transparent;
-    border: 1px solid #0D2F3F;
-    font-family: "Eudoxus Sans", sans-serif;
-    transition: all 0.2s ease-in;
+
+    margin-right: 2.5vw;
+    border-radius: 7px;
+
+    padding: .5vw 1vw 0.5vw 1vw;
+    font-family: "Poppins", sans-serif;
+      cursor: pointer;
+  background: transparent;
+  border: 1px solid #91C9FF;
+  outline: none;
+  transition: 0.3s ease-in-out;
 
     /* background: linear-gradient(90deg, #746CFE, #AE8CFA); */
 

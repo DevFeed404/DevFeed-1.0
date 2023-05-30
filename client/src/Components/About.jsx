@@ -30,13 +30,13 @@ export default function About() {
 
       <div className='h-fit flex flex-row mlg:flex-col w-screen background mh-[2vh] pb-[13vh] pt-[6vh] ' id='about'>
         <div className='w-[50%] h-[90%] xxlg:w-[40%] mt-[12vh] mlg:mt-[6vh] mlg:mb-[5vh] mlg:ml-[1vw] lg:w-[35%] lg:pt-[4vh] mlg:w-[100%] flex flex-row justify-center ml-[2vw] '>
-          <img src={require("../Assets/meetup1.png")} data-aos-once = "true" data-aos = "fade-up" alt="" className='about-image ' />
+          <img src={require("../Assets/3d-business-young-women-sitting-with-laptop.png")} data-aos-once = "true" data-aos = "fade-up" alt="" className='about-image ' />
 
 
         </div>
         <div className='flex flex-col items-center xxlg:w-[60%] lg:w-[65%] w-[63%] mlg:w-[100%] pr-[4vw] about-con'>
           <h1 className=' about-title mt-[9vh] xlg:mt-[2vh]  sm:text-4xl xsm:text-3xl text-5xl font-mono items-center font-bold text-black'>Nice to meet you</h1>
-          <p className='text-xl  xsm:text-sms sm:text-lg mt-[3vh] ml-[4vw] mr-2 text-[#0D2F3F]  font-medium font-sans sans-serif'>With <span className='text-[#1c145f] comme'>DevFeed</span>, you'll never miss out on an opportunity to not only expand your skills but also connect with other tech professionals in your community. Our newsletter is your personal roadmap to navigating the tech scene, providing you with exclusive <span >updates on the latest events, speakers, and topics that matter most to you.</span></p>
+          <p  className='about-p text-xl  xsm:text-sms sm:text-lg mt-[3vh] ml-[4vw] mr-2 text-[#0D2F3F]  font-medium font-sans'>With <span className='text-[#1c145f] comme'>DevFeed</span>, you'll never miss out on an opportunity to not only expand your skills but also connect with other tech professionals in your community. Our newsletter is your personal roadmap to navigating the tech scene, providing you with exclusive <span >updates on the latest events, speakers, and topics that matter most to you.</span></p>
           <ul class="list-disc about-pts ml-[1.2vw]  pt-3 text-xl sm:text-lg xsm:text-sms text-[#0D2F3F] font-medium ">
   <li className='pt-3  ml-[4vw] '>Centralized location for subscribers to receive all the relevant information about tech events happening in their city</li>
   <li className='pt-3  ml-[4vw]'>Attending tech events can provide valuable networking opportunities for professionals and enthusiasts in the industry</li>

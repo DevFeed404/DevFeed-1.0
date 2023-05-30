@@ -17,6 +17,7 @@
     "mysql2": "^3.2.3",
     "nodemailer": "^6.9.1",
     "nodemon": "^2.0.22",
+    "react-router-dom": "^6.11.2",
     "validator": "^13.9.0",
     "validatorjs": "^3.22.1"
   }

@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import { ToastContainer } from "react-toastify";
 import About from "./About";
 import Footer from "./Footer";
 import Hero from "./Hero";
@@ -31,6 +32,18 @@ const Home = () => {
       <Helmet>
         <title>DevFeed</title>
       </Helmet>
+      <ToastContainer
+        position="top-center"
+         autoClose={5000}
+         hideProgressBar={false}
+         newestOnTop={false}
+         closeOnClick
+         rtl={false}
+         pauseOnFocusLoss
+         draggable
+         pauseOnHover
+        theme="light"
+      />
       <Navbar />
       <ScrollToTop />
       <Hero />

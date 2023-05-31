@@ -3,6 +3,8 @@ import "./App.css";
 import Home from "./Components/Home";
 import { Routes, Route } from "react-router-dom";
 import ErrorPage from "./Components/404";
+import SendNewsFeed from "./Components/SendNewsFeed";
+import Login from "./Components/Login";
 
 function App() {
    
@@ -11,13 +13,15 @@ function App() {
   if (spinner) {
     setTimeout(() => {
       spinner.style.display = "none";
-      setLoading(false);
+      
     }, 2000);
   }
   return (
     !loading && <div>
       <Routes>
         <Route path="/" element={<Home/>}/>
+        <Route path='/sendNews' element={<SendNewsFeed/>}/>
+        <Route path='/login' element={<Login/>}/>
         <Route path="*" element={<ErrorPage/>}/>
       </Routes>
       </div>

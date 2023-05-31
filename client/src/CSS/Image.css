@@ -1,19 +1,47 @@
 .width{
-    padding-right:8px ;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
     border-radius: 8%;
     box-shadow: 0px 21px 13px rgba(0, 0, 0, 0.13);
+    /* height: 24vh; */
+
     @media (max-width:710px)
     {
-        /* width: 22vw; */
         height:24vh;
-   }
+    }
 }
 
 .image-con{
     width: 100vw;
-    overflow-x: scroll;
+    /* overflow-x: scroll; */
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
 .image-con::-webkit-scrollbar{
     display: none;
+}
+
+.image-scroll{
+    @media (min-width:300px){
+      width: 50%; 
+      height: 20vh;
+    }
+    @media (min-width:330px){
+        width: 50%; 
+        height: 22vh;
+    }
+    @media (min-width: 370px){
+        width: 50%;
+        height: 24vh;
+    }
+    @media (min-width: 425px){
+       margin-left: 5px;
+       margin-right: 5px;
+       width: 60%;
+    }
+    @media (min-width: 760px){
+        width: 33%;
+     }
 }

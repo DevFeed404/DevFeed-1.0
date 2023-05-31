@@ -48,6 +48,7 @@ export default function Subscribe() {
       .catch((error) => {
         toast.error(error.message);
       });
+      
   };
 
   return (

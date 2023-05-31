@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function Navbar() {
     return (
         <div className="nav-body">
-            <a href="#home">
+            <Link to="/">
             <div className="logo">
                 <img
                     src={require("../Assets/logoimage.png")}
@@ -13,15 +13,15 @@ export default function Navbar() {
                     id="nav-logo"
                 />
             </div>
-            </a>
+            </Link>
             <div className="flex ">
-            <a href="#subscribe-con">
+            <Link to="/#subscribe-con">
                 <div className="subscribe font-medium ">
                     Subscribe
                     {/* <img src={require("../Assets/right.png")} alt=""  /> */}
                 </div>
                 
-            </a>
+            </Link>
             <Link to="/login">
                 <div className="subscribe font-medium ">
                     Login

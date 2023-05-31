@@ -64,6 +64,9 @@ body{
   }
     /* font-size: 4vh; */
 }
+.subscribe.font-medium.login{
+    display: none;
+}
 
 .subscribe{
     cursor: pointer;
@@ -73,7 +76,7 @@ body{
     justify-content: center;
 
     margin-right: 2.5vw;
-    border-radius: 7px;
+    border-radius: 9rem;
 
     padding: .5vw 1vw 0.5vw 1vw;
     font-family: "Poppins", sans-serif;

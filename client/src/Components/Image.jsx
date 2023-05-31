@@ -7,7 +7,7 @@ function Images() {
     <div className='flex flex-row h-[29vh] width image-con '>
      {
       imageList.map((images, index)=>{
-          return <img src={require(`../Assets/${images.imageName}`)} alt="" className={index === 0? "width pl-2": "width"} key={index}/>
+          return <img src={require(`../Assets/${images.imageName}`)} alt="" className={index === 0? "width pl-2 image-scroll": "width image-scroll"} key={index}/>
       })
      }
 

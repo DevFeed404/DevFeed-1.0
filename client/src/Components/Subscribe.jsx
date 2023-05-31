@@ -48,11 +48,12 @@ export default function Subscribe() {
       .catch((error) => {
         toast.error(error.message);
       });
+      
   };
 
   return (
     <div
-      className="subscribe-con "
+      className="subscribe-con"
       id="subscribe-con"
       data-aos="slide-up"
       data-aos-once="true"
@@ -61,7 +62,7 @@ export default function Subscribe() {
         <img src={require("../Assets/subs-doodle.png")} alt="" />
       </div>
 
-      <div className="subscribe-body ">
+      <div className="subscribe-body bg-[#0d2f3f] p-10 border-[#0d2f3f] rounded-xl flex flex-col items-center shadow-lg shadow-[#0d2f3f]">
         <div className="subscribe-heading ">
           <h2 className="poppins">Subscribe to our newsletter</h2>
         </div>
@@ -77,7 +78,6 @@ export default function Subscribe() {
           method="POST"
           action="localhost:3000"
         >
-          <h3 id="person-name-heading">Full name *</h3>
           <input
             type="text"
             name="name"
@@ -88,7 +88,7 @@ export default function Subscribe() {
             onChange={handleChange}
           />
 
-          <h3 id="person-email-heading">Email *</h3>
+
           <input
             type="email"
             name="email"
@@ -99,7 +99,6 @@ export default function Subscribe() {
             onChange={handleChange}
           />
 
-          <h3 id="person-org-heading">Organization/College *</h3>
           <input
             type="text"
             name="organization"
@@ -110,7 +109,6 @@ export default function Subscribe() {
             onChange={handleChange}
           />
           <h4>* (Required)</h4>
-
           <button type="submit" id="subscribe-btn" onClick={subscribe}>
             <p>SUBSCRIBE</p>
           </button>

@@ -275,11 +275,19 @@
     font-size: 2.5rem;
     @media (max-width:560px)
     {
-        font-size: 2.5rem;
+
+        padding-top: 150px ;
+        font-size: 2rem;
    };
    @media (max-width:448px)
    {
-       font-size: 2rem;
+        padding-top: 300px;
+        font-size: 2rem;
+  };
+  @media (max-width:430px)
+   {
+        padding-top: 300px;
+        font-size: 2rem;
   };
 
 

@@ -20,7 +20,7 @@
 }
 
 .footer-items:hover{
-    color: blue;
+    color: #0d2f3f;
     transform: scale(1.1);
 }
 
@@ -35,7 +35,7 @@
     display:block;
     height: 4px;
     width:0;
-    background:blue;
+    background:#0d2f3f;
     transition:all .5
 }
 

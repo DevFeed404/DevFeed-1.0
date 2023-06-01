@@ -42,8 +42,8 @@ const Faq = () => {
 
   return (
     <section
-      className="bg-white pt-auto"
-      style={{ color: "#0D2F3F", fontFamily: "Eudoxus Sans, sans-serif" }}
+      className="bg-var(--bg-clr) pt-auto"
+      style={{ color: "var(--secondary-clr)", fontFamily: "Eudoxus Sans, sans-serif" }}
     >
       <div className="container max-w-3xl px-6 py-10 mx-auto">
         <h1 className="text-5xl font-semibold text-center lg:text-3xl">

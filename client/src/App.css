@@ -8,3 +8,21 @@
 .App{
     overflow-x: hidden;
 }
+
+.dark-theme{
+    --bg-clr: #000;
+    --text-clr: #fff;
+    --primary-clr:#aaff00; 
+    --nav-clr:#222121;
+    --secondary-clr: #e1d9d9;
+    transition: all 0.3s ease-in-out;
+}
+
+.light-theme{
+    --bg-clr: #fff;
+    --text-clr: #000;
+    --primary-clr:#aaff00; 
+    --nav-clr: #fff;
+    --secondary-clr: #0D2F3F;
+    transition: all 0.3s ease-in-out;
+}

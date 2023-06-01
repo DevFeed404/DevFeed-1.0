@@ -34,7 +34,8 @@
     justify-content: center;
     justify-content: space-between;
     font-weight: 800;
-    color: #0D2F3F;
+    /* color: #0D2F3F; */
+    color: var(--secondary-clr);
 
     font-size: 12vh;
     margin-left: 5vw;

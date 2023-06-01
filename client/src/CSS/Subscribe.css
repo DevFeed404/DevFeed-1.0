@@ -50,7 +50,7 @@
 .subscribe-con h2{
     font-size: 7vh;
     font-weight: 700;
-    color: #0D2F3F;
+    color: var(--secondary-clr);
     @media (max-width: 1946px)
     {
         font-size: 5vh;

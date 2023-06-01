@@ -1,5 +1,6 @@
 import React from "react";
 import "../CSS/Navbar.css";
+import DarkLightMode from "./DarkLightMode";
 
 export default function Navbar() {
     return (
@@ -13,6 +14,7 @@ export default function Navbar() {
                 />
             </div>
             </a>
+            <DarkLightMode />
             <a href="#subscribe-con">
                 <div className="subscribe font-medium">
                     Subscribe

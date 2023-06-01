@@ -196,8 +196,7 @@
 
 .button{
     background-color: transparent;
-    border:1px solid;
-    border-color:  #0D2F3F;;
+    border:1px solid var(--secondary-clr);
     border-width: 1px;
     border-radius: 40px;
     width:100%;
@@ -253,7 +252,7 @@
 
 .buttontext{
     font-family: "Eudoxus Sans", sans-serif;
-   color: #0D2F3F;
+   color: var(--secondary-clr);
    font-weight: 600;
 }
 #custom-tooltip {

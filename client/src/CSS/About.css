@@ -1,14 +1,16 @@
+/* #about{
+    background-color: var(--bg-clr);
+} */
+
 .about{
     display: flex;
     flex-direction: column;
     width: 100vw;
     align-items: center;
     justify-content: center;
-    /* background-color: #736cfe68; */
     color: #FEFCFF;
     z-index: 5;
     position: absolute;
-
 }
 
 .vision-headline{
@@ -79,16 +81,11 @@
   }
   
 }
- 
-.background{
-    background-color: #ffffff;
-}
-
 
 .about-title{
     font-family: "Eudoxus Sans", sans-serif;
     font-size: 3rem;
-    color: #0D2F3F;
+    color: var(--secondary-clr);
 }
 
 .about-pts{

@@ -58,7 +58,8 @@
 }
 
 .testimonials-title{
-    color: #0D2F3F;
+    /* color: #0D2F3F; */
+    color: var(--secondary-clr);
 
     font-size: 3rem;
     margin-left: 5vw;

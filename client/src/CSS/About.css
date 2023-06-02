@@ -60,14 +60,28 @@
     width: 85vw;
     align-self: center;
 }
+@keyframes floater {
+    0% {
+        transform: translatey(0px);
+        transition: ease 0.5s;
+      }
+      50% {
+        transform: translatey(-20px);
+        transition: ease 0.5s;
+      }
+      100% {
+        transform: translatey(0px);
+        transition: ease 0.5s;
+      }
+  }
 
 .about-image{
     width: 25vw;
     background-color: transparent;
-   
-    /* filter:invert(1); */
-  
-
+    transform: translateY(-10%);
+    animation: floater 2s infinite;
+    transition: ease 0.5s;
+    
     @media (max-width:668px)
     {
         width: 80vw;

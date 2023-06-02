@@ -86,6 +86,21 @@
         margin-left: 1vw;
    }
 }
+@keyframes floater {
+    0% {
+        transform: translatey(0px);
+        transition: ease 0.2s;
+      }
+      50% {
+        transform: translatey(-20px);
+        transition: ease 0.2s;
+      }
+      100% {
+        transform: translatey(0px);
+        transition: ease 0.2s;
+      }
+  }
+
 
 .hero-img{
     width: 38vw;
@@ -94,6 +109,9 @@
     margin-right: 5vw;
     margin-left: 3vw;
     margin-top: 200px;
+    transform: translateY(-10%);
+    animation: floater 2s infinite;
+    transition: ease 0.5s;
     @media (max-width:668px)
     {
         width: 50vw;

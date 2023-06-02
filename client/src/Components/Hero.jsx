@@ -20,7 +20,7 @@ export default function Hero() {
                     <span className='text-[#28004d] comme'>what are you waiting for? </span> Join our community and be<br></br> a part of the tech revolution!
                 </div>
             </div>
-            <div className="hero-image nm:hidden">
+            <div className="hero-image">
                 <img src={require("../Assets/3d-casual-life-colleagues-discussing-team-project.png")} data-aos="fade-up" data-aor-once="true" alt="" className='hero-img' />
             </div>
         </div>

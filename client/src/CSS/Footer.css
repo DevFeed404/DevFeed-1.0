@@ -269,27 +269,7 @@
 .sans-serif{
     font-family: "Eudoxus Sans", sans-serif;
 }
-.flex.flex-col {
-    margin-top: 0rem;
-}
-.flex.flex-col {
-    /* margin-top: 10rem; */
-    @media  (max-width:560px)
-    {
-    margin-top:7rem;
-    };
-    @media (max-width:480px)
-    {
-        margin-top: 8rem;
-    }
-    @media (max-width:430px){
-        margin-top:12rem;
-    }
 
-    @media (max-width:360px){
-        margin-top:19rem;
-    }
-}
 .title{
     font-family: "Eudoxus Sans", sans-serif;
     color: #0D2F3F;

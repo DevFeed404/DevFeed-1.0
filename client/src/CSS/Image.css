@@ -8,6 +8,7 @@
     @media (max-width:710px)
     {
         height:24vh;
+        padding-bottom: 1rem;
     }
 }
 
@@ -17,6 +18,7 @@
     overflow-x: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;
+    overflow-y: hidden;
 }
 
 .image-con::-webkit-scrollbar{

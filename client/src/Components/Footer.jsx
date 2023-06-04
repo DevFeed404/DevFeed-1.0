@@ -74,7 +74,6 @@ export default function Footer() {
 
                 <div className='flex flex-row justify-between'>
                     <button type="submit" className='button'  ><span className='buttontext'><a href="mailto:devfeed.in@gmail.com">devfeed.in@gmail.com</a></span></button>
-                  
                         <div className='copybutton' onClick={() => {
                             navigator.clipboard.writeText("devfeed.in@gmail.com");
                             document.getElementById("custom-tooltip").style.display = "inline";
@@ -83,32 +82,35 @@ export default function Footer() {
                             }, 1000);
                         }}> <img src={require("../Assets/copymain2.png")} alt="" style={{"width":"20px"}} /></div>
                          <span id="custom-tooltip">copied!</span>
-                    
-
-                     
-                
                 </div>
-
             </div>
 
-            <div className='footer comme  '>
-                {/* <div className="hr" style={{ "width": "90%" , "marginTop":"3vh"}}></div> */}
-                <div className='footer-main'>
+            {/* Footer Section */}
+
+            {/* <div className='footer comme  '>
+                <div className="hr" style={{ "width": "90%" , "marginTop":"3vh"}}></div>
+                <div className='footer-main'> */}
                     {/* <div className="footer-title">
                         DevFeed
                     </div> */}
 
-                    <div className='text-md p-2 flex flex-row font-normal sans-serif cursor-pointer'>
+                    {/* <div className='text-md p-2 flex flex-row font-normal sans-serif cursor-pointer'>
      
                         <div className='hover:text-[#FADA5E]' onClick={scrollToAbout} >About |</div> <div className='hover:text-[#FADA5E]'><a href="mailto:devfeed.in@gmail.com">&nbsp; Contact |</a>  </div> <div className='hover:text-[#FADA5E]' onClick={scrollToSubs}>&nbsp; Subscribe</div>
                     </div>
                     <div className="copyright sans-serif pb-2 ">
                         &copy; Copyright {getCurrentYear()} by DevFeed. All rights reserved.
                     </div>
-                </div>
+                </div> */}
+            {/* </div> */}
 
-
-
+            <div className="footer">
+                    <ul className='footer-list'>
+                        <li><p className="footer-items" onClick={scrollToAbout}>About</p></li>
+                        <li><p className="footer-items"><a href="mailto:devfeed.in@gmail.com">Contact</a></p></li>
+                        <li><p className='footer-items' onClick={scrollToSubs}>Subscribe</p></li>
+                    </ul>
+                <div className="copyright">&copy; Copyright {getCurrentYear()} by DevFeed. All rights reserved.</div>
             </div>
         </>
     )

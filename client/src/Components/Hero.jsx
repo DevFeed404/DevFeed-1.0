@@ -14,7 +14,7 @@ export default function Hero() {
         <div className='hero' id='home'>
             <div className="hero-data">
                 <div className="hero-head">
-                    Educate. <p>Connect. </p> Awaare.
+                    Educate. <p>Connect. </p> Aware.
                 </div>
                 <div className="hero-text">
                     <span className='text-[#28004d] comme'>what are you waiting for? </span> Join our community and be<br></br> a part of the tech revolution!

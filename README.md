@@ -22,7 +22,7 @@
 
 ## DevFeed: Newsletter Website 💌
 
-**Welcome to DevFeed!** It's a newsletter website that enables users to subscribe and receive newsletters. The application is built with two main components:'
+**Welcome to DevFeed!** It's a newsletter website that enables users to subscribe and receive newsletters. The application is built with two main components:
 
 **Client-Side Frontend (React.js):** The frontend of DevFeed is developed using React.js, a popular JavaScript library for building user interfaces. With React.js, we ensure a smooth and responsive user experience, making it easy for users to navigate and interact with the website.
 

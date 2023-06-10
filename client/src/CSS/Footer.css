@@ -1,23 +1,19 @@
 .footer{
     background-color: #0d2f3f;
-    color: rgb(238, 255, 0);
-    padding-top: 40px;
-    padding-bottom: 40px;
+    color: white;
     font-size: 20px;
     
 }
 
 .footer-list{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    margin-top: 5px;
+    font-weight: bold;
 }
 
 .footer-items{
-    cursor: pointer;
-    margin: 0px 30px 0px 30px;
-    margin-bottom: 20px;
+    cursor: pointer;    
+    font-size:18px ;
+    color: rgb(238, 255, 0);
 }
 
 .footer-items:hover{
@@ -28,7 +24,7 @@
 .footer-items:hover::after{
     /* transform: scale(1.1); */
     transition: 400ms;
-    width: 100%;
+    width: 90%;
 }
   
 .footer-items::after{
@@ -41,8 +37,8 @@
 }
 
 .copyright{
-    /* color: #fefcff; */
-    font-size: 1.9vh;
+    color: rgb(238, 255, 0);
+    font-size: 2.3vh;
     /* margin-right: 5vw; */
     /* margin-right: 2vw; */
     width: 100vw;

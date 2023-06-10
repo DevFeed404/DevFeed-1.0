@@ -44,6 +44,7 @@ const Faq = () => {
     <section
       className={activeIndex?"bg-white pt-auto pb-40" : "bg-white pt-auto"}
       style={{ color: "#0D2F3F", fontFamily: "Eudoxus Sans, sans-serif" }}
+      id="faq"
     >
       <div className="container max-w-3xl px-6 py-10 mx-auto">
         <h1 className="text-5xl font-semibold text-center lg:text-3xl">

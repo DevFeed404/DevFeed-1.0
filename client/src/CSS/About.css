@@ -64,6 +64,7 @@
 .about-image{
     width: 25vw;
     background-color: transparent;
+    
    
     /* filter:invert(1); */
   
@@ -79,7 +80,7 @@
   }
   
 }
- 
+
 .background{
     background-color: #ffffff;
 }

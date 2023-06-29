@@ -10,10 +10,25 @@ import Testimonials from "./Testimonials";
 import Images from "./Image";
 import "../CSS/MediaQuery.css";
 import Faq from "./Faq";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import React, { useState } from "react";
 
 const Home = () => {
   return (
     <div>
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
       <Helmet>
         <title>DevFeed</title>
       </Helmet>

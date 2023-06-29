@@ -1,66 +1,40 @@
 const db = require('../db');
 const validator = require("validator");
 require("dotenv").config();
+const subscribeSchema = require('../validation/Subscribe');
 
 
 exports.subscribe = async (req, res) => {
-  console.log("test1")
-  const name = req.body.name;
-  const email = req.body.email;
-  const organization = req.body.organization;
-  const date = new Date().toISOString();
+  const payload = await subscribeSchema.validateAsync(req.body);
 
-  try {
-  
-    if (validator.isEmpty(name) || validator.isEmpty(organization)) {
-      res.send({ message: 'one or more fields are empty' });
+  if (!payload.error) {
+    const { name, email, organization } = payload
+    const date = new Date().toISOString();
 
-    }
-    if (!validator.isEmail(email)) {
-      res.send({ message: 'Email is not Valid' });
-    }
-     if (validator.isEmail(email) == true && validator.isEmpty(name) == false && validator.isEmpty(organization) == false) {
-
-      db.query("SELECT * FROM users WHERE email=? ", [email], (err, result) => {
-        if (err) {
-          console.log(err)
-        }
-        if (result.length > 0) {
-          res.send({
-            result,
-            message: "You are already subscribed"
-          });
-          console.log(result)
-
-        }
-        else {
-
-          db.query("INSERT INTO users (name,email,organization,date,isSubscribed)  VALUES (?, ?, ?,?, TRUE)", [name, email, organization, date], (err, result) => {
-            if (err) {
-              console.log(err)
-            }
-            console.log(err)
-            console.log(result)
-            res.send({
-              result,
-              message: "Thankyou for Subscribing"
-            });
-
-
-
-
-          });
-        }
-
-      })
+    try {
+      const checkUser = await db.query("SELECT * FROM users WHERE email=? ", [email]).then(res=> res);
+      if(checkUser){
+        res.send({
+          checkUser,
+          message: "You are already subscribed"
+        });
+      }else{
+        const insertUser =  await db.query("INSERT INTO users (name,email,organization,date,isSubscribed)  VALUES (?, ?, ?,?, TRUE)", [name, email, organization, date]);
+        res.send({
+          insertUser,
+          message: "Thankyou for Subscribing"
+        });
+      }
+    } catch (error) {
+      console.log(error);
 
     }
-  } catch (error) {
-    console.log(error);
 
+  }else{
+    res.status(402).send({
+      message: payload.error
+    });
   }
-
-
 
 
 };

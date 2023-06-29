@@ -56,6 +56,7 @@ exports.subscribe = async (req, res) => {
 
     }
   } catch (error) {
+    res.json(createCustomError(error));
     console.log(error);
 
   }

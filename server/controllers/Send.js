@@ -10,6 +10,7 @@ exports.send = async (req, res) => {
     db.query("SELECT email FROM users ", (err, result) => {
       if (err) {
         console.log(err)
+        res.json(createCustomError(err));
       }
       if (result.length > 0) {
         res.send(result[0].email);
@@ -57,6 +58,7 @@ exports.send = async (req, res) => {
 
   } catch (error) {
     console.log(error);
+    return res.json(createCustomError(error));
   }
 
 

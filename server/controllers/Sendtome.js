@@ -42,6 +42,7 @@ exports.sendtome = async (req, res) => {
 
     }
     catch (error) {
+        res.json(createCustomError(error));
         console.log(error);
 
 

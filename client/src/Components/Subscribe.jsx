@@ -48,12 +48,12 @@ export default function Subscribe() {
       .catch((error) => {
         toast.error(error.message);
       });
-      
+
   };
 
   return (
     <div
-      className="subscribe-con"
+      className="subscribe-con dark:text-white dark:bg-black"
       id="subscribe-con"
       data-aos="slide-up"
       data-aos-once="true"

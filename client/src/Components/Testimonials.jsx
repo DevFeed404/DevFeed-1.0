@@ -39,7 +39,7 @@ export default function Testimonials() {
           data-aos-once="true"
         >
           {testimonialList.map((testi, index) => {
-           return <Testimonial key={index} img_src={testi.img_src} text={testi.text} name={testi.name} email={testi.email} />;
+            return <Testimonial key={index} img_src={testi.img_src} text={testi.text} name={testi.name} email={testi.email} />;
           })}
         </div>
         <div

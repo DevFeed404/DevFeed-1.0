@@ -42,10 +42,10 @@ const Faq = () => {
 
   return (
     <section
-      className={activeIndex?"bg-white pt-auto pb-40" : "bg-white pt-auto"}
+      className={activeIndex ? "bg-white dark:bg-black pt-auto pb-40" : "bg-white dark:bg-black pt-auto"}
       style={{ color: "#0D2F3F", fontFamily: "Eudoxus Sans, sans-serif" }}
     >
-      <div className="container max-w-3xl px-6 py-10 mx-auto">
+      <div className="container max-w-3xl dark:text-white px-6 py-10 mx-auto">
         <h1 className="text-5xl font-semibold text-center lg:text-3xl">
           Frequently Asked Questions
         </h1>
@@ -54,7 +54,7 @@ const Faq = () => {
           {questions.map((ques, index) => (
             <div
               key={index}
-              className="border-2 border-gray-100 rounded-lg dark:border-gray-700"
+              className="border-2 dark:bg-[#0D2F3F] border-gray-100 rounded-lg dark:border-gray-700"
             >
               <button
                 className="flex items-center space-x-3  justify-between w-full p-8 focus:outline-none"
@@ -65,9 +65,8 @@ const Faq = () => {
                 </h1>
 
                 <span
-                  className={`text-gray-400 bg-gray-200 rounded-full transform transition-transform duration-300 ${
-                    activeIndex === index ? "rotate-0" : "rotate-180"
-                  }`}
+                  className={`text-gray-400 bg-gray-200 rounded-full transform transition-transform duration-300 ${activeIndex === index ? "rotate-0" : "rotate-180"
+                    }`}
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

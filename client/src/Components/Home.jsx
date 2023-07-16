@@ -13,20 +13,20 @@ import Faq from "./Faq";
 
 const Home = () => {
   return (
-    <div>
+    <div className="dark:text-white dark:bg-black">
       <Helmet>
         <title>DevFeed</title>
       </Helmet>
       <ToastContainer
         position="top-center"
-         autoClose={5000}
-         hideProgressBar={false}
-         newestOnTop={false}
-         closeOnClick
-         rtl={false}
-         pauseOnFocusLoss
-         draggable
-         pauseOnHover
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
         theme="light"
       />
       <Navbar />

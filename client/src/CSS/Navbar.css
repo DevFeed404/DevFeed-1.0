@@ -1,129 +1,120 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
-*{
-    padding: 0px;
-    margin: 0px;
-   
+* {
+	padding: 0px;
+	margin: 0px;
 }
 
-body{
-    background-color: #f8f7f1;
-    width: 100vw !important;
-    overflow-x: hidden;
-    scroll-behavior: smooth !important;
+body {
+	background-color: #f8f7f1;
+	width: 100vw !important;
+	overflow-x: hidden;
+	scroll-behavior: smooth !important;
 }
 
-::-webkit-scrollbar{
-    width: 5px;
+::-webkit-scrollbar {
+	width: 5px;
 }
 
-::-webkit-scrollbar-track{
-    background-color:#242132;
+::-webkit-scrollbar-track {
+	background-color: #242132;
 }
-::-webkit-scrollbar-thumb{
-    background-color: #25243a;
-    border-radius: 5px;
-}
-
-.count-container{
-    background-color: rgba(0,0,0,0.3);
+::-webkit-scrollbar-thumb {
+	background-color: #25243a;
+	border-radius: 5px;
 }
 
-.nav-body{
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
-    height: 12vh;
-    /* background: linear-gradient(90deg, #46404061,rgba(0, 0, 0, 0.301)); */
-    /* background: #3c3c3c; */
-    background-color: #f8f7f1;
- box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-    -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
-    color: #FEFCFF;
-    align-items: center;
-    justify-content:space-between;
-    z-index: 10;
-    position: fixed;
+.count-container {
+	background-color: rgba(0, 0, 0, 0.3);
 }
 
-.logo{
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 1vh;
-
-    @media (max-width:940px)
-    {
-      
-   }
-   @media (max-width:575px)
-   {
-      
-  }
-    /* font-size: 4vh; */
-}
-.subscribe.font-medium.login{
-    display: none;
+.nav-body {
+	display: flex;
+	flex-direction: row;
+	width: 100vw;
+	height: 12vh;
+	/* background: linear-gradient(90deg, #46404061,rgba(0, 0, 0, 0.301)); */
+	/* background: #3c3c3c; */
+	background-color: #f8f7f1;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+	-webkit-backdrop-filter: blur(20px);
+	backdrop-filter: blur(20px);
+	color: #fefcff;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 10;
+	position: fixed;
 }
 
-.subscribe{
-    cursor: pointer;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.logo {
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 1vh;
 
-    margin-right: 2.5vw;
-    border-radius: 9rem;
+	@media (max-width: 940px) {
+	}
+	@media (max-width: 575px) {
+	}
+	/* font-size: 4vh; */
+}
+.subscribe.font-medium.login {
+	display: none;
+}
 
-    padding: .5vw 1vw 0.5vw 1vw;
-    font-family: "Poppins", sans-serif;
-      cursor: pointer;
-  background: transparent;
-  border: 1px solid #91C9FF;
-  outline: none;
-  transition: 0.3s ease-in-out;
+.subscribe {
+	cursor: pointer;
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
-    /* background: linear-gradient(90deg, #746CFE, #AE8CFA); */
+	margin-right: 2.5vw;
+	border-radius: 9rem;
 
-    font-size: 2.5vh;
-    color: #0D2F3F;
-    @media (max-width:710px)
-    {
-        padding: 1.5vw;
-   }
-   @media (max-width:500px)
-   {
-       padding: 2vw;
-  }
-  @media (max-width:390px)
-  {
-      padding: 2.5vw;
-      font-size: 2vh;
- }
-     
+	padding: 0.5vw 1vw 0.5vw 1vw;
+	font-family: "Poppins", sans-serif;
+	cursor: pointer;
+	background: transparent;
+	border: 1px solid #91c9ff;
+	outline: none;
+	transition: 0.3s ease-in-out;
+
+	/* background: linear-gradient(90deg, #746CFE, #AE8CFA); */
+
+	font-size: 2.5vh;
+	color: #0d2f3f;
+	@media (max-width: 710px) {
+		padding: 1.5vw;
+	}
+	@media (max-width: 500px) {
+		padding: 2vw;
+	}
+	@media (max-width: 390px) {
+		padding: 2.5vw;
+		font-size: 2vh;
+	}
 }
 
 .subscribe:hover {
-    background-color: #aaff00;
-    border: 1px solid #aaff00;
+	background-color: #aaff00;
+	border: 1px solid #aaff00;
 }
 
-.subscribe img{
-    height: 2.4vh;
+.subscribe img {
+	height: 2.4vh;
 }
 
-#nav-logo{
-    width: 90%;
-    height: 80%;
-    @media (max-width:650px )
-    {
-        width: 70%;
-    height: 60%;
-   }
-    /* background-color: black; */
+#nav-logo {
+	width: 60%;
+	height: 70%;
+	@media (max-width: 650px) {
+		width: 70%;
+		height: 60%;
+	}
+	/* background-color: black; */
 }
 
 /* :window-inactive{

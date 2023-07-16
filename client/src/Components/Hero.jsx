@@ -11,13 +11,13 @@ export default function Hero() {
     }, []);
 
     return (
-        <div className='hero' id='home'>
+        <div className='hero dark:bg-black  ' id='home'>
             <div className="hero-data">
-                <div className="hero-head">
+                <div className="hero-head dark:text-white">
                     Educate. <p>Connect. </p> Aware.
                 </div>
-                <div className="hero-text">
-                    <span className='text-[#28004d] comme'>what are you waiting for? </span> Join our community and be<br></br> a part of the tech revolution!
+                <div className="hero-text font-bold dark:text-white">
+                    <span className='text-[#28004d] font-semibold comme'>what are you waiting for? </span> Join our community and be<br></br> a part of the tech revolution!
                 </div>
             </div>
             <div className="hero-image nm:hidden">

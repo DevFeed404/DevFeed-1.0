@@ -68,20 +68,20 @@ export default function Footer() {
                 </div>
             </div> */}
 
-            <div className='flex flex-col w-screen justify-center bg-white items-center sans-serif  pt-[5vh] pb-[7vh]'>
-                <div className='text-black title items-center sans-serif  font-bold'>Reach out to us</div>
-                <div className='text-black text-lg items-center pt-1 pb-3 xsm:text-base xssm:text-xs'>Connect with us for any kind of query at</div>
+            <div className='flex flex-col w-screen justify-center  dark:bg-black bg-white items-center sans-serif  pt-[5vh] pb-[7vh]'>
+                <div className='text-black dark:text-white title items-center sans-serif  font-bold'>Reach out to us</div>
+                <div className='text-black dark:text-white text-lg items-center pt-1 pb-3 xsm:text-base xssm:text-xs'>Connect with us for any kind of query at</div>
 
                 <div className='flex flex-row justify-between'>
-                    <button type="submit" className='button'  ><span className='buttontext'><a href="mailto:devfeed.in@gmail.com">devfeed.in@gmail.com</a></span></button>
-                        <div className='copybutton' onClick={() => {
-                            navigator.clipboard.writeText("devfeed.in@gmail.com");
-                            document.getElementById("custom-tooltip").style.display = "inline";
-                            setTimeout(function () {
-                                document.getElementById("custom-tooltip").style.display = "none";
-                            }, 1000);
-                        }}> <img src={require("../Assets/copymain2.png")} alt="" style={{"width":"20px"}} /></div>
-                         <span id="custom-tooltip">copied!</span>
+                    <button type="submit" className='button dark:bg-white'  ><span className='buttontext  dark:text-black '><a href="mailto:devfeed.in@gmail.com">devfeed.in@gmail.com</a></span></button>
+                    <div className='copybutton' onClick={() => {
+                        navigator.clipboard.writeText("devfeed.in@gmail.com");
+                        document.getElementById("custom-tooltip").style.display = "inline";
+                        setTimeout(function () {
+                            document.getElementById("custom-tooltip").style.display = "none";
+                        }, 1000);
+                    }}> <img src={require("../Assets/copymain2.png")} alt="" style={{ "width": "20px" }} /></div>
+                    <span id="custom-tooltip">copied!</span>
                 </div>
             </div>
 
@@ -90,11 +90,11 @@ export default function Footer() {
             {/* <div className='footer comme  '>
                 <div className="hr" style={{ "width": "90%" , "marginTop":"3vh"}}></div>
                 <div className='footer-main'> */}
-                    {/* <div className="footer-title">
+            {/* <div className="footer-title">
                         DevFeed
                     </div> */}
 
-                    {/* <div className='text-md p-2 flex flex-row font-normal sans-serif cursor-pointer'>
+            {/* <div className='text-md p-2 flex flex-row font-normal sans-serif cursor-pointer'>
      
                         <div className='hover:text-[#FADA5E]' onClick={scrollToAbout} >About |</div> <div className='hover:text-[#FADA5E]'><a href="mailto:devfeed.in@gmail.com">&nbsp; Contact |</a>  </div> <div className='hover:text-[#FADA5E]' onClick={scrollToSubs}>&nbsp; Subscribe</div>
                     </div>
@@ -105,11 +105,11 @@ export default function Footer() {
             {/* </div> */}
 
             <div className="footer">
-                    <ul className='footer-list'>
-                        <li><p className="footer-items" onClick={scrollToAbout}>About</p></li>
-                        <li><p className="footer-items"><a href="mailto:devfeed.in@gmail.com">Contact</a></p></li>
-                        <li><p className='footer-items' onClick={scrollToSubs}>Subscribe</p></li>
-                    </ul>
+                <ul className='footer-list'>
+                    <li><p className="footer-items" onClick={scrollToAbout}>About</p></li>
+                    <li><p className="footer-items"><a href="mailto:devfeed.in@gmail.com">Contact</a></p></li>
+                    <li><p className='footer-items' onClick={scrollToSubs}>Subscribe</p></li>
+                </ul>
                 <div className="copyright">&copy; Copyright {getCurrentYear()} by DevFeed. All rights reserved.</div>
             </div>
         </>

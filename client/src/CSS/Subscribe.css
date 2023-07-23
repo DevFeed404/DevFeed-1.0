@@ -1,0 +1,153 @@
+.subscribe-con{
+    display: flex;
+    flex-direction: row;
+    /* background-color: #33333390; */
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    /* background-color: blue; */
+    margin-top: 3vh;
+
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+    scroll-behavior: smooth;
+    /* backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px); */
+}
+
+.subscribe-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    margin-top: 4vh;
+    @media (max-width: 1103px)
+ {
+    width: 100vw;
+}
+}
+
+.subscribe-con h2{
+    font-size: 7vh;
+    font-weight: 700;
+    color: #0D2F3F;
+    @media (max-width: 1946px)
+    {
+        font-size: 5vh;
+   }
+   @media (max-width: 1410px)
+    {
+        font-size: 4vh;
+   }
+   @media (max-width: 597px)
+   {
+       font-size: 3vh;
+  }
+   @media (max-width: 597px)
+   {
+       font-size: 3vh;
+  }
+
+
+
+}
+
+.hr{
+    height: 4px;
+    width: 20%;
+    background-color: #6acfc7;
+    border-radius: 5px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.form-subheading{
+    font-family: "Eudoxus Sans", sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 3vh;
+    font-weight: 500;
+    @media (max-width: 430px)
+    {
+        font-size: 2.5vh;
+   }
+ 
+}
+
+.subscribe-form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+    
+    @media (max-width:520px)
+    {
+        width: 70%;
+        margin-left:1.5vw;
+        margin-right:1.5w;
+        
+   }
+}
+
+#person-name-heading{
+    color: #0D2F3F;
+    font-size: 3vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    font-family: "Eudoxus Sans", sans-serif;
+}
+
+#person-name{
+    background-color: transparent;
+    border: 1px#000000 solid;
+    padding: 1vh;
+    border-radius: 5px;
+    margin: 1vh 0vh 3vh 0vh;
+}
+
+#person-email-heading{
+    color: #0D2F3F;
+    font-size: 3vh;
+    font-family: "Eudoxus Sans", sans-serif;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+#person-email{
+    background-color: transparent;
+    border: 1px#000000 solid;
+    padding: 1vh;
+    border-radius: 5px;
+    margin: 1vh 0vh 3vh 0vh;
+}
+
+#person-org-heading{
+    font-family: "Eudoxus Sans", sans-serif;
+    color: #0D2F3F;
+    font-size: 3vh;
+    margin-top: 1vh;
+    
+    margin-bottom: 1vh;
+}
+
+#person-org{
+    background-color: transparent;
+    border: 1px#000000 solid;
+    padding: 1vh;
+    border-radius: 5px;
+    margin: 1vh 0vh 3vh 0vh;
+}
+
+#subscribe-btn{
+    cursor: pointer;
+    padding: 1vh;
+    background-color: #aaff00;
+    border-radius: 5px;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    align-self: center;
+    font-size: 2.3vh;
+    font-weight: 600;
+    margin-top: 3vh;
+}

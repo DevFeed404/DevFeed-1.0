@@ -1,0 +1,107 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #736cfe68; */
+    color: #FEFCFF;
+    z-index: 5;
+    position: absolute;
+
+}
+
+.vision-headline{
+    font-size: 2.5vh;
+    font-weight: 350;
+    margin-left: 5vw;
+    margin-top: 2vh;
+}
+
+.vision{
+    width: 50%;
+    font-size: 5vh;
+    font-weight: 800;
+    margin-left: 5vw;
+}
+
+.para1{
+    width: 30%;
+    margin-left: 5vw;
+    margin-top: 3vh;
+}
+
+.para2{
+    width: 30%;
+    margin-right: 5vw;
+    align-self: flex-end;
+    margin-bottom: 2vh;
+}
+
+#about-photo-1{
+    width: 15%;
+    margin-left: 40vw;
+    margin-top: 25vh;
+}
+
+#about-photo-2{
+    width: 25%;
+    margin-left: 60vw;
+    margin-top: -65vh;
+}
+
+#about-photo-3{
+    width: 25%;
+    margin-left: 7vw;
+    margin-top: 12vh;
+}
+
+.about-con{
+    width: 85vw;
+    align-self: center;
+}
+
+.about-image{
+    width: 50vw;
+    background-color: transparent;
+   
+    /* filter:invert(1); */
+  
+
+    @media (max-width:668px)
+    {
+        width: 80vw;
+   }
+   @media (max-width:450px)
+   {
+       height: 75vw;
+       width: 80vw;
+  }
+  
+}
+ 
+.background{
+    background-color: #ffffff;
+}
+
+
+.about-title{
+    font-family: "Eudoxus Sans", sans-serif;
+    font-size: 3rem;
+    color: #0D2F3F;
+}
+
+.about-pts{
+    font-family: "Eudoxus Sans", sans-serif;
+}
+
+.poppins{
+    font-family: Poppins;
+}
+
+.comme{
+    font-family: Comme;
+}
+.sans-serif{
+    font-family: "Eudoxus Sans", sans-serif;
+}

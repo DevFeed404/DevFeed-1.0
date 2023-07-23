@@ -1,0 +1,19 @@
+.width{
+    padding-right:8px ;
+    border-radius: 8%;
+    box-shadow: 0px 21px 13px rgba(0, 0, 0, 0.13);
+    @media (max-width:710px)
+    {
+        /* width: 22vw; */
+        height:24vh;
+   }
+}
+
+.image-con{
+    width: 100vw;
+    overflow-x: scroll;
+}
+
+.image-con::-webkit-scrollbar{
+    display: none;
+}

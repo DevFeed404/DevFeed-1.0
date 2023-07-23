@@ -1,0 +1,142 @@
+.testimonials-body{
+    display: flex;
+    flex-direction: row;
+    height: 66vh;
+    width: 94vw;
+    /* max-width: 200vw; */
+    align-items: center;
+    /* align-self: center; */
+    margin-left: 1vw;
+    margin-right: auto;
+    /* justify-content: center; */
+    overflow-x:scroll ;
+    scroll-behavior: smooth;
+}
+
+#testimonial-con{
+    display: flex;
+    flex-direction: row;
+    width: 100% !important;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+#left-control img{
+    rotate: 180deg;
+}
+
+.testimonials-control{
+    /* width: 1vw !important; */
+    width: 2vw ;
+    border-radius: 30%;
+    background-color: #afabe6;
+    z-index: 6;
+    @media (max-width:680px)
+    {
+     visibility: hidden;
+   };
+   @media (max-width:1126px)
+    {
+        width: 2.5vw ;
+   };
+}
+
+.testimonials-control img{
+    width: 100%;
+
+    padding: 0.5vh;
+    /* height: 100%; */
+}
+
+.testimonials-body::-webkit-scrollbar{
+    display: none;
+}
+
+.testimonials-title{
+    color: #0D2F3F;
+
+    font-size: 3rem;
+    margin-left: 5vw;
+    margin-top: 6vh;
+    font-weight: 700;
+@media (max-width:560px)
+    {
+        font-size: 2.5rem;
+   };
+   @media (max-width:448px)
+   {
+       font-size: 2rem;
+  };
+  @media (max-width:344px)
+  {
+      font-size: 1.7rem;
+ };
+}
+
+.Testimonial{
+    background: rgb(255, 255, 255);
+
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.05) -3px 11px 13px 0px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 23vw;
+    min-width: 29vw;
+    height: 50vh;
+    border-radius: 30px;
+
+    margin-right: 3.6vh;
+    @media (max-width:1151px)
+    {
+        width: 45vw;
+        min-width: 45vw;
+   };
+    @media (max-width:1048px)
+    {
+        width: 46vw;
+        min-width: 45vw;
+   };
+   @media (max-width:690px)
+    {
+        width: 56vw;
+        min-width: 55vw;
+   };
+   @media (max-width:517px)
+   {
+       width: 75vw;
+       min-width: 74vw;
+  }
+  @media (max-width:400px)
+  {
+      width: 90vw;
+      min-width: 89vw;
+ }
+}
+
+.testimonial-img{
+    width: 5vw;
+    border-radius: 50%;
+    /* margin-top: 10vh; */
+
+}
+
+.testimonial-text{
+    color: #0D2F3F;
+    font-size: 2.5vh;
+    width: 80%;
+    font-weight: 100;
+    text-align:center;
+    margin-top: 2vh;
+    /* text-justify: inter-word; */
+}
+
+.testimonial_name{
+    color: #000000;
+    font-weight: 550;
+}
+
+.testimonial_email{
+    color: #070707;
+}

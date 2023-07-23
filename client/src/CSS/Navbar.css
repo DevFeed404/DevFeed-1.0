@@ -1,0 +1,119 @@
+*{
+    padding: 0px;
+    margin: 0px;
+   
+}
+
+body{
+    background-color: #f8f7f1;
+    width: 100vw !important;
+    overflow-x: hidden;
+    scroll-behavior: smooth !important;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background-color:#242132;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #25243a;
+    border-radius: 5px;
+}
+
+.count-container{
+    background-color: rgba(0,0,0,0.3);
+}
+
+.nav-body{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 12vh;
+    /* background: linear-gradient(90deg, #46404061,rgba(0, 0, 0, 0.301)); */
+    /* background: #3c3c3c; */
+    background-color: #f8f7f1;
+ box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    color: #FEFCFF;
+    align-items: center;
+    justify-content:space-between;
+    z-index: 10;
+    position: fixed;
+}
+
+.logo{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1vh;
+
+    @media (max-width:940px)
+    {
+      
+   }
+   @media (max-width:575px)
+   {
+      
+  }
+    /* font-size: 4vh; */
+}
+
+.subscribe{
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5vw;
+    border-radius: 50px;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    padding-top: 0.8vw;
+    padding-bottom: 0.8vw;
+    background-color: transparent;
+    border: 1px solid #0D2F3F;
+    font-family: "Eudoxus Sans", sans-serif;
+
+    /* background: linear-gradient(90deg, #746CFE, #AE8CFA); */
+
+    font-size: 2.5vh;
+    color: #0D2F3F;
+    @media (max-width:710px)
+    {
+        padding: 1.5vw;
+   }
+   @media (max-width:500px)
+   {
+       padding: 2vw;
+  }
+  @media (max-width:390px)
+  {
+      padding: 2.5vw;
+      font-size: 2vh;
+ }
+     
+}
+
+.subscribe img{
+    height: 2.4vh;
+}
+
+#nav-logo{
+    width: 90%;
+    height: 80%;
+    @media (max-width:650px )
+    {
+        width: 70%;
+    height: 60%;
+   }
+    /* background-color: black; */
+}
+
+/* :window-inactive{
+    scroll-behavior: smooth;
+} */

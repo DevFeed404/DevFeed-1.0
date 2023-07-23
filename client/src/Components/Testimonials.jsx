@@ -38,9 +38,11 @@ export default function Testimonials() {
           data-aos="slide-left"
           data-aos-once="true"
         >
-          {testimonialList.map((testi, index) => {
-           return <Testimonial key={index} img_src={testi.img_src} text={testi.text} name={testi.name} email={testi.email} />;
-          })}
+          <Testimonial img_src = "1" text = "Devfeed is a game-changer! It keeps me up-to-date on the latest happenings with concise, relevant content delivered straight to my inbox. Highly recommended!" name = "Himesh Nayak"/>
+            <Testimonial img_src = "2" text = "This newsletter website is a fantastic resource for staying up-to-date on upcoming events. The site is user-friendly and provides comprehensive information in one convenient location." name = "Utkarsh Rai"/>
+            <Testimonial img_src = "3" text = "This website is a must-have resource for staying informed. Its concise updates and user-friendly interface make it effortless to discover and engage with exciting events." name = "Dhruv Aeron"/>
+            <Testimonial img_src = "4" text = "It is an invaluable resource, delivering timely and comprehensive updates on upcoming events. It's user-friendly interface makes finding and registering for events a breeze!" name = "Priyanshu Singh"/>
+            <Testimonial img_src = "5" text = "The newsletter website provides timely updates and comprehensive information. Its user-friendly interface and engaging content make it a must-visit resource for event enthusiasts." name = "Taniska Jha"/>
         </div>
         <div
           className="testimonials-control"

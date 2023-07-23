@@ -4,7 +4,7 @@ import "../CSS/Testimonial.css"
 export default function Testimonial(props) {
   return (
     <div className='Testimonial'>
-        <img src={require("../Assets/himesh.jpg")} alt="" className='testimonial-img' />
+        <img src={props.img_src} alt="" className='testimonial-img' />
         <div className="testimonial-text sans-serif">
             {props.text}
         </div>

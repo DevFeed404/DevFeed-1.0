@@ -1,5 +1,7 @@
 const express = require('express');
 const cors = require('cors')
+const Scraper = require('./controllers/scraper');
+const setUpJobs = require('./utils/jobs')
 const db =require('./db');
 const PORT = 5000;
 let Validator = require('validatorjs');
@@ -17,13 +19,8 @@ app.get("/",(req,res) => {
         message:"welcome to this server"
     });
 });
-
-
-
-
-
-
-
 app.listen(PORT, () => {
-    console.log(`Server is running on 5000`)
-  });
+    console.log(`Server is running on 5000`);
+    // Scraper();
+    console.log("something..");
+});

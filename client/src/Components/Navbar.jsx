@@ -1,8 +1,13 @@
 import React from "react";
 import "../CSS/Navbar.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate} from "react-router-dom";
 
 export default function Navbar() {
+    const navigate = useNavigate();
+    const handleChange = () => {
+        console.log("clicked");
+        navigate("/events");
+    }
     return (
         <div className="nav-body">
             <a href="#home">
@@ -15,6 +20,9 @@ export default function Navbar() {
                 </div>
             </a>
             <div className="flex ">
+                <button  className = "subscribe" onClick = {handleChange}>
+                    Events
+                </button>
                 <a href="#subscribe-con">
                     <div className="subscribe font-medium ">
                         Subscribe
@@ -25,7 +33,7 @@ export default function Navbar() {
                 <Link to="/login">
                     <div className="subscribe font-medium login ">
                         Login
-                        {/* <img src={require("../Assets/right.png")} alt=""  /> */}
+                        <img src={require("../Assets/right.png")} alt=""  />
                     </div>
 
                 </Link>

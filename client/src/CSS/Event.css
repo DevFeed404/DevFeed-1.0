@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    position:static;
+    margin:0px;
+    padding:0px;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth !important;
+}
+.container{
+    position:static;
+    width:100vw;
+    height:20vh;
+}
+.heading{
+    position:absolute;
+    width: 100vw;
+    height: 30vh;
+    margin-top: 12vh;
+    text-align: center;
+    background-color: #072c41;
+}
+.heading>h1{
+    font-size: 3rem;
+    font-weight: 600;
+    color:white;
+    /* margin-left: 35vw; */
+    margin-top: 5vh;
+    font-family: "Poppins", sans-serif;
+}
+.lead{
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 1.4;
+    color:white;
+}
+.inner{
+    border: 3px solid #c8cac9;
+    width :19vw;
+}
+.event-card{
+    position: absolute;
+    margin-top: 50vh;
+    width:80vw;
+    margin-left: 12vw;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.event-wrapper{
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    object-fit: fill;
+}
+.event-logo{
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background-color: #fff;
+    border-style: solid;
+    border-color: #fff;
+    border-width: 5px;
+    height: 60px;
+    margin-top: -46px;
+    margin-left:115px;
+    position: absolute;
+    text-align: center;
+    width: 60px;
+}
+
+.content{
+    padding-top: 50px;
+    height:25vh;
+    text-align: center;
+}
+.content > h3{
+    color: #333333;
+    line-height: 2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-weight: 700;
+}
+.content >p{
+    color: #989898;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+}
+.content > .event-location{
+    color: #333333;
+    line-height: 2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-weight: 700;
+}
+.content > .event-notes{
+    color: #989898;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+}

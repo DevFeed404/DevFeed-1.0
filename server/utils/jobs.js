@@ -1,10 +1,10 @@
 const cron = require('node-cron');
-const FeedData = require('../controllers/scraper');
+const { scraper }= require('../controllers/scraper');
 
 const setUpJobs = ()=>{ 
-    cron.schedule('0 0 * * 0',()=> {
+    cron.schedule('0 0 */3 * *',()=> {
         console.log("jobs .. ");
-        FeedData();
+        scraper();
     })
 }
 module.exports = setUpJobs;

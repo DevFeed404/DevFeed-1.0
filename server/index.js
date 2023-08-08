@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors')
 const db =require('./db');
-const PORT = 5000;
+const PORT = 80;
 let Validator = require('validatorjs');
 const app = express();
 const route = require('./routes/routes');
@@ -25,5 +25,5 @@ app.get("/",(req,res) => {
 
 
 app.listen(PORT, () => {
-    console.log(`Server is running on 5000`)
+    console.log(`Server is running on ${PORT}`)
   });

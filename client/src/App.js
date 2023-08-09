@@ -1,16 +1,14 @@
-
-import "react-toastify/dist/ReactToastify.css";
+import { useState } from "react";
 import "./App.css";
 import Home from "./Components/Home";
-import { Route, Routes } from "react-router-dom";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import { Routes, Route } from "react-router-dom";
+import ErrorPage from "./Components/404";
 import SendNewsFeed from "./Components/SendNewsFeed";
 import Login from "./Components/Login";
 
 function App() {
-
-
+   
+  const [loading, setLoading] = useState(true);
   const spinner = document.getElementById("spinner");
   if (spinner) {
     setTimeout(() => {
@@ -18,27 +16,15 @@ function App() {
       
     }, 2000);
   }
-
-
   return (
-    <Routes>
-      <Route path="/" element={<>
-        <Home />
-      <ToastContainer
-        position="top-center"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="light"
-      /></>}/>
-      <Route path='/sendNews' element={<SendNewsFeed/>}/>
-      <Route path='/login' element={<Login/>}/>    
-    </Routes>
+    !loading && <div>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path='/sendNews' element={<SendNewsFeed/>}/>
+        <Route path='/login' element={<Login/>}/>
+        <Route path="*" element={<ErrorPage/>}/>
+      </Routes>
+      </div>
   );
 }
 

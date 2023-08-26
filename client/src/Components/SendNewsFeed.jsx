@@ -38,7 +38,6 @@ return (
 <>
 <Navbar/>
 <div className='flex items-center justify-center p-36'>
-
 <form className="h-screen w-2/5">
   <h1 className='text-3xl m-6 font-medium'>DevFeed Admin</h1>
             <div className="space-y-5">

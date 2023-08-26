@@ -30,3 +30,6 @@ app.listen(PORT, () => {
     // setUpJobs();
     console.log("something..");
 });
+=======
+    console.log(`Server is running on ${PORT}`)
+  });

@@ -21,6 +21,6 @@ exports.feedback = async (req, res) => {
         
         
     } catch (error) {
-        
+        console.log("Error");
     }
 }

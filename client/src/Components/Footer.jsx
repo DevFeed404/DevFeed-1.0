@@ -35,9 +35,19 @@ export default function Footer() {
         element.scrollIntoView();
     }
 
-    const getCurrentYear = () => {
-        return new Date().getFullYear();
-    };
+    function scrollToHome(){
+        var element = document.getElementById("home");
+        element.scrollIntoView();
+    }
+
+    function scrollToFAQ(){
+        var element = document.getElementById("faq");
+        element.scrollIntoView();
+    }
+
+    
+
+  const currentYear = new Date().getFullYear();
 
 
     return (
@@ -104,14 +114,73 @@ export default function Footer() {
                 </div> */}
             {/* </div> */}
 
-            <div className="footer">
+            {/* <div className="footer">
                     <ul className='footer-list'>
                         <li><p className="footer-items" onClick={scrollToAbout}>About</p></li>
                         <li><p className="footer-items"><a href="mailto:devfeed.in@gmail.com">Contact</a></p></li>
                         <li><p className='footer-items' onClick={scrollToSubs}>Subscribe</p></li>
                     </ul>
                 <div className="copyright">&copy; Copyright {getCurrentYear()} by DevFeed. All rights reserved.</div>
-            </div>
+            </div> */}
+    
+    <footer className="footer">
+     <div className="w-80vw mx-auto max-w-1200px">
+     <div className="flex justify-around flex-wrap">
+         
+         <div className="mb-6 mt-8">
+             <div className="footer">Quick Links</div>
+             <ul className="footer-list list-none m-0 p-0">
+                    <li className="leading-8 text-base text-black text-opacity-80 dark:text-zinc-50">
+                     <a onClick={scrollToHome} className="footer-items">Home</a>
+                     </li>
+                     <li className="leading-8 text-base text-black text-opacity-80 dark:text-zinc-50">
+                     <a onClick={scrollToAbout} className="footer-items" >About Us</a>
+                     </li>
+                     <li className="leading-8 text-base text-black text-opacity-80 dark:text-zinc-50">
+                     <a onClick={scrollToSubs} className="footer-items">Subscribe</a>
+                     </li>
+                     <li className="leading-8 text-base text-black text-opacity-80 dark:text-zinc-50">
+                     <a href="mailto:devfeed.in@gmail.com" className="footer-items">Contact</a>
+                     </li>
+                     <li className="leading-8 text-base text-black text-opacity-80 dark:text-zinc-50">
+                     <a onClick={scrollToFAQ} className="footer-items">FAQ</a>
+     
+                     </li>
+             </ul>
+             </div>
+
+             <div className="mb-24 mt-8">
+                <div className="footer ">Help</div>
+                <ul className='footer-list list-none m-0 p-0'>
+                     <li className="leading-8 text-base text-black text-opacity-80 dark:text-zinc-50 ">
+                     <a href="https://github.com/DevFeed404/DevFeed-1.0/issues" aria-label="Follow me on Github" target="_blank" className="footer-items">Github Issues</a>
+                     </li>
+                     <li className="leading-8 text-base text-black text-opacity-80 dark:text-zinc-50">
+                        <a href="https://github.com/DevFeed404/DevFeed-1.0" aria-label="Follow me on Github" target="_blank" className="footer-items">Contribution</a>
+                     </li>
+                     <li className="leading-8 text-base text-black text-opacity-80 dark:text-zinc-50">
+                        <a href="https://github.com/DevFeed404/DevFeed-1.0" aria-label="Follow me on Github" target="_blank" className="footer-items">Github Discussions</a>
+                     </li>
+                  </ul>
+             </div>
+             
+             <div className="mb-24 mt-8">
+                <div className="footer ">Legal</div>
+                <ul className='footer-list list-none m-0 p-0'>
+                     <li className="leading-8 text-base text-black text-opacity-80 dark:text-zinc-50 ">
+                     <a onClick={scrollToHome} aria-label="Follow me on Github" target="_blank" className="footer-items">Privacy Policy</a>
+                     </li>
+                     <li className="leading-8 text-base text-black text-opacity-80 dark:text-zinc-50">
+                        <a onClick={scrollToHome}  aria-label="Follow me on Twitter"  className="footer-items">Terms & Conditions</a>
+                     </li>
+                  </ul>
+             </div>
+             </div>
+     </div>
+     <div className="copyright flex flex-row justify-center w-full border-y-2 items-center gap-8 border-black  ">
+             <p>© {currentYear} Dev Feed . All rights reserved.</p>
+             </div>
+      </footer> 
         </>
     )
 }
